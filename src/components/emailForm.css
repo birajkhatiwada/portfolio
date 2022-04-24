@@ -1,0 +1,151 @@
+.hideForm {
+  display: none;
+}
+
+.formContainer {
+  position: absolute;
+  top: 20vh;
+  left: 50vw;
+  height: 400px;
+  width: 600px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.titleBar {
+  position: absolute;
+  background-color: #e0e0e0;
+  height: 30px;
+  width: 100%;
+  border-radius: 7px 7px 0 0;
+}
+
+.green {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: green;
+}
+
+.yellow {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: orange;
+}
+
+.red {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.emailTitleName {
+  position: absolute;
+  top: 5px;
+  left: 45%;
+}
+.sendEmail {
+  position: absolute;
+  top: 3px;
+  left: 60px;
+  padding: 1px 10px 1px 10px;
+}
+.sendEmail:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.yourEmail {
+  position: absolute;
+  left: 25px;
+  top: 35px;
+  font-size: 14px;
+}
+
+.emailInput {
+  position: absolute;
+  top: 37px;
+  left: 105px;
+  height: 15px;
+  width: 78%;
+  text-decoration: none;
+  border: none;
+}
+
+.line {
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  height: 1px;
+  width: 95%;
+  background-color: grey;
+}
+
+.firstName {
+  position: absolute;
+  top: 67px;
+  left: 25px;
+  font-size: 14px;
+}
+.nameInput {
+  position: absolute;
+  top: 68px;
+  left: 75px;
+  height: 15px;
+  width: 82%;
+  border: none;
+}
+.secondline {
+  position: absolute;
+  top: 90px;
+  left: 25px;
+  height: 1px;
+  width: 95%;
+  background-color: grey;
+}
+.messageInput {
+  position: absolute;
+  top: 100px;
+  left: 25px;
+  height: 240px;
+  width: 91%;
+  text-decoration: none;
+  border: none;
+}
+
+.messageInput::placeholder {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+
+.sendBtn {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  right: 2px;
+  padding: 5px;
+  width: 83%;
+  height: 30px;
+  text-decoration: none;
+  border: none;
+
+  background-color: #e0e0e0;
+}
+
+.sendBtn:hover {
+  opacity: 0.8;
+}

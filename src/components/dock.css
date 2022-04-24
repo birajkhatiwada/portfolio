@@ -1,0 +1,99 @@
+.dock {
+  position: fixed;
+  bottom: 10px;
+  left: 20vw;
+  right: 20vw;
+  background-color: black;
+  height: 80px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.cv {
+  position: absolute;
+  left: 17px;
+  top: 12px;
+  z-index: 1;
+  fill: white;
+  transition: 50ms transform ease;
+}
+
+.cv:hover {
+  fill: grey;
+}
+
+.linkedin {
+  position: absolute;
+  top: 12px;
+  left: 100px;
+  z-index: 1;
+  fill: #0e76a8;
+}
+
+.linkedin:hover {
+  opacity: 0.6;
+}
+
+.instagram {
+  position: absolute;
+  top: 12px;
+  left: 190px;
+  z-index: 1;
+  fill: #e1306c;
+}
+.instagram:hover {
+  opacity: 0.6;
+}
+
+.github {
+  position: absolute;
+  top: 12px;
+  left: 280px;
+  z-index: 1;
+  fill: white;
+}
+.github:hover {
+  opacity: 0.6;
+}
+
+.email {
+  position: absolute;
+  top: 12px;
+  left: 370px;
+  z-index: 1;
+  fill: #18b5f0;
+}
+
+.email:hover {
+  opacity: 0.6;
+}
+
+.spotify {
+  position: absolute;
+  top: 12px;
+  left: 460px;
+  z-index: 1;
+  fill: green;
+}
+
+.spotify:hover {
+  opacity: 0.6;
+}
+
+.terminal {
+  position: absolute;
+  top: 11px;
+  left: 570px;
+  z-index: 1;
+  fill: white;
+}
+
+.app {
+  transition: transform 0.2s ease-in-out;
+}
+.app:hover {
+  text-decoration: none;
+  cursor: default;
+  transform: translateY(-4px);
+}

@@ -1,0 +1,11 @@
+.project-card {
+}
+
+.front {
+  background-color: beige;
+  background-position: center;
+  background-size: cover;
+  /*margin: 30px;*/
+  padding: 100px;
+  cursor: pointer;
+}
