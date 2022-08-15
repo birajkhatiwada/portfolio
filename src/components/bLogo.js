@@ -14,4 +14,4 @@ const BLogo = (props) => {
   );
 };
 
-export default BLogo;
+// export default BLogo;

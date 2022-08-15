@@ -1,0 +1,83 @@
+.LanguagesContainer{
+    --opacity_numter: 0.15;
+
+
+}
+.react{
+    position: absolute;
+    font-size: 50px;
+    top: 40vh;
+    left: 57vw;
+    opacity: var(--opacity_numter);
+}
+.cpp{
+    position: absolute;
+    font-size: 50px;
+    top: 38vh;
+    left: 48vw;
+    opacity: var(--opacity_numter);
+}
+.javascript{
+    position: absolute;
+    font-size: 50px;
+    top: 27vh;
+    left: 35vw;
+    opacity: var(--opacity_numter);
+}
+.java{
+    position: absolute;
+    font-size: 50px;
+    top: 32vh;
+    left: 25vw;
+    opacity: var(--opacity_numter);
+}
+.python{
+    position: absolute;
+    font-size: 50px;
+    top: 40vh;
+    left: 67vw;
+    opacity: var(--opacity_numter);
+}
+.sql{
+    position: absolute;
+    font-size: 50px;
+    top: 32vh;
+    left: 52vw;
+    opacity: var(--opacity_numter);
+}
+.mongodb{
+    position: absolute;
+    font-size: 50px;
+    top: 33vh;
+    left: 70vw;
+    opacity: var(--opacity_numter);
+}
+.git{
+    position: absolute;
+    font-size: 50px;
+    top: 35vh;
+    left: 40vw;
+    opacity: var(--opacity_numter);
+
+}
+.node{
+    position: absolute;
+    font-size: 50px;
+    top: 40vh;
+    left: 20vw;
+    opacity: var(--opacity_numter);
+}
+.html{
+    position: absolute;
+    font-size: 50px;
+    top: 34vh;
+    left: 60vw;
+    opacity: var(--opacity_numter);
+}
+.css{
+    position: absolute;
+    font-size: 50px;
+    top: 39vh;
+    left: 30vw;
+    opacity: var(--opacity_numter);
+}

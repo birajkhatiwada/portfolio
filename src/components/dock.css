@@ -1,21 +1,37 @@
+
 .dock {
   position: fixed;
-  bottom: 10px;
-  left: 20vw;
-  right: 20vw;
-  background-color: black;
-  height: 80px;
+  --left_space: 17px;
+  /* bottom: 10px;
+  left: 28vw;
+  right: 28vw; */
+  left: 96vw;
+  top: 28vh;
+  z-index: 1;
+  /* background-color: #ffffff; */
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  /* width: 10px; */
+  padding-bottom: 10px;
   border-radius: 7px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px; */
 }
 
+a{
+  margin-top: 15px;
+}
+
+svg{}
+
 .cv {
-  position: absolute;
-  left: 17px;
-  top: 12px;
+  /* position: absolute; */
+  /* left: var(--left_space); */
+  /* top: 10px; */
   z-index: 1;
-  fill: white;
+  fill: rgb(115, 37, 37);
   transition: 50ms transform ease;
 }
 
@@ -24,9 +40,9 @@
 }
 
 .linkedin {
-  position: absolute;
-  top: 12px;
-  left: 100px;
+  /* position: absolute; */
+  /* top: 75px; */
+  /* left: var(--left_space); */
   z-index: 1;
   fill: #0e76a8;
 }
@@ -36,9 +52,9 @@
 }
 
 .instagram {
-  position: absolute;
-  top: 12px;
-  left: 190px;
+  /* position: absolute; */
+  /* top: 140px; */
+  /* left: var(--left_space); */
   z-index: 1;
   fill: #e1306c;
 }
@@ -47,20 +63,20 @@
 }
 
 .github {
-  position: absolute;
-  top: 12px;
-  left: 280px;
+  /* position: absolute; */
+  /* top: 205px; */
+  /* left: var(--left_space); */
   z-index: 1;
-  fill: white;
+  fill: rgb(3, 0, 0);
 }
 .github:hover {
   opacity: 0.6;
 }
 
 .email {
-  position: absolute;
-  top: 12px;
-  left: 370px;
+  /* position: absolute; */
+  /* top: 270px; */
+  /* left: var(--left_space); */
   z-index: 1;
   fill: #18b5f0;
 }
@@ -70,9 +86,9 @@
 }
 
 .spotify {
-  position: absolute;
-  top: 12px;
-  left: 460px;
+  /* position: absolute; */
+  /* top: 335px; */
+  /* left: var(--left_space); */
   z-index: 1;
   fill: green;
 }
@@ -82,11 +98,11 @@
 }
 
 .terminal {
-  position: absolute;
-  top: 11px;
-  left: 570px;
+  /* position: absolute; */
+  /* top: 395px; */
+  /* left: var(--left_space); */
   z-index: 1;
-  fill: white;
+  fill: rgb(255, 255, 255);
 }
 
 .app {

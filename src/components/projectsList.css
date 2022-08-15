@@ -9,25 +9,288 @@
   border: 3px solid #73ad21;
 }*/
 
-.test {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.projects {
+.projectsContainer {
+  background-color: black;
+  /* position: absolute; */
+  /* top: 100vh; */
+  /* left: 0px; */
+  height: 520vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  width: 100%;
+  /* border-radius: 0 0 50% 50%/0 0 100% 100%; */
+  /* transform: scaleX(1.5); */
+  /* height: 100%; */
 }
 
-.project {
+.wave{
+  display: block;
+  position: absolute;
+  top: 57%;
+  /* transform: rotate(180deg); */
+}
+
+/* .verticalLine{
+  position: absolute;
+  top: 125%;
+  left: 24%;
+  margin: 0 auto;
+  bottom: 0px;
+  align-content: center;
+  width: 1px;
+  height: 190vh;
+  background-color: rgb(255, 255, 255);
+} */
+
+.projectsTitle{
+  padding: 15vh 0px 15vh 0px;
+  font-size: 135px;
+  color: white;
+  /* text-decoration: underline; */
+}
+.straightline {
+  /* position: absolute; */
+  margin: 0 auto;
+  margin-bottom: 20vh;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  align-content: center;
+  width: 50%;
+  height: 1px;
+  background-color: white;
+}
+.projectUnderline{
+  margin-bottom: 10vh;
+}
+.secondwave{
+  display: block;
+  position: absolute;
+  top: 152%;
+  opacity: 0.3;
+  transform: rotate(180deg);
+}
+.thirdwave{
+  display: block;
+  position: absolute;
+  top: 356%;
+  opacity: 0.3;
+  transform: rotate(180deg);
+}
+.fourthwave{
+  display: block;
+  position: absolute;
+  top: 610%;
+  /* opacity: 0.3; */
+  /* transform: rotate(180deg); */
+}
+
+.videosContainer{
+  /* background-color: yellow; */
+  /* position: relative; */
+  /* top: 30%; */
+  /* left: 10%; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20vh;
+  /* align-items:center; */
+}
+.videoContainer{
+  margin-bottom: 20vh;
+  /* position: relative; */
+  /* background-color: aqua; */
+}
+.leftvideoContainer{
+  padding-left: 12%;
+}
+.rightvideoContainer{
+  padding-left: 25%;
+}
+
+.video{
+  /* background-color: black; */
+  /* z-index: 1; */
+  /* margin-bottom: 30vh; */
+  position: relative;
+  /* left: 50%;
+  top: 50%; */
+  /* -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  /* background-color: aqua; */
+  height: 700px;
+  width: 1200px;
+  border-radius: 10px;
+  filter: brightness(0.7);
+  /* transition: transform 0.3s ease-in-out; */
+}
+.video:hover{
+  /* transform: translateY(-4px); */
+}
+.rightvideo{
+}
+.clockout{
+  background: linear-gradient(to bottom right, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/clockoutCalculatorDemo.gif); 
+  /* background: url(/src/components/public/clockoutCalculatorDemo.gif); */
+
+  /* background:rgba(0, 0, 0, 0.7) url(/src/components/public/clockoutCalculatorDemo.gif); */
+  background-size: cover;
+  filter: brightness(0.7);
+  /* opacity: 0.8; */
+  /* background-blend-mode:darken; */
+  /* filter: brightness(40%); */
+}
+.covid{
+  /* background-color: aqua; */
+  background: linear-gradient(to bottom right, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/covidTravel.gif); 
+  /* background-image: url(/src/components/public/covidTravel.gif); */
+  background-size: cover;
+  filter: brightness(0.7);
+  /* opacity: 0.8; */
+}
+.anime{
+  background: linear-gradient(to bottom left, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/animeRecommendation.gif); 
+  /* background-image: url(/src/components/public/animeRecommendation.gif); */
+  /* margin-left: 25vh; */
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+.pathfinding{
+  background: linear-gradient(to bottom left, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/pathfinding.gif); 
+
+  /* background-image: url(/src/components/public/pathfinding.gif); */
+  height: 800px;
+  /* margin-left: 25vh; */
+  background-size: cover;
+  /* opacity: 0.8; */
+}
+
+
+.projectTitleContainer{
+  /* background-color: bisque; */
+  position: absolute;
+  margin:0%;
+  padding: 0%;
+  height: 300px;
+  width: 480px;
+  /* top: 45%;
+  left: 50%; */
+  color: white;
+  font-size: 80px;
+  font-weight: 400;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.lefttitleContainer{
+  /* background-color: aqua; */
+  top: 58%;
+  left: 80%;
+}
+.righttitleContainer{
+  top: 58%;
+  left: -15%;
+}
+.pathfindingTitleContainer{
+  top: 60%;
+}
+.animeTitleContainer{
+  /* position: absolute;
+  top: 36%;
+  left: 0%; */
+}
+
+.projectTitle{
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.projectTitle:hover{
+  color: lightskyblue;
+  transform: translateY(-4px);
+}
+.firstTitle{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 1;
+  /* opacity: 0.8; */
+}
+.secondTitle{
+  position: absolute;
+  /* background-color: aqua; */
+  top: 45%;
+  /* opacity: 0.6; */
+}
+
+.linksDiv{
+  /* background-color: aqua; */
+  position: relative;
+  top: 73%;
+  text-align: left;
+  /* left: 0%; */
+  font-size: 20px;
+  opacity: 0.7;
+}
+.projectLanguageDiv{
+  /* background-color: aqua; */
+  padding: 0px;
+  width: fit-content;
+  position: relative;
+  opacity: 0.7;
+  top: 70%;
+  left: -2%;
+  display: flex;
+  justify-content: left;
+  color: white;
+  flex-direction: row;
+}
+.projectLanguage {
+  /* background-color: white; */
+  margin: 10px;
+  /* padding: 5px 10px; */
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  /* background-size: 200% auto; */
+  /* color: ;             */
+  /* box-shadow: 0 0 20px #eee; */
+  /* border-radius: 10px; */
+  display: block;
+}
+.projectLanguage:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.projects {
+  position: relative;
+  /* background-color: rgba(85, 24, 24, 0.9); */
+  /* padding-left: 15px; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* border-radius: 5px; */
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  bottom: 14vh;
+  left: 10%;
+  /* transform: translate(-50%, 0); */
+}
+
+ProjectCard{
+  background-color: blue;
+  width: 300rem;
+  opacity: 0.5;
 }
 
 ProjectCard {
-  background-color: blueviolet;
-}
-
-video {
-  width: 80vw;
-  height: 100vh;
+  background-color: red;
 }

@@ -3,9 +3,10 @@
 }
 
 .formContainer {
-  position: absolute;
+  position: fixed;
   top: 20vh;
   left: 50vw;
+  z-index: 1;
   height: 400px;
   width: 600px;
   background-color: white;

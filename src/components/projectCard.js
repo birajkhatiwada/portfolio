@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './projectCard.css';
 
 const ProjectCard = (props) => {
+  const [clicked, setClicked] = useState(false);
   const handleOnClick = () => {
-    console.log("i'm here");
-    props.passData(props.image);
+    console.log("i'm here in projectCard.js");
+    props.passData(props.name);
   };
   return (
     <div className="project-card">
-      <div
-        className="front"
-        style={{ backgroundImage: `url(${props.image})` }}
-        onClick={handleOnClick}
-      ></div>
+      <div className="front" onClick={handleOnClick}>
+        <div className="projectName">{props.name}</div>
+        <div className='projectName'>{props.isClicked?"true":"false"}</div>
+      </div>
     </div>
   );
 };
