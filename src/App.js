@@ -95,17 +95,18 @@ function App() {
         </div>
         <div className="straightLine"></div>
         
-        <div className="emailContainer">
+        
+        <Dock passData={passData}></Dock>
+      </div>
+      <ProjectList></ProjectList>
+      <div className="emailContainer">
           <EmailForm
             className="emailForm"
             emailAppClick={EmailAppClick}
           ></EmailForm>
         </div>
-        <Dock passData={passData}></Dock>
-      </div>
-      <ProjectList></ProjectList>
       <div className='footer'></div>
-      {/* <div className="footer"> Hello </div> */}
+      <div className="footer"> Hello </div>
     </div>
   );
 }

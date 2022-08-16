@@ -27,43 +27,66 @@ const EmailForm = (props) => {
     form.reset();
   };
   return (
-    <div>
-      <form
-        className={props.emailAppClick ? 'formContainer' : 'hideForm'}
-        ref={form}
-        onSubmit={sendEmail}
-      >
-        <div className="titleBar">
-          <div className="green"></div>
-          <div className="yellow"></div>
-          <div className="red"></div>
-          <div className="emailTitleName">Email</div>
+    <div className='EmailContainer'>
+      <div className='contactTitle'>CONTACT</div>
+      <div className='mainMailingContainer'>
+        <div className='leftbox'>
+          <div className='chatWithMeContainer'>
+            <div className='chatI'>Let's Talk!</div>
+            <div className='chatII'>Collaborate</div>
+            <div className='ideas'>Ideas, thoughts</div>
+            <div className='createSomething'> and Let's create something together!</div>
+            <div className='mailMeContainer'>
+              <div className='mailMe'>you can also reach out to me here!</div>
+              <div className='myMail'>khatiwadabiraj10@gmail.com</div>
+            </div>
+          </div>
         </div>
-        <div className="yourEmail">Your Email: </div>
-        <input
-          className="emailInput"
-          placeholder="*abc@email.com"
-          name="from_email"
-          required
-        ></input>
-        <div className="line"></div>
-        <label className="firstName">Name:</label>
-        <input
-          className="nameInput"
-          placeholder="John Doe"
-          name="from_name"
-        ></input>
-        <div className="secondline"></div>
-        <textarea
-          className="messageInput"
-          placeholder="*Message here"
-          name="message"
-          required
-        ></textarea>
-        <button className="sendBtn" type="submit">
-          Send
-        </button>
-      </form>
+        <form
+          className='formContainer'
+          ref={form}
+          onSubmit={sendEmail}
+        >
+          {/* <div className="titleBar">
+            <div className="green"></div>
+            <div className="yellow"></div>
+            <div className="red"></div>
+            <div className="emailTitleName">Email</div>
+          </div> */}
+          <div className='sendMeMsg'>Send me a message!</div>
+          {/* <div className="yourEmail labell">Your Email </div> */}
+          <input
+            className="emailInput inputbox"
+            placeholder="Email address*"
+            name="from_email"
+            required
+          ></input>
+          {/* <div className="line"></div> */}
+          {/* <div className="firstName labell">Your Name</div> */}
+          <input
+            className="nameInput inputbox"
+            placeholder="Full name"
+            name="from_name"
+          ></input>
+          <input
+            className="nameInput inputbox"
+            placeholder="Subject"
+            // name="from_name"
+          ></input>
+          {/* <div className="secondline"></div> */}
+          <div className='message labell'>Your Message here*</div>
+          <textarea
+            className="messageInput inputbox"
+            name="message"
+            required
+          ></textarea>
+          <button className="sendBtn" type="submit">
+            Send Message
+          </button>
+        </form>
+
+      </div>
+      
     </div>
   );
 };

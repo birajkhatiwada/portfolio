@@ -14,7 +14,7 @@
   /* position: absolute; */
   /* top: 100vh; */
   /* left: 0px; */
-  height: 520vh;
+  height: 505vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -60,29 +60,44 @@
   height: 1px;
   background-color: white;
 }
+.betprojectline{
+  position: relative;
+  left: -7vw;
+  opacity: 0.3;
+  width: 30%;
+  height: 5px;
+  border-radius: 3px;
+}
 .projectUnderline{
   margin-bottom: 10vh;
 }
 .secondwave{
   display: block;
   position: absolute;
-  top: 152%;
+  top: 117%;
   opacity: 0.3;
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
 }
 .thirdwave{
   display: block;
   position: absolute;
-  top: 356%;
-  opacity: 0.3;
+  top: 345%;
+  opacity: 0.2;
   transform: rotate(180deg);
 }
 .fourthwave{
   display: block;
   position: absolute;
-  top: 610%;
+  top: 604%;
   /* opacity: 0.3; */
   /* transform: rotate(180deg); */
+}
+.fifthwave{
+  display: block;
+  position: absolute;
+  top: 345%;
+  opacity: 0.3;
+  transform: rotate(180deg);
 }
 
 .videosContainer{
@@ -108,6 +123,9 @@
 .rightvideoContainer{
   padding-left: 25%;
 }
+.animeVideoContainer{
+  margin-bottom: 40vh;
+}
 
 .video{
   /* background-color: black; */
@@ -122,7 +140,7 @@
   height: 700px;
   width: 1200px;
   border-radius: 10px;
-  filter: brightness(0.7);
+  /* filter: brightness(0.7); */
   /* transition: transform 0.3s ease-in-out; */
 }
 .video:hover{
@@ -136,7 +154,7 @@
 
   /* background:rgba(0, 0, 0, 0.7) url(/src/components/public/clockoutCalculatorDemo.gif); */
   background-size: cover;
-  filter: brightness(0.7);
+  /* filter: brightness(0.7); */
   /* opacity: 0.8; */
   /* background-blend-mode:darken; */
   /* filter: brightness(40%); */
@@ -146,7 +164,7 @@
   background: linear-gradient(to bottom right, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/covidTravel.gif); 
   /* background-image: url(/src/components/public/covidTravel.gif); */
   background-size: cover;
-  filter: brightness(0.7);
+  /* filter: brightness(0.7); */
   /* opacity: 0.8; */
 }
 .anime{
@@ -204,7 +222,7 @@
   transition: transform 0.3s ease-in-out;
 }
 .projectTitle:hover{
-  color: lightskyblue;
+  color: rgb(22, 166, 255);
   transform: translateY(-4px);
 }
 .firstTitle{
@@ -229,6 +247,8 @@
   /* left: 0%; */
   font-size: 20px;
   opacity: 0.7;
+  /* color: rgb(209, 105, 105); */
+  color: rgb(143, 190, 255);
 }
 .projectLanguageDiv{
   /* background-color: aqua; */
@@ -240,14 +260,15 @@
   left: -2%;
   display: flex;
   justify-content: left;
-  color: white;
+  color: #abdaff;
   flex-direction: row;
 }
 .projectLanguage {
   /* background-color: white; */
+  cursor: default;
   margin: 10px;
   /* padding: 5px 10px; */
-  font-size: 20px;
+  font-size: 13px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -259,7 +280,7 @@
 }
 .projectLanguage:hover {
   background-position: right center; /* change the direction of the change here */
-  color: black;
+  color: white;
   text-decoration: none;
 }
 

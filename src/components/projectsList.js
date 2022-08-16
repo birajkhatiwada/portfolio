@@ -73,8 +73,9 @@ const ProjectList = (props) => {
           <div className='straightline projectUnderline'></div>
         </div>
         <svg className='secondwave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,288L80,282.7C160,277,320,267,480,261.3C640,256,800,256,960,234.7C1120,213,1280,171,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-        <svg className='thirdwave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,128C640,139,800,181,960,192C1120,203,1280,181,1360,170.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+        {/* <svg className='thirdwave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,128C640,139,800,181,960,192C1120,203,1280,181,1360,170.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> */}
         <svg className='fourthwave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00000" fill-opacity="1" d="M0,128L80,122.7C160,117,320,107,480,138.7C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+        <svg className='fifthwave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,128C640,139,800,181,960,192C1120,203,1280,181,1360,170.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
         <div className='videosContainer'>
           <div className='videoContainer covidVideoContainer leftvideoContainer'>
             <div className='video clockout leftvideo'>
@@ -97,7 +98,7 @@ const ProjectList = (props) => {
             </div>
           </div>
         
-          <div className='straightline'></div>
+          <div className='straightline betprojectline'></div>
 
           <div className='videoContainer animeVideoContainer toberightvideoContainer rightvideoContainer'>
             <div className='video anime rightvideo'>
@@ -121,7 +122,7 @@ const ProjectList = (props) => {
             </div>     
           </div>
           
-          <div className='straightline'></div>
+          {/* <div className='straightline'></div> */}
 
           <div className='videoContainer covidVideoContainer leftvideoContainer'>
             <div className='video covid leftvideo'>
@@ -146,7 +147,7 @@ const ProjectList = (props) => {
               </div>
             </div>            
           </div>
-          <div className='straightline'></div>
+          <div className='straightline betprojectline'></div>
           
 
           <div className='videoContainer pathFindingContainer rightvideoContainer'>

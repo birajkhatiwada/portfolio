@@ -1,21 +1,80 @@
-.hideForm {
-  display: none;
+.EmailContainer {
+  /* position: relative; */
+  margin-top: 40vh;
+  padding-top: 100px;
+  padding-bottom: 250px;
+  /* height: 100vh; */
+  /* background-color: rgb(46, 148, 150); */
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+  display: flex;
+  flex-direction: column;
 }
+.contactTitle{
+  /* padding-top: 10vh; */
+  font-size: 135px;
+}
+.mainMailingContainer{
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+}
+.leftbox{
+  border-radius: 5px;
+  padding: 25px;
+  /* background-color: bisque; */
+  text-align: left;
+}
+.chatI{
+  font-size: 60px;
+  font-weight: 500;
+  padding-top: 10vh;
+}
+.chatII,.ideas{
+  font-size: 60px;
+  font-weight: 500;
+}
+.ideas{
+  background: linear-gradient(to right, #1FA2FF 50%, #964be0  100%);
+  /* background-clip: text; */
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: rgb(22, 166, 255); */
+}
+.createSomething{
+  padding-top: 14px;
+  font-size: 24px;
+  padding-bottom: 14px;
+}
+.mailMeContainer{
+  display: flex;
+  padding-top: 15px;
+  flex-direction: column;
+  font-size: 20px;
+}
+.myMail{
+  padding-top: 5px;
+  font-weight: 700;
+  color: rgb(22, 166, 255);
 
-.formContainer {
-  position: fixed;
-  top: 20vh;
-  left: 50vw;
-  z-index: 1;
-  height: 400px;
-  width: 600px;
+}
+.formContainer{
+  padding: 30px;
+  /* position: relative; */
+  top: 10vh;
+  left: 55%;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  /* justify-content:left; */
+  text-align: left;
   background-color: white;
-  border-radius: 7px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 20px;
 }
 
-.titleBar {
+/* .titleBar {
   position: absolute;
   background-color: #e0e0e0;
   height: 30px;
@@ -57,9 +116,37 @@
   position: absolute;
   top: 5px;
   left: 45%;
+} */
+.sendMeMsg{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
+.labell{
+  /* background-color: blueviolet; */
+  /* color: black; */
+  font-size: 35px;
+  opacity: 0.5;
+}
+.inputbox{
+  height: 35px;
+  width: 20vw;
+  border: none;
+  padding: 5px 15px;
+  background-color: rgba(79, 123, 255, 0.1);
+  border-radius: 7px;
+  /* border-bottom: 2px solid rgb(0,0,0,0.4); */
+}
+.labell,.inputbox{
+  margin-bottom: 20px;
+  
+}
+.inputbox::placeholder{
+  /* padding-left: 10px; */
+}
+
 .sendEmail {
-  position: absolute;
+  /* position: absolute; */
   top: 3px;
   left: 60px;
   padding: 1px 10px 1px 10px;
@@ -70,20 +157,19 @@
 }
 
 .yourEmail {
-  position: absolute;
+  /* position: absolute; */
   left: 25px;
   top: 35px;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 .emailInput {
-  position: absolute;
+  /* position: absolute; */
   top: 37px;
   left: 105px;
-  height: 15px;
-  width: 78%;
-  text-decoration: none;
-  border: none;
+  /* height: 15px; */
+  /* width: 78%; */
+  
 }
 
 .line {
@@ -96,18 +182,17 @@
 }
 
 .firstName {
-  position: absolute;
+  /* position: absolute; */
   top: 67px;
   left: 25px;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 .nameInput {
-  position: absolute;
+  /* position: absolute; */
   top: 68px;
   left: 75px;
-  height: 15px;
-  width: 82%;
-  border: none;
+  /* height: 15px; */
+  /* width: 82%; */
 }
 .secondline {
   position: absolute;
@@ -117,34 +202,55 @@
   width: 95%;
   background-color: grey;
 }
-.messageInput {
-  position: absolute;
-  top: 100px;
-  left: 25px;
-  height: 240px;
-  width: 91%;
-  text-decoration: none;
-  border: none;
+.message{
+  margin-top: 10px;
+  font-size: 15px;
 }
-
-.messageInput::placeholder {
-  position: absolute;
-  top: 0px;
-  left: 30px;
+.messageInput {
+  /* position: absolute; */
+  /* top: 100px;
+  left: 25px; */
+  height: 100px;
 }
 
 .sendBtn {
-  position: absolute;
+  /* position: absolute; */
   bottom: 10px;
   left: 50px;
   right: 2px;
-  padding: 5px;
-  width: 83%;
-  height: 30px;
+  padding: 15px 25px;
+  width: fit-content;
   text-decoration: none;
   border: none;
+  border-radius: 9px;
+  font-size: 13px;
+  color: white;
+  /* background-image: linear-gradient(to right, #1FA2FF 50%, #964be0  100%); */
 
-  background-color: #e0e0e0;
+  background-color: rgb(22, 166, 255);
+           
+ 
+ 
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .sendBtn:hover {
