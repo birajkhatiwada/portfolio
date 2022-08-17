@@ -74,7 +74,7 @@ $primary-color: #ffd700;
   padding-right: 4px;
   // background-color: black;
   // height: 40px;
-  color: #4fb3ff;
+  color: #ffffff;
   z-index: 1;
   // color: white;
   font-size: 15px;
@@ -137,6 +137,18 @@ $primary-color: #ffd700;
   font-size: 100px;
 }
 
+.aboutMeComp{
+  cursor: pointer;
+  
+  // transition: transform 0.3s ease-in-out;
+}
+
+.aboutMeComp:hover{
+  // opacity: 0.7;
+  // color: #0064ff;
+  
+  // transform: translateY(-4px);
+}
 
 .aboutMeSoftwareEngineer{
   position: absolute;
@@ -145,7 +157,13 @@ $primary-color: #ffd700;
   top: 37vh;
   left: 23vw;
   z-index: 1;
-  opacity: 0.9;
+  opacity: 0.8;
+  background: linear-gradient(to right, #1FA2FF 20%, #964be0  100%);
+  /* background-clip: text; */
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideUpWebDeveloper 5s infinite;
 }
 
 .aboutMeWebDeveloper{
@@ -156,19 +174,15 @@ $primary-color: #ffd700;
   padding: 0;
   top: 43vh;
   left: 15vw;
-  opacity: 0.6;
-}
-
-.aboutMeComp{
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.aboutMeComp:hover{
-  color: #0064ff;
-  transform: translateY(-4px);
+  opacity: 0.8;
+  background: linear-gradient(to right,  #964be0  20%,#1FA2FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  // transition: transform 0.3s ease-in-out;
+  animation: slideUpWebDeveloper 4s infinite;
 
 }
+
 
 .aboutMeMyName{
   position: absolute;
@@ -177,8 +191,9 @@ $primary-color: #ffd700;
   left: 5vw;
   font-weight: 500;
   font-size: 200px;
-  opacity: 0.3;
-  transition: transform 0.3s ease-in-out infinite;
+  opacity: 0.9;
+  animation: birajkhatiwada 3s infinite;
+
 
   // animation: slideUp;
   // animation-iteration-count: infinite;
@@ -186,7 +201,7 @@ $primary-color: #ffd700;
 
 .aboutMeMyName:hover{
   cursor: pointer;
-  color: #0064ff;
+  // color: #0064ff;
   transform: translateY(-4px);
 }
 
@@ -210,10 +225,54 @@ $primary-color: #ffd700;
   // height: 30vh;
   // z-index: 1;
   // margin-top: 70vh;
-  height: 20vh;
+  height: 23vh;
   width: 100%;
+  color: white;
   background-color: rgb(0, 0, 0);
+  justify-content: center;
+  // text-align: start;
+  display: flex;
+  // flex-direction: column;
   // color: white;
+}
+.footerContainer{
+  padding-top: 90px;
+}
+
+.designedByContainer{
+  // padding-top: 169px;
+  // padding-left: 85px;
+  height: fit-content;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  text-align: center;
+  // background-color: #0064ff;
+  font-size: 13px;
+
+  // transform: rotate(90deg);
+}
+.designedBy{
+  // background-color: #61dafb;
+  // width: fit-content;
+  // background-color: #0064ff;
+  // transform: rotate(-90deg);
+}
+.codedBy{
+  // background-color: #ffd700;
+  padding-left: 3px;
+}
+.copyrightContainer{
+  display: flex;
+  font-size: 13px;
+  // background-color: #27e589;
+  justify-content: center;
+  // padding-top: 10vh;
+  // margin-left: 35%;
+}
+.emeryville{
+  padding-left: 3px;
 }
 
 @keyframes pulsate {
@@ -245,9 +304,57 @@ $primary-color: #ffd700;
 }
 
 
-@keyframes slideUp {
-  0%{
-    transform: translateY(-4px);
+@keyframes slideUpSoftwareEngineer {
+  50%{
+    transform: translateY(-9px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes slideUpSoftwareEngineer {
+  50%{
+    transform: translateY(-9px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideUpWebDeveloper {
+  29%{
+    transform: translateY(3px);
+  }
+  50%{
+    transform: translateY(-6px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes slideUpWebDeveloper {
+  29%{
+    transform: translateY(3px);
+  }
+  50%{
+    transform: translateY(-6px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes birajkhatiwada {
+  50%{
+    transform: translateY(-9px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes birajkhatiwada {
+  50%{
+    transform: translateY(-9px);
   }
   100%{
     transform: translateY(0px);

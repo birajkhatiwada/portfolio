@@ -54,7 +54,11 @@
   font-size: 20px;
 }
 .myMail{
-  padding-top: 5px;
+  border: 1px solid black;
+  width: fit-content;
+  border-radius: 5px 20px;
+  margin-top: 10px;
+  padding: 5px 10px;
   font-weight: 700;
   color: rgb(22, 166, 255);
 

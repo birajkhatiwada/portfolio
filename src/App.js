@@ -105,8 +105,20 @@ function App() {
             emailAppClick={EmailAppClick}
           ></EmailForm>
         </div>
-      <div className='footer'></div>
-      <div className="footer"> Hello </div>
+      {/* <div className='footer'></div> */}
+      <div className="footer">
+        <div className='footerContainer'>
+          <div className='designedByContainer'>
+            <div className='designedBy'>Designed and Coded by</div>
+            <div className='codedBy'>Biraj Khatiwada</div>
+            {/* <div className='footerName'>Biraj Khatiwada</div> */}
+          </div>
+          <div className='copyrightContainer'>
+            <div>©2022 Copyright</div>
+            <div className='emeryville'>Emeryville</div>
+        </div>
+        </div>
+      </div>
     </div>
   );
 }
