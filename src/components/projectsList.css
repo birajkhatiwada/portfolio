@@ -10,7 +10,8 @@
 }*/
 
 .projectsContainer {
-  background-color: black;
+  --height: 450px;
+  background-color: rgb(0, 0, 0);
   /* position: absolute; */
   /* top: 100vh; */
   /* left: 0px; */
@@ -44,8 +45,8 @@
 
 .projectsTitle{
   padding: 15vh 0px 15vh 0px;
-  font-size: 135px;
-  color: white;
+  font-size: 200px;
+  color: rgb(255, 255, 255);
   /* text-decoration: underline; */
 }
 .straightline {
@@ -110,12 +111,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 5vh;
-  margin-bottom: 20vh;
+  /* margin-top: 5vh; */
+  /* margin-bottom: 20vh; */
   /* align-items:center; */
 }
 .videoContainer{
-  margin-bottom: 40vh;
+  display: flex;
+  margin-bottom: 10vh;
   /* position: relative; */
   /* background-color: aqua; */
 }
@@ -123,7 +125,7 @@
   padding-left: 12%;
 }
 .rightvideoContainer{
-  padding-left: 25%;
+  padding-left: 12%;
 }
 .animeVideoContainer{
   /* margin-bottom: 40vh; */
@@ -141,8 +143,8 @@
   /* -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
   /* background-color: aqua; */
-  height: 650px;
-  width: 1200px;
+  height: var(--height);
+  width: 800px;
   border-radius: 10px;
   /* filter: brightness(0.7); */
   /* transition: transform 0.3s ease-in-out; */
@@ -153,8 +155,8 @@
 .rightvideo{
 }
 .clockout{
-  background: linear-gradient(to bottom right, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/clockoutCalculatorDemo.gif); 
-  /* background: url(/src/components/public/clockoutCalculatorDemo.gif); */
+  /* background: linear-gradient(to bottom right, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/clockoutCalculatorDemo.gif);  */
+  background: url(/src/components/public/clockoutCalculatorDemo.gif);
 
   /* background:rgba(0, 0, 0, 0.7) url(/src/components/public/clockoutCalculatorDemo.gif); */
   background-size: cover;
@@ -164,61 +166,59 @@
   /* filter: brightness(40%); */
 }
 .covid{
-  /* background-color: aqua; */
-  background: linear-gradient(to bottom right, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/covidTravel.gif); 
-  /* background-image: url(/src/components/public/covidTravel.gif); */
+  /* background: linear-gradient(to bottom right, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/covidTravel.gif);  */
+  background-image: url(/src/components/public/covidTravel.gif);
   background-size: cover;
-  /* filter: brightness(0.7); */
-  /* opacity: 0.8; */
 }
 .anime{
-  background: linear-gradient(to bottom left, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/animeRecommendation.gif); 
-  /* background-image: url(/src/components/public/animeRecommendation.gif); */
+  /* background: linear-gradient(to bottom left, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/animeRecommendation.gif);  */
+  background-image: url(/src/components/public/animeRecommendation.gif);
   /* margin-left: 25vh; */
+  width: 700px;
   background-size: cover;
-  /* opacity: 0.8; */
 }
 .pathfinding{
-  background: linear-gradient(to bottom left, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/pathfinding.gif); 
+  /* background: linear-gradient(to bottom left, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/pathfinding.gif);  */
 
-  /* background-image: url(/src/components/public/pathfinding.gif); */
-  height: 800px;
+  background-image: url(/src/components/public/pathfinding.gif);
+  height: 510px;
   /* margin-left: 25vh; */
   background-size: cover;
-  /* opacity: 0.8; */
 }
 
 
 .projectTitleContainer{
-  /* background-color: bisque; */
-  position: absolute;
+  /* position: relative; */
   margin:0%;
-  padding: 0%;
-  height: 300px;
-  width: 480px;
-  /* top: 45%;
-  left: 50%; */
+  padding: 10px 20px;
+  /* height: 300px; */
+  height: var(--height)-20px;
+  width: 500px;
   color: white;
   font-size: 80px;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px; 
+  background-color: #6b0062;
+  /* transform: rotate(-90deg); */
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .lefttitleContainer{
-  /* background-color: aqua; */
-  top: 58%;
-  left: 80%;
+  top: 25%;
+  left: 85%;
 }
 .righttitleContainer{
-  top: 58%;
-  left: -15%;
+  /* top: 58%;
+  left: -15%; */
 }
 .pathfindingTitleContainer{
   top: 60%;
 }
 .animeTitleContainer{
-  /* position: absolute;
-  top: 36%;
-  left: 0%; */
+  /* left: 40%; */
+  width: 600px;
 }
 
 .projectTitle{
@@ -230,36 +230,41 @@
   transform: translateY(-4px);
 }
 .firstTitle{
-  position: absolute;
+  /* position: absolute; */
   top: 20%;
   left: 20%;
   z-index: 1;
-  /* opacity: 0.8; */
 }
 .secondTitle{
-  position: absolute;
-  /* background-color: aqua; */
+  /* position: absolute; */
   top: 45%;
-  /* opacity: 0.6; */
+}
+.projectDescription{
+  display: none;
+  padding: 20px 0px;
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+.projectDescHide{
+  /* display: none; */
+}
+.projectTitleContainer:hover .projectDescription{
+  display: block;
 }
 
 .linksDiv{
-  /* background-color: aqua; */
-  position: relative;
-  top: 73%;
+  /* position: relative;
+  top: 73%; */
   text-align: left;
-  /* left: 0%; */
   font-size: 20px;
   opacity: 0.7;
   width: fit-content;
-  /* color: rgb(209, 105, 105); */
   color: rgb(22, 166, 255);
 }
 .projectLanguageDiv{
-  /* background-color: aqua; */
   padding: 0px;
   width: fit-content;
-  position: relative;
+  /* position: relative; */
   opacity: 0.7;
   top: 70%;
   left: -2%;

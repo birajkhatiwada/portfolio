@@ -32,7 +32,7 @@ const EmailForm = (props) => {
       <div className='mainMailingContainer'>
         <div className='leftbox'>
           <div className='chatWithMeContainer'>
-            <div className='chatI'>Let's Talk!</div>
+            <div className='chatI'>Let's Connect!</div>
             <div className='chatII'>Collaborate</div>
             <div className='ideas'>Ideas, thoughts</div>
             <div className='createSomething'> and Let's create something together!</div>
