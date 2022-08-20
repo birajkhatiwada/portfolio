@@ -81,61 +81,51 @@ $primary-color: #ffd700;
   font-weight: 500;
   transform: rotate(-90deg);
 }
+
+
+
 .firstPage {
   height: 100vh;
-  background: linear-gradient(to bottom,  #000000  13%,#ffffff 13%,#ffffff 85%, #000000 85%);
-  // background-image: url(./components/images/background.jpg);
-  // background-attachment: fixed;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-}
-
-// .myName {
-//   position: absolute;
-//   top: -9px;
-//   left: 15px;
-//   z-index: 1;
-//   font-weight: 600;
-//   font-size: 20px;
-//   color: black;
-// }
-
-// .date {
-//   position: absolute;
-//   right: 15px;
-//   top: -9px;
-//   z-index: 1;
-//   font-weight: 600;
-//   font-size: 17px;
-//   color: black;
-// }
-
-.nameLogo {
-  position: absolute;
-  top: 50px;
-  z-index: 1;
-  color: blue;
+  display: flex;
+  padding: 0 200px;
+  flex-direction: row;
+  justify-content:space-around;
+  // background: linear-gradient(to bottom,  #000000  13%,#ffffff 13%,#ffffff 85%, #000000 85%);
+  background-color: #012a4a;
 }
 
 .EmailForm {
-  // position: absolute;
-  // top: 40px;
-  // z-index: 1;
   color: blue;
 }
 
 .aboutMe{
-  // background-color: #ffd700;
-  position: relative;
   color: black;
-  // left: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // height: fit-content;
+  width: fit-content;
+  // margin-left: 10vw;
+  
 }
-
+.aboutMe2{
+  // background-color: #013a63;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  padding: 30px 40px;
+  border-radius: 10px;
+  z-index: 1;
+}
 .aboutMeComp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: black;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 50px;
+  // font-size: 50px;
 }
 
 .aboutMeComp{
@@ -152,9 +142,9 @@ $primary-color: #ffd700;
 }
 
 .aboutMeSoftwareEngineer{
-  position: absolute;
+  // position: absolute;
   // background-color: #ffd700;
-  font-size: 145px;
+  font-size: 80px;
   top: 33vh;
   left: 23vw;
   z-index: 1;
@@ -168,8 +158,8 @@ $primary-color: #ffd700;
 }
 
 .aboutMeWebDeveloper{
-  position: absolute;
-  font-size: 160px;
+  // position: absolute;
+  font-size: 80px;
   height: auto;
   margin: 0;
   padding: 0;
@@ -184,16 +174,22 @@ $primary-color: #ffd700;
 
 }
 
+.hiMyName{
+  font-weight: 200;
+  font-size: 30px;
+  color: #feffff;
+}
 
 .aboutMeMyName{
-  position: absolute;
-  color: black;
-  top: 46vh;
+  // position: absolute;
+  color: #76c893;
+  top: 51vh;
   left: 5vw;
-  font-weight: 500;
-  font-size: 200px;
-  opacity: 0.9;
-  animation: birajkhatiwada 3s infinite;
+  font-weight: 600;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  // opacity: 0.9;
+  // animation: birajkhatiwada 3s infinite;
 
 
   // animation: slideUp;
@@ -205,6 +201,21 @@ $primary-color: #ffd700;
   // color: #0064ff;
   transform: translateY(-4px);
 }
+.avatarContainer{
+  // background-color: #ffd700;
+  display: flex;
+  height: 100vh;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: center;
+}
+.avatar{
+//  background-color: #1FA2FF;
+ width: 40vw;
+ height: 50vh;
+}
+
+
 
 
 .straightLine {
@@ -316,7 +327,7 @@ $primary-color: #ffd700;
     // z-index: ;
     opacity: 0.7;
 
-    transform: translateY(110px);
+    transform: translateY(10vh);
   }
   75%{
     opacity: 0.3;
@@ -341,7 +352,7 @@ $primary-color: #ffd700;
   50%{
     opacity: 1;
     z-index: 2;
-    transform: translateY(-110px);
+    transform: translateY(-10vh);
   }
   99%{
     z-index: 2;

@@ -9,6 +9,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import {motion} from "framer-motion";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { Avatar } from 'avataaars';
+import svg from './components/public/22.svg'
 
 function App() {
   const [EmailAppClick, setEmailAppClick] = useState(false);
@@ -61,7 +63,7 @@ function App() {
   return (
     <div className="App">
       <div className="firstPage" onMouseMove={handleMouseMove}>
-        <div
+        {/* <div
           className="clickCSS"
           style={{
             left: clickCoord.x - 12 + 'px',
@@ -71,8 +73,8 @@ function App() {
         <div
           className="circle"
           style={{ left: coord.x + 'px', top: coord.y - 80 + 'px' }}
-        ></div>
-        <div
+        ></div> */}
+        {/* <div
           className="sideBar"
           style={{ left: 0, top: coord.y - 80 + 'px' }}
         ></div>
@@ -80,23 +82,43 @@ function App() {
         <div
           className="right sideBar"
           style={{ right: 0, top: coord.y - 80 + 'px' }}
-        ></div>
+        ></div> */}
         {/* <div className="panel">
           <p className="myName panelComp">K.BIRAJ</p>
           <p className='panelComp panelProjects'>projects</p>
           <p className="date panelComp">{date}</p>
         </div> */}
         {/* <Terminal  terminalAppClick={TerminalAppClick}></Terminal> */}
-        <Languages></Languages>
+        {/* <Languages></Languages> */}
         <div className='aboutMe'>
-          <div className='aboutMeComp aboutMeMyName'>Biraj Khatiwada</div>
-          <div className='aboutMeComp aboutMeSoftwareEngineer'>Software Engineer</div>
-          <div className='aboutMeComp aboutMeWebDeveloper'>Web Developer</div>
+          <div className='aboutMe2'>
+            <div className='aboutMeComp hiMyName'>hi! I am</div>
+            <div className='aboutMeComp aboutMeMyName'>biraj khatiwada.</div>
+            <div className='aboutMeComp aboutMeSoftwareEngineer'>Software Engineer</div>
+            <div className='aboutMeComp aboutMeWebDeveloper'>Web Developer</div>
+          </div> 
         </div>
-        <div className="straightLine"></div>
+        <div className='avatarContainer'>
+          <img className='avatar' src={svg}></img>
+        </div>
+        {/* <div className='svg'></div> */}
+        {/* <Avatar
+          avatarStyle='Transparent'
+          topType='ShortHairShortCurly'
+          accessoriesType='Blank'
+          hairColor='Black'
+          facialHairType='BeardLight'
+          facialHairColor='Black'
+          clotheType='BlazerShirt'
+          eyeType='Default'
+          eyebrowType='Default'
+          mouthType='Default'
+          skinColor='Light'
+        /> */}
+        {/* <div className="straightLine"></div> */}
         
         
-        <Dock passData={passData}></Dock>
+        {/* <Dock passData={passData}></Dock> */}
       </div>
       <ProjectList></ProjectList>
       <div className="emailContainer">

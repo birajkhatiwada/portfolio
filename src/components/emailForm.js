@@ -1,6 +1,8 @@
 import './emailForm.css';
 import emailjs, { init } from '@emailjs/browser';
 import { useRef } from 'react';
+import mail from './public/9.svg'
+
 
 const EmailForm = (props) => {
   console.log(props.emailAppClick);
@@ -28,7 +30,7 @@ const EmailForm = (props) => {
   };
   return (
     <div className='EmailContainer'>
-      <div className='contactTitle'>CONTACT</div>
+      <div className='contactTitle'>contact</div>
       <div className='mainMailingContainer'>
         <div className='leftbox'>
           <div className='chatWithMeContainer'>
@@ -41,6 +43,9 @@ const EmailForm = (props) => {
               <div className='myMail'>khatiwadabiraj10@gmail.com</div>
             </div>
           </div>
+        </div>
+        <div className='mailsvgContainer'>
+          <img className='mailAvatar' src={mail}></img>
         </div>
         <form
           className='formContainer'
