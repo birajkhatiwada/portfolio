@@ -30,7 +30,11 @@ const EmailForm = (props) => {
   };
   return (
     <div className='EmailContainer'>
-      <div className='contactTitle'>contact</div>
+      <div className='contactTitle'>
+        <div className='contactTitleBar'>>:contact
+          <div className='lineUnderContact'></div>
+        </div>
+      </div>
       <div className='mainMailingContainer'>
         <div className='leftbox'>
           <div className='chatWithMeContainer'>
@@ -79,7 +83,7 @@ const EmailForm = (props) => {
             // name="from_name"
           ></input>
           {/* <div className="secondline"></div> */}
-          <div className='message labell'>Your Message here*</div>
+          <div className='messageOg labell'>Your Message here*</div>
           <textarea
             className="messageInput inputbox"
             name="message"
