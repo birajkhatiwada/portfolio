@@ -31,8 +31,7 @@ const EmailForm = (props) => {
   return (
     <div className='EmailContainer'>
       <div className='contactTitle'>
-        <div className='contactTitleBar'>>:contact
-          <div className='lineUnderContact'></div>
+        <div className='contactTitleBar'>CONTACT
         </div>
       </div>
       <div className='mainMailingContainer'>
@@ -48,9 +47,9 @@ const EmailForm = (props) => {
             </div>
           </div>
         </div>
-        <div className='mailsvgContainer'>
+        {/* <div className='mailsvgContainer'>
           <img className='mailAvatar' src={mail}></img>
-        </div>
+        </div> */}
         <form
           className='formContainer'
           ref={form}

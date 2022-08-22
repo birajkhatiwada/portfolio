@@ -4,7 +4,7 @@
   /* margin-top: 20vh; */
   /* padding-top: 100px; */
   color: #a9d6e5;
-  padding-bottom: 60vh;
+  /* padding-bottom: 60vh; */
   /* height: 100vh; */
   /* background-color: rgb(46, 148, 150); */
   /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
@@ -17,19 +17,19 @@
   /* padding-top: 10vh; */
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
-  padding-left: 20vw;
+  justify-content:center;
+  /* padding-left: 20vw; */
   /* width: fit-content; */
   /* background-color: #12D8FA; */
 
-  font-size: 100px;
-  color: #a9d6e5;  
-  margin: 10vh 0;
+  font-size: 80px;
+  color: #76c893;  
+  margin: 20vh 0 10vh 0;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .contactTitleBar{
   border-radius: 5px;
-  padding: 0px 10px 10px 10px;
+  /* padding: 0px 10px 10px 10px; */
 
 }
 .lineUnderContact {
@@ -48,6 +48,8 @@
   /* margin-top: 10vh; */
   display: flex;
   justify-content: space-around;
+  padding: 0 50px;
+  margin-bottom: 20vh;
 }
 .leftbox{
   border-radius: 5px;
@@ -56,12 +58,12 @@
   text-align: left;
 }
 .chatI{
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 500;
   padding-top: 10vh;
 }
 .chatII,.ideas{
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 500;
 }
 .ideas{

@@ -101,8 +101,8 @@ const ProjectList = (props) => {
         {/* <div className='verticalLine'></div> */}
         <div className="projectsTitle">
           <div className='projectsTitleBar'>
-            >:projects
-            <div className='straightline projectUnderline'></div>
+            PROJECTS
+            {/* <div className='straightline projectUnderline'></div> */}
 
           </div>
           {/* <div className='projectsTitleFirstPart'>
@@ -124,7 +124,7 @@ const ProjectList = (props) => {
             {/* <div className="videoContainer2"> */}
               <div className='video clockout leftvideo'></div>
               <div className='projectTitleContainer clockoutContainer lefttitleContainer '>
-                <div className="projectTitle">
+                <div className="projectTitle leftProjectTitle">
                   <div className='projectTitleName firstTitle clockoutTitle'>
                     clockout
                   </div>
@@ -133,14 +133,15 @@ const ProjectList = (props) => {
                   </div>
                 </div>
                   
-                <div className='linksDiv'>
-                  <a className='link'>https://github.com/birajkhatiwada/kronosTimeCalculator</a>
-                </div>
+               
                 <div className={isHoverClockout?'projectDescHide':'projectDescription'} onMouseOver={handleOnHoverClockout} onMouseOut={handleOffHoverClockout}>
                   At my workplace we would have to clock in and then clock out for lunch and clock back in from lunch, and at times there would be confusion as to when to clock out to make the whole shift 8 hours. I observed many of my coworkers asking other for the answers. 
                   So, i decided to work on this project to help the problem.
                 </div>
-                <div className='projectLanguageDiv'>
+                <div className='linksDiv leftLinksDiv'>
+                  <a className='link'>https://github.com/birajkhatiwada/kronosTimeCalculator</a>
+                </div>
+                <div className='projectLanguageDiv leftProjectLanguageDiv'>
                   <div className='projectLanguage'>react</div>
                   <div className='projectLanguage'>html</div>
                   <div className='projectLanguage'>css</div>
@@ -154,7 +155,7 @@ const ProjectList = (props) => {
 
           <div className='videoContainer animeVideoContainer toberightvideoContainer rightvideoContainer'>
             <div className='projectTitleContainer animeTitleContainer righttitleContainer '>
-              <div className="projectTitle">
+              <div className="projectTitle rightProjectTitle">
                 <div className='projectTitleName firstTitle animeTitle'>
                   anime
                 </div>
@@ -163,13 +164,14 @@ const ProjectList = (props) => {
                 </div>
               </div>
               
-              <div className='linksDiv animeLinksDiv'>
-                <a className='link'>https://github.com/birajkhatiwada/AnimeRecommendations</a>
-              </div>
-              <div className={isHoverAnime?"projectDescHide":"projectDescription rightProjectDescription"} onMouseOver={handleOnHoverAnime} onMouseOut={handleOffHoverAnime}>
+             
+              <div className={isHoverAnime?"projectDescHide":"projectDescription rightProjectDescription rightProjectDescription"} onMouseOver={handleOnHoverAnime} onMouseOut={handleOffHoverAnime}>
               Have you ever finished a show and wanted to watch another similar show? This Anime Recommendation search engine does exactly that. It also allows users to search for Animes, view trending Animes and upcoming Animes. This is all done through API "api.jikan.moe".
               </div>
-              <div className='projectLanguageDiv animeLanguaugeDiv'>
+              <div className='linksDiv rightLinksDiv'>
+                <a className='link'>https://github.com/birajkhatiwada/AnimeRecommendations</a>
+              </div>
+              <div className='projectLanguageDiv rightProjectLanguageDiv'>
                 <div className='projectLanguage'>react</div>
                 <div className='projectLanguage'>html</div>
                 <div className='projectLanguage'>css</div>
@@ -187,7 +189,7 @@ const ProjectList = (props) => {
               
             </div>
             <div className='projectTitleContainer covidTitleContainer lefttitleContainer '>
-                <div className="projectTitle">
+                <div className="projectTitle leftProjectTitle">
                   <div className='projectTitleName firstTitle covidTitle'>
                     covid 
                   </div>
@@ -196,13 +198,14 @@ const ProjectList = (props) => {
                   </div>
                 </div>
                 
-                <div className='linksDiv'>
-                  <a className='link'>https://github.com/birajkhatiwada/covidTravelLog</a>
-                </div>
+               
                 <div className={isHoverCovid?"projectDescHide":"projectDescription"} onMouseOver={handleOnHoverCovid} onMouseOut={handleOffHoverCovid}>
                 I worked on a COVID Travel Log web app that allows users to plan their trips according to the severity of the current global pandemic’s impact. During/after this pandemic, it's quite difficult to find a safe place to travel. So, I decided to make an app that will show the information about deaths, and confirmed COVID cases in different places. This covidTravelLog will allow users to plan their trips accordingly. Users will also be able to create logs for the places they have visited and the places that they are interested in visiting.
                 </div>
-                <div className='projectLanguageDiv'>
+                <div className='linksDiv leftLinksDiv'>
+                  <a className='link'>https://github.com/birajkhatiwada/covidTravelLog</a>
+                </div>
+                <div className='projectLanguageDiv leftProjectLanguageDiv'>
                   <div className='projectLanguage'>react</div>
                   <div className='projectLanguage'>node.js</div>
                   <div className='projectLanguage'>mongodb</div>
@@ -217,29 +220,32 @@ const ProjectList = (props) => {
 
           <div className='videoContainer pathFindingContainer rightvideoContainer'>
             <div className='projectTitleContainer pathfindingTitleContainer righttitleContainer '>
-              <div className="projectTitle">
+              <div className="projectTitle rightProjectTitle">
                 <div className='projectTitleName firstTitle pathTitle'>
-                  a* 
+                  pathfinding
                 </div>
                 <div className='projectTitleName secondTitle findingTitle'>
-                  PATHFINDING
+                  VISUALIZATION
                 </div>
               </div>
-              <div className='linksDiv'>
-                <a className='link'>https://github.com/birajkhatiwada/PathfindingVisualization
-                </a>
-              </div>
+              
               <div className={isHoverPathfinding?"projectDescHide":"projectDescription rightProjectDescription"} onMouseOver={handleOnHoverPathfinding} onMouseOut={handleOffHoverPathfinding}>
               In order to visually understand pathfinding algorithms, I implemented the A* algorithm, which will allow users to plant two points, then they will be able to create barriers within the grid. This algorithm will then explore all valid paths and return the shortest path. I worked on this project because I was extremely fascinated by the idea of how these pathfinding algorithms would look in visualization.
               </div>
-              <div className='projectLanguageDiv'>
+              <div className='linksDiv rightLinksDiv'>
+                <a className='link'>https://github.com/birajkhatiwada/PathfindingVisualization
+                </a>
+              </div>
+              <div className='projectLanguageDiv rightProjectLanguageDiv'>
                 <div className='projectLanguage'>python</div>
               </div>
             </div>
             <div className='video pathfinding rightvideo'>
             </div>
           </div>
-          <button className='seeMore'>see more......</button>
+          <div className='seeMoreContainer'>
+            <button className='seeMore'>see more......</button>
+          </div>
 
           {/* <div className="projects">
             <ProjectCard

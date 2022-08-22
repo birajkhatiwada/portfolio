@@ -143,7 +143,7 @@ $primary-color: #ffd700;
 
 .aboutMeSoftwareEngineer{
   // position: absolute;
-  // background-color: #ffd700;
+  background-color: #ffd700;
   font-size: 80px;
   top: 33vh;
   left: 23vw;
@@ -167,6 +167,7 @@ $primary-color: #ffd700;
   left: 15vw;
   // opacity: 0.8;
   background: linear-gradient(to right,  #964be0  20%,#1FA2FF 100%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   // transition: transform 0.3s ease-in-out;
