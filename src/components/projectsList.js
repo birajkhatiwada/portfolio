@@ -31,7 +31,7 @@ const ProjectList = (props) => {
     setData(childData);
   };
 
-  console.log('here is the data ' + data + ' and done ');
+  // console.log('here is the data ' + data + ' and done ');
   // if (data === 'Kronos Time') {
   //   setWhichVideo(clockOutApp);
   // } else if (data === 'Covid TravelLog') {
@@ -70,7 +70,7 @@ const ProjectList = (props) => {
     setIsCovidTravelLog(false);
     setIsAnimeRecommendation(false);
     setIsPathFinding(false);
-    console.log("in the handle function");
+    // console.log("in the handle function");
   }
   function handleOnClickCovidTravelLog() {
     setIsKronosTime(false);
@@ -120,7 +120,7 @@ const ProjectList = (props) => {
         {/* <svg className='fourthwave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00000" fill-opacity="1" d="M0,128L80,122.7C160,117,320,107,480,138.7C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> */}
         {/* <svg className='fifthwave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,128C640,139,800,181,960,192C1120,203,1280,181,1360,170.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> */}
         <div className='videosContainer'>
-          <div className='videoContainer covidVideoContainer leftvideoContainer'>
+          <div className='videoContainer clockoutContainer leftvideoContainer'>
             {/* <div className="videoContainer2"> */}
               <div className='video clockout leftvideo'></div>
               <div className='projectTitleContainer clockoutContainer lefttitleContainer '>
@@ -137,8 +137,7 @@ const ProjectList = (props) => {
                 <div className={isHoverClockout?'projectDescHide':'projectDescription'} onMouseOver={handleOnHoverClockout} onMouseOut={handleOffHoverClockout}>
                   At my workplace we would have to clock in and then clock out for lunch and clock back in from lunch, and at times there would be confusion as to when to clock out to make the whole shift 8 hours. I observed many of my coworkers asking other for the answers. 
                   So, i decided to work on this project to help the problem.
-                </div>
-                <div className='linksDiv leftLinksDiv'>
+                  <div className='linksDiv leftLinksDiv'>
                   <a className='link'>https://github.com/birajkhatiwada/kronosTimeCalculator</a>
                 </div>
                 <div className='projectLanguageDiv leftProjectLanguageDiv'>
@@ -146,6 +145,8 @@ const ProjectList = (props) => {
                   <div className='projectLanguage'>html</div>
                   <div className='projectLanguage'>css</div>
                 </div> 
+                </div>
+                
               </div>
             {/* </div> */}
             
@@ -167,7 +168,6 @@ const ProjectList = (props) => {
              
               <div className={isHoverAnime?"projectDescHide":"projectDescription rightProjectDescription rightProjectDescription"} onMouseOver={handleOnHoverAnime} onMouseOut={handleOffHoverAnime}>
               Have you ever finished a show and wanted to watch another similar show? This Anime Recommendation search engine does exactly that. It also allows users to search for Animes, view trending Animes and upcoming Animes. This is all done through API "api.jikan.moe".
-              </div>
               <div className='linksDiv rightLinksDiv'>
                 <a className='link'>https://github.com/birajkhatiwada/AnimeRecommendations</a>
               </div>
@@ -177,6 +177,8 @@ const ProjectList = (props) => {
                 <div className='projectLanguage'>css</div>
                 <div className='projectLanguage'>Api calls</div>
               </div>
+              </div>
+              
             </div>
             <div className='video anime rightvideo'>
             </div>
@@ -201,7 +203,6 @@ const ProjectList = (props) => {
                
                 <div className={isHoverCovid?"projectDescHide":"projectDescription"} onMouseOver={handleOnHoverCovid} onMouseOut={handleOffHoverCovid}>
                 I worked on a COVID Travel Log web app that allows users to plan their trips according to the severity of the current global pandemic’s impact. During/after this pandemic, it's quite difficult to find a safe place to travel. So, I decided to make an app that will show the information about deaths, and confirmed COVID cases in different places. This covidTravelLog will allow users to plan their trips accordingly. Users will also be able to create logs for the places they have visited and the places that they are interested in visiting.
-                </div>
                 <div className='linksDiv leftLinksDiv'>
                   <a className='link'>https://github.com/birajkhatiwada/covidTravelLog</a>
                 </div>
@@ -213,6 +214,8 @@ const ProjectList = (props) => {
                   <div className='projectLanguage'>html</div>
                   <div className='projectLanguage'>css</div>
                 </div>
+                </div>
+                
               </div>            
           </div>
           {/* <div className='straightline betprojectline'></div> */}
@@ -231,7 +234,6 @@ const ProjectList = (props) => {
               
               <div className={isHoverPathfinding?"projectDescHide":"projectDescription rightProjectDescription"} onMouseOver={handleOnHoverPathfinding} onMouseOut={handleOffHoverPathfinding}>
               In order to visually understand pathfinding algorithms, I implemented the A* algorithm, which will allow users to plant two points, then they will be able to create barriers within the grid. This algorithm will then explore all valid paths and return the shortest path. I worked on this project because I was extremely fascinated by the idea of how these pathfinding algorithms would look in visualization.
-              </div>
               <div className='linksDiv rightLinksDiv'>
                 <a className='link'>https://github.com/birajkhatiwada/PathfindingVisualization
                 </a>
@@ -239,6 +241,8 @@ const ProjectList = (props) => {
               <div className='projectLanguageDiv rightProjectLanguageDiv'>
                 <div className='projectLanguage'>python</div>
               </div>
+              </div>
+              
             </div>
             <div className='video pathfinding rightvideo'>
             </div>

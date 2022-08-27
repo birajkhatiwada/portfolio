@@ -11,7 +11,7 @@
 
 .projectsContainer {
   --height: 400px;
-  background-color: #001e36;
+  background-color: #02111e;
   /* position: absolute; */
   /* top: 100vh; */
   /* left: 0px; */
@@ -50,7 +50,7 @@
   justify-content:center;
   /* padding-left: 20vw; */
   /* margin-left: 17vw; */
-  margin: 20vh 0 10vh 0;
+  margin: 15vh 0 15vh 0;
   height: fit-content;
   /* width: fit-content; */
   /* padding: 0px 10px 10px 10px; */
@@ -62,13 +62,54 @@
   /* text-decoration: underline; */
 }
 .projectsTitleBar{
+  position: relative;
   width: fit-content;
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 0px 10px;
+  border-radius: 10px;
   /* border: 2px solid #52b69a; */
+  border: 3px solid #001e36;
+  
   /* background-color: #52b69a; */
-  color: #76c893;
-  border-radius: 5px;
+  color: #a9d6e5;
+  animation: blinkerProjects 2s ease-in-out infinite;
+  /* border-radius: 5px; */
+  /* border-bottom: 3px solid #76c893;
+  border-top: 3px solid #76c893; */
   /* background-color: #012a4a; */
+}
+/* .projectsTitleBar::after{
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: rgb(169, 214, 229, 0.6);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+} */
+
+
+
+@keyframes blinkerProjects {
+  0%{
+    border-top-color: #012a4a;
+    border-right-color: #1FA2FF;
+  }
+  25%{
+    border-right-color: #012a4a;
+    border-bottom-color: #964be0;
+  }
+  50%{
+    border-bottom-color: #012a4a;
+    border-left-color: #1FA2FF;
+  }
+  75%{
+    border-left-color: #012a4a;
+    border-top-color: #964be0;
+  }
+  100%{
+    border-top-color: #012a4a;
+    border-right-color: #1FA2FF;
+  }
 }
 /* 
 .projectsTitleFirstPart{
@@ -154,6 +195,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* margin-top: 5vh; */
   /* margin-bottom: 20vh; */
   /* align-items:center; */
@@ -182,7 +224,7 @@
   transform: translate(-50%, -50%); */
   /* background-color: aqua; */
   height: var(--height);
-  width: 700px;
+  width: 800px;
   border: 2px solid #013a63;
   border-radius: 10px;
   filter: brightness(0.7);
@@ -214,7 +256,7 @@
   /* background: linear-gradient(to bottom left, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 90%), url(/src/components/public/animeRecommendation.gif);  */
   background-image: url(/src/components/public/animeRecommendation.gif);
   /* margin-left: 25vh; */
-  width: 700px;
+  /* width: 800px; */
   background-size: cover;
 }
 .pathfinding{
@@ -244,7 +286,7 @@
   display: flex;
   flex-direction: column;
   justify-content:flex-end;
-  border-radius: 10px; 
+  /* border-radius: 10px;  */
   /* background: #5bb2f4; */
   transition: all 2s ease-in-out;
   /* transform: rotate(-20deg); */
@@ -252,24 +294,85 @@
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .lefttitleContainer{
-  left: -10%;
+  left: -20%;
+  /* border-right: 3px solid rgb(31, 162, 255, 0.4); */
+  /* border-top: 1px solid #1FA2FF;
+  border-right: 1px solid #1FA2FF;
+  border-bottom: 1px solid #1FA2FF; */
   /* z-index: 0; */
   /* top: 25%;
   left: 85%; */
 }
+.lefttitleContainer::after{
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: rgb(31, 162, 255);
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+  animation: slide-left 7s ease-in-out infinite;
+}
+@keyframes slide-left {
+  0%{
+    right: 30px;
+    width: 30px;
+    background: #1FA2FF;
+  }
+  25%{
+    width: 100px;
+  }
+  50%{
+    right: 65%;
+    width: 30px;
+    background: #964be0;
+  }
+  75%{
+    width: 100px;
+  }
+}
 .righttitleContainer{
-  left: 10%;
+  left: 20%;
+  /* border-left: 3px solid rgb(31, 162, 255, 0.5); */
+
   /* top: 58%;
   left: -15%; */
 }
-
+.righttitleContainer::after{
+  content: '';
+  width: 30px;
+  height: 1px;
+  background:#964be0;
+  position: absolute;
+  left: 30px;
+  bottom: 0px;
+  animation: slide-right 7s ease-in-out infinite;
+}
+@keyframes slide-right {
+  0%{
+    width: 30px;
+    left: 30px;
+    background: #964be0;
+  }
+  25%{
+    width: 100px;
+  }
+  50%{
+    width: 30px;
+    left: 65%;
+    background: #1FA2FF;
+  }
+  75%{
+    width: 100px;
+  }
+}
+/* 
 .animeTitleContainer{
-  /* left: 40%; */
   width: 650px;
 }
 .animeTitleContainer .linksDiv{
   width: 600px;
-}
+} */
 
 .projectTitle{
   color: #1FA2FF;
@@ -324,7 +427,7 @@
   /* position: relative; */
   /* left: -15%; */
   color: #e3f2fd;
-  background-color:#012a4a;
+  background-color:#02182b;
   text-align: left;
   z-index: 2;
   /* background-color: aqua; */
@@ -334,6 +437,7 @@
   /* background-color: #012a4a; */
   /* padding: 10px; */
   /* margin-left: -150px; */
+  /* border: 1px solid #964be0; */
   border-radius: 5px;
   font-size: 17px;
   overflow-wrap: break-word;
@@ -408,7 +512,7 @@
   /* color: #a9d6e5; */
 }
 .leftLinksDiv{
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .rightLinksDiv{
   justify-content: flex-start;
@@ -420,7 +524,7 @@
   /* background-color: #1FA2FF; */
   color: #e3f2fd;
   /* padding: 0 10px; */
-  border-radius: 5px;
+  /* border-radius: 5px; */
   /* width: fit-content; */
   text-align: left;
   /* margin-top: 10px; */
@@ -433,12 +537,12 @@
   justify-content: flex-start;
 }
 .leftProjectLanguageDiv{
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .projectLanguage {
   /* background-color: white; */
   cursor: default;
-  margin: 10px 10px 10px 0;
+  /* margin: 0px 10px 10px 0; */
   padding: 2px 5px;
   font-size: 13px;
   
@@ -479,7 +583,7 @@
   font-size: 15px;
   color: white;
   /* background-image: linear-gradient(to right, #1FA2FF 50%, #964be0  100%); */
-  background-color: #012a4a;
+  background-color: #02182b;
 }
 .seeMore:hover{
   opacity: 0.8;
@@ -487,4 +591,27 @@
 
 
 
+@media (max-width: 1500px){
+  .projectsTitle{
+    font-size: 50px;
+  }
+  .leftvideoContainer{
+    margin-left: 150px;
+  }
+  .rightvideoContainer{
+    margin-right: 150px;
+  }
+  .projectTitle{
+    font-size: 20px;
+  }
+  .projectDescription{
+    font-size: 15px;
+  }
+  .linksDiv{
+    font-size: 13px;
+  }
+  .projectLanguage{
+    font-size: 12px;
+  }
+}
 

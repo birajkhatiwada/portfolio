@@ -29,7 +29,7 @@ function App() {
   let prevMouseYPosition = [];
   const handleMouseMove = (e) => {
     setCoord({ x: e.screenX, y: e.screenY });
-    console.log(coord);
+    // console.log(coord);
     prevMouseXPosition.push(coord.x);
     prevMouseYPosition.push(coord.y);
     if (prevMouseXPosition.length > 5) {
@@ -40,13 +40,13 @@ function App() {
   const handleOnClick = (e) => {
     setClickCoord({ x: e.screenX, y: e.screenY });
     setHidePulsate('flex');
-    console.log(clickCoord.x, clickCoord.y);
+    // console.log(clickCoord.x, clickCoord.y);
     setTimeout(hideElement, 250);
   };
 
   function hideElement() {
     setHidePulsate('none');
-    console.log('hereomy');
+    // console.log('hereomy');
   }
 
   const passData = (childData) => {

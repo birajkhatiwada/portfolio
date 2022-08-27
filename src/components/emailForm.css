@@ -9,7 +9,7 @@
   /* background-color: rgb(46, 148, 150); */
   /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px; */
-  background-color: #012a4a;
+  background-color: #031423;
   display: flex;
   flex-direction: column;
 }
@@ -23,14 +23,64 @@
   /* background-color: #12D8FA; */
 
   font-size: 80px;
-  color: #76c893;  
-  margin: 20vh 0 10vh 0;
+  color: #a9d6e5;  
+  margin: 15vh 0 15vh 0;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .contactTitleBar{
-  border-radius: 5px;
+  position: relative;
+  border: 3px solid #012a4a;
+  border-radius: 10px;
+  padding: 0 10px;
+  border-right: 3px solid #1FA2FF;
+  animation: blinker-contact 2s ease-in-out infinite;
   /* padding: 0px 10px 10px 10px; */
 
+}
+@media (max-width: 1500px){
+  .contactTitle{
+    font-size: 50px;
+  }
+}
+/* .contactTitleBar::before{
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: rgb(169, 214, 229, 0.9);
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.contactTitleBar::after{
+  content: '';
+  width: 3px;
+  height: 30px;
+  background: rgb(169, 214, 229, 0.9);
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+} */
+@keyframes blinker-contact {
+  0%{
+    border-top-color: #012a4a;
+    border-right-color: #1FA2FF;
+  }
+  25%{
+    border-right-color: #012a4a;
+    border-bottom-color: #964be0;
+  }
+  50%{
+    border-bottom-color: #012a4a;
+    border-left-color: #1FA2FF;
+  }
+  75%{
+    border-left-color: #012a4a;
+    border-top-color: #964be0;
+  }
+  100%{
+    border-top-color: #012a4a;
+    border-right-color: #1FA2FF;
+  }
 }
 .lineUnderContact {
   /* position: absolute; */
@@ -58,12 +108,12 @@
   text-align: left;
 }
 .chatI{
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   padding-top: 10vh;
 }
 .chatII,.ideas{
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
 }
 .ideas{
@@ -106,7 +156,7 @@
   z-index: 1;
   /* justify-content:left; */
   text-align: left;
-  background-color: #012a4a;
+  background-color: #031423;
   border-radius: 20px;
 }
 
@@ -308,3 +358,6 @@
 .sendBtn:hover {
   opacity: 0.8;
 }
+
+
+
