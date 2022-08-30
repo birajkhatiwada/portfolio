@@ -54,7 +54,7 @@
   height: fit-content;
   /* width: fit-content; */
   /* padding: 0px 10px 10px 10px; */
-  font-size: 80px;
+  font-size: 60px;
   /* color: #52b69a; */
 
   
@@ -227,7 +227,7 @@
   width: 800px;
   border: 2px solid #013a63;
   border-radius: 10px;
-  filter: brightness(0.7);
+  filter: brightness(0.8);
   /* z-index: 2; */
   /* box-shadow: 3px 10px 10px 10px rgba(0, 0, 0, 0.2);   */
   /* transition: transform 0.3s ease-in-out; */
@@ -280,7 +280,7 @@
   height: var(--height)-20px;
   width: 600px;
   /* max-width: 400px; */
-  color: #e3f2fd;
+  color: #02111e;
   font-size: 50px;
   font-weight: 400;
   display: flex;
@@ -294,7 +294,8 @@
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .lefttitleContainer{
-  left: -20%;
+  /* left: -20%; */
+  left: -10%;
   /* border-right: 3px solid rgb(31, 162, 255, 0.4); */
   /* border-top: 1px solid #1FA2FF;
   border-right: 1px solid #1FA2FF;
@@ -332,7 +333,8 @@
   }
 }
 .righttitleContainer{
-  left: 20%;
+  /* left: 20%; */
+  left: 10%;
   /* border-left: 3px solid rgb(31, 162, 255, 0.5); */
 
   /* top: 58%;
@@ -426,8 +428,10 @@
 .projectDescription{
   /* position: relative; */
   /* left: -15%; */
-  color: #e3f2fd;
-  background-color:#02182b;
+  /* color: #6a9bff; */
+  color: #ffffff;
+  background-color:rgb(4, 63, 105);
+  backdrop-filter: blur(15px);
   text-align: left;
   z-index: 2;
   /* background-color: aqua; */
@@ -442,7 +446,8 @@
   font-size: 17px;
   overflow-wrap: break-word;
 }
-.rightProjectDescription{
+.leftProjectDescription{
+  justify-content: right;
   /* left: 0%; */
 }
 
@@ -512,7 +517,7 @@
   /* color: #a9d6e5; */
 }
 .leftLinksDiv{
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 .rightLinksDiv{
   justify-content: flex-start;
@@ -522,7 +527,7 @@
   flex-direction: row;
 
   /* background-color: #1FA2FF; */
-  color: #e3f2fd;
+  /* color: #e3f2fd; */
   /* padding: 0 10px; */
   /* border-radius: 5px; */
   /* width: fit-content; */
@@ -537,7 +542,7 @@
   justify-content: flex-start;
 }
 .leftProjectLanguageDiv{
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 .projectLanguage {
   /* background-color: white; */

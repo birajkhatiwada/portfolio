@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './App.scss';
 import ProjectList from './components/projectsList';
 import EmailForm from './components/emailForm';
@@ -11,6 +11,8 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Avatar } from 'avataaars';
 import svg from './components/public/22.svg'
+import {Link} from 'react-scroll'
+
 
 function App() {
   const [EmailAppClick, setEmailAppClick] = useState(false);
@@ -18,6 +20,8 @@ function App() {
   const [coord, setCoord] = useState({ x: 0, y: 0 });
   const [clickCoord, setClickCoord] = useState({ x: 0, y: 0 });
   const [hidePulsate, setHidePulsate] = useState('flex');
+  const projectRef = useRef(null);
+  const contactRef = useRef(null);
 
   useEffect(()=>{
     // Aos.init();
@@ -49,6 +53,11 @@ function App() {
     // console.log('hereomy');
   }
 
+  const scrollToProject = () => {
+    projectRef.current?.scrollIntoView({behavior: 'smooth'});
+  };
+
+
   const passData = (childData) => {
     if (childData === 'email') setEmailAppClick(!EmailAppClick);
     if (childData === 'terminal') setTerminalAppClick(!TerminalAppClick);
@@ -62,7 +71,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="firstPage" onMouseMove={handleMouseMove}>
+      <div id='firstPageRef' className="firstPage" onMouseMove={handleMouseMove}>
         {/* <div
           className="clickCSS"
           style={{
@@ -90,10 +99,25 @@ function App() {
         </div> */}
         {/* <Terminal  terminalAppClick={TerminalAppClick}></Terminal> */}
         {/* <Languages></Languages> */}
+        <div className='linksContainer'>
+          <div className='linkLine'></div>
+          <Link className='projectLink' to="projectRef" spy={true} smooth={true}>PROJECT</Link>
+          <Link className='projectLink' to="contactRef" spy={true} smooth={true}>CONTACT</Link>
+          <Link className='projectLink' to="firstPageRef" spy={true} smooth={true}>HOME</Link>
+        </div>
+        <div className='fixedEmailContainer'>
+          <div className='linkLineEmail'></div>
+          <div className='fixedEmailLink'>khatiwadabiraj10@gmail.com</div>
+
+        </div>
         <div className='aboutMe'>
           <div className='aboutMe2'>
             <div className='aboutMeComp hiMyName'>hi! I am</div>
-            <div className='aboutMeComp aboutMeMyName'>biraj khatiwada.</div>
+            <Link className='aboutMeComp aboutMeMyName' to="projectListRef" spy={true} smooth={true}>biraj khatiwada.</Link>
+            {/* <div className='aboutMeComp aboutMeMyName' onClick={scrollToProject}>biraj khatiwada.</div> */}
+            <div className='aboutMeComp aboutMeDescription'>I enjoy desiging and creating, whether it's art or computer programming. 
+                  Both allow me to turn a small idea into an entire work of art. Separately, computer programming allows 
+                  me to joyfully explore my interest in problem solving.</div>
             <div className='aboutMeComp aboutMeSoftwareEngineer'>Software Engineer</div>
             <div className='aboutMeComp aboutMeWebDeveloper'>Web Developer</div>
           </div> 
@@ -121,14 +145,14 @@ function App() {
         {/* <Dock passData={passData}></Dock> */}
       </div>
       <ProjectList></ProjectList>
-      <div className="emailContainer">
+      <div id="contactRef" className="emailContainer">
           <EmailForm
             className="emailForm"
             emailAppClick={EmailAppClick}
           ></EmailForm>
         </div>
       {/* <div className='footer'></div> */}
-      <div className="footer">
+      <div  className="footer">
         <div className='footerContainer'>
           <div className='designedByContainer'>
             <div className='designedBy'>Designed and Coded by</div>
@@ -138,7 +162,7 @@ function App() {
           <div className='copyrightContainer'>
             <div>©2022 Copyright</div>
             <div className='emeryville'>Emeryville</div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
