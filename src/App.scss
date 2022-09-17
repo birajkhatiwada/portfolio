@@ -1,5 +1,13 @@
 $primary-color: #ffd700;
 
+html {
+  --cursor-color: #333;
+}
+
+html.dark-mode {
+  --cursor-color: #fff;
+}
+
 // @import "animate.css";
 
 .App {
@@ -38,17 +46,20 @@ $primary-color: #ffd700;
   color: white;
   font-weight: 700;
   font-size: 17px;
-    // color: black;
+  // color: black;
 }
 
 .circle {
   position: fixed;
-  display: none;
+  // display: none;
+  // top: 100px;
+  // left: 0px;
   height: 30px;
   width: 30px;
   border-radius: 16px;
-  background-color: black;
-  opacity: 0.3;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  // opacity: 0.3;
 }
 .clickCSS {
   position: fixed;
@@ -82,14 +93,12 @@ $primary-color: #ffd700;
   transform: rotate(-90deg);
 }
 
-
-
 .firstPage {
   height: 100vh;
   display: flex;
-  padding: 0 200px;
+  padding: 0 250px;
   flex-direction: row;
-  justify-content:space-around; 
+  justify-content: space-around;
   // border-bottom: 1px solid rgb(255, 255, 255, 0.5);
   // background: linear-gradient(to bottom,  #000000  13%,#ffffff 13%,#ffffff 85%, #000000 85%);
   background-color: #031423;
@@ -99,7 +108,7 @@ $primary-color: #ffd700;
   color: blue;
 }
 
-.linksContainer{
+.linksContainer {
   position: fixed;
   z-index: 1;
   top: 77vh;
@@ -108,13 +117,13 @@ $primary-color: #ffd700;
   display: flex;
   flex-direction: row;
   transform: rotate(-90deg);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 
   // height: 100vh;
 }
 
-
-.linkLine{
+.linkLine {
   opacity: 0.2;
   width: 160px;
   height: 1px;
@@ -123,44 +132,53 @@ $primary-color: #ffd700;
   background-color: white;
 }
 
-.projectLink{
+.MyAwesomeParallax {
+  color: white;
+}
+
+.projectLink {
   opacity: 0.6;
   margin: 0;
   margin-left: 10px;
+  // cursor: pointer;
+  color: #1fa2ff;
   cursor: pointer;
-  color: #1FA2FF;
   // background-color: #1FA2FF;
   // height: 100vh;
+  // transition: transform 1s ease-in-out;
 }
-.projectLink:hover{
+.projectLink:hover {
   opacity: 1;
+  // transform: scale(1);
 }
 
-.fixedEmailContainer{
+.fixedEmailContainer {
   position: fixed;
   z-index: 1;
   top: 24vh;
-  left: 87vw;
+  right: -150px;
+  left: auto;
   font-size: 16px;
   display: flex;
   flex-direction: row;
   transform: rotate(90deg);
   color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-.fixedEmailLink{
-  cursor: pointer;
+.fixedEmailLink {
+  // cursor: pointer;
   opacity: 0.6;
   margin-right: 10px;
-  color: #1FA2FF;
+  color: #1fa2ff;
 }
-.fixedEmailLink:hover{
+.fixedEmailLink:hover {
   opacity: 1;
   // color: #ffd700;
 }
 
-.linkLineEmail{
+.linkLineEmail {
   opacity: 0.2;
   width: 160px;
   height: 1px;
@@ -169,8 +187,7 @@ $primary-color: #ffd700;
   background-color: white;
 }
 
-
-.aboutMe{
+.aboutMe {
   color: black;
   display: flex;
   flex-direction: column;
@@ -178,10 +195,10 @@ $primary-color: #ffd700;
   // height: fit-content;
   width: fit-content;
   // margin-left: 10vw;
-  
 }
-.aboutMe2{
+.aboutMe2 {
   // background-color: #013a63;
+
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -190,7 +207,7 @@ $primary-color: #ffd700;
   border-radius: 10px;
   z-index: 1;
 }
-.aboutMeComp{
+.aboutMeComp {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,29 +217,31 @@ $primary-color: #ffd700;
   // font-size: 50px;
 }
 
-.aboutMeComp{
-  cursor: pointer;
-  
+.aboutMeComp {
+  // cursor: pointer;
+
   // transition: transform 0.3s ease-in-out;
 }
 
-.aboutMeComp:hover{
+.aboutMeComp:hover {
   // opacity: 0.7;
   // color: #0064ff;
-  
+
   // transform: translateY(-4px);
 }
 
-.aboutMeDescription{
-  font-size: 15px;
+.aboutMeDescription {
+  font-size: 20px;
   font-weight: 100;
   color: #feffff;
+  max-width: 550px;
+  // background-color: #1FA2FF;
   opacity: 0.7;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-.aboutMeSoftwareEngineer{
+.aboutMeSoftwareEngineer {
   // position: absolute;
   background-color: #ffd700;
   font-size: 60px;
@@ -230,7 +249,7 @@ $primary-color: #ffd700;
   // left: 23vw;
   z-index: 1;
   // opacity: 0.8;
-  background: linear-gradient(to right, #1FA2FF 20%, #964be0  100%);
+  background: linear-gradient(to right, #1fa2ff 20%, #964be0 100%);
   /* background-clip: text; */
   /* background: -webkit-linear-gradient(#eee, #333); */
   -webkit-background-clip: text;
@@ -238,7 +257,7 @@ $primary-color: #ffd700;
   animation: slideUpSoftwareEngineer 4s infinite;
 }
 
-.aboutMeWebDeveloper{
+.aboutMeWebDeveloper {
   // position: absolute;
   font-size: 60px;
   height: auto;
@@ -247,23 +266,22 @@ $primary-color: #ffd700;
   // top: 43vh;
   // left: 15vw;
   // opacity: 0.8;
-  background: linear-gradient(to right,  #964be0  20%,#1FA2FF 100%);
+  background: linear-gradient(to right, #964be0 20%, #1fa2ff 100%);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   // transition: transform 0.3s ease-in-out;
   animation: slideUpWebDeveloper 4s infinite;
-
 }
 
-.hiMyName{
+.hiMyName {
   font-weight: 200;
   font-size: 30px;
   color: #feffff;
   // background-color: #1FA2FF;
 }
 
-.aboutMeMyName{
+.aboutMeMyName {
   // position: absolute;
   // background-color: #964be0;
   color: #76c893;
@@ -272,10 +290,10 @@ $primary-color: #ffd700;
   left: 5vw;
   font-weight: 600;
   font-size: 50px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   // opacity: 0.9;
   // animation: birajkhatiwada 3s infinite;
-
 
   // animation: slideUp;
   // animation-iteration-count: infinite;
@@ -287,8 +305,7 @@ $primary-color: #ffd700;
 //   transform: translateY(-4px);
 // }
 
-
-.avatarContainer{
+.avatarContainer {
   // background-color: #ffd700;
   display: flex;
   height: 100vh;
@@ -296,25 +313,33 @@ $primary-color: #ffd700;
   flex-direction: column;
   justify-content: center;
 }
-.avatar{
-//  background-color: #1FA2FF;
- width: 40vw;
- height: 45vh;
- opacity: 0.7;
+.avatar {
+  //  background-color: #1FA2FF;
+  width: 40vw;
+  height: 45vh;
+  opacity: 0.7;
 }
 
-
-@media screen and (max-width: 1500px){
-  .aboutMeSoftwareEngineer, .aboutMeWebDeveloper{
+@media screen and (max-width: 1500px) {
+  .aboutMeSoftwareEngineer,
+  .aboutMeWebDeveloper {
     font-size: 50px;
   }
-  .avatar{
+  .hiMyName {
+    font-size: 25px;
+  }
+  .aboutMeMyName {
+    font-size: 40px;
+  }
+  .aboutMeDescription {
+    font-size: 17px;
+    width: 560px;
+  }
+  .avatar {
     width: 35vw;
     height: 45vh;
   }
 }
-
-
 
 .straightLine {
   position: absolute;
@@ -347,13 +372,13 @@ $primary-color: #ffd700;
   // flex-direction: column;
   // color: white;
 }
-.footerContainer{
+.footerContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.designedByContainer{
+.designedByContainer {
   // padding-top: 169px;
   // padding-left: 85px;
   height: fit-content;
@@ -367,17 +392,17 @@ $primary-color: #ffd700;
 
   // transform: rotate(90deg);
 }
-.designedBy{
+.designedBy {
   // background-color: #61dafb;
   // width: fit-content;
   // background-color: #0064ff;
   // transform: rotate(-90deg);
 }
-.codedBy{
+.codedBy {
   // background-color: #ffd700;
   padding-left: 3px;
 }
-.copyrightContainer{
+.copyrightContainer {
   display: flex;
   // font-size: 13px;
   // background-color: #27e589;
@@ -385,13 +410,9 @@ $primary-color: #ffd700;
   // padding-top: 10vh;
   // margin-left: 35%;
 }
-.emeryville{
+.emeryville {
   padding-left: 3px;
 }
-
-
-
-
 
 @keyframes pulsate {
   0% {
@@ -421,53 +442,51 @@ $primary-color: #ffd700;
   }
 }
 
-
 @keyframes slideUpSoftwareEngineer {
-  0%{
+  0% {
     opacity: 1;
   }
-  25%{
+  25% {
     opacity: 1;
   }
-  50%{
+  50% {
     // z-index: ;
     opacity: 0.7;
 
-    transform: translateY(50px);
+    transform: translateY(70px);
   }
-  75%{
+  75% {
     opacity: 0.3;
   }
-  100%{
-    // z-index: 
+  100% {
+    // z-index:
     opacity: 1;
     transform: translateY(0px);
   }
 }
 @keyframes slideUpWebDeveloper {
-  0%{
-    
+  0% {
     opacity: 0.7;
   }
-  25%{
+  25% {
     opacity: 0.3;
   }
-  49%{
+  49% {
     z-index: 0;
   }
-  50%{
+  50% {
     opacity: 1;
     z-index: 2;
-    
-    transform: translateY(-50px);
+
+    transform: translateY(-70px);
   }
-  99%{
+  99% {
     z-index: 2;
   }
-  75%{
+  75% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0.7;
     z-index: 0;
     transform: translateY(0px);
@@ -475,49 +494,49 @@ $primary-color: #ffd700;
 }
 
 @-webkit-keyframes slideUpSoftwareEngineer {
-  0%{
+  0% {
     opacity: 1;
   }
-  25%{
+  25% {
     opacity: 1;
   }
-  50%{
+  50% {
     // z-index: ;
     opacity: 0.7;
 
     transform: translateY(120px);
   }
-  75%{
+  75% {
     opacity: 0.3;
   }
-  100%{
-    // z-index: 
+  100% {
+    // z-index:
     opacity: 1;
     transform: translateY(0px);
   }
 }
 @-webkit-keyframes slideUpWebDeveloper {
-  0%{
+  0% {
     opacity: 0.7;
   }
-  25%{
+  25% {
     opacity: 0.3;
   }
-  49%{
+  49% {
     z-index: 0;
   }
-  50%{
+  50% {
     opacity: 1;
     z-index: 2;
     transform: translateY(-80px);
   }
-  99%{
+  99% {
     z-index: 2;
   }
-  75%{
+  75% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0.7;
     z-index: 0;
     transform: translateY(0px);
@@ -525,18 +544,18 @@ $primary-color: #ffd700;
 }
 
 @keyframes birajkhatiwada {
-  50%{
+  50% {
     transform: translateY(-9px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
 @-webkit-keyframes birajkhatiwada {
-  50%{
+  50% {
     transform: translateY(-9px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }

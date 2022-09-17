@@ -2,10 +2,25 @@ import './emailForm.css';
 import emailjs, { init } from '@emailjs/browser';
 import { useRef } from 'react';
 import mail from './public/9.svg'
+import Plx from 'react-plx';
+const parallaxData = [
+  {
+    start: "self",
+    // end: "self",
+    duration: 300,
+    properties: [
+      {
+        startValue: 1,
+        endValue: 2,
+        property: "scale",
+      },
+    ],
+  },
+];
 
 
 const EmailForm = (props) => {
-  console.log(props.emailAppClick);
+  // console.log(props.emailAppClick);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -94,7 +109,7 @@ const EmailForm = (props) => {
         </form>
 
       </div>
-      
+    
     </div>
   );
 };
