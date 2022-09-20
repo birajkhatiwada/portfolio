@@ -1,27 +1,8 @@
 import { Parallax, useParallax } from "react-scroll-parallax";
-import clockOutApp from "./public/clockoutCalculatorDemo.gif";
-import covidTravelLog from "./public/covidTravel.gif";
-import animeRecommendation from "./public/animeRecommendation.gif";
-import pathFinding from "./public/pathfinding.gif";
-import pathF from "./images/pathfinding.mp4";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import "./projectsList.css";
 
 const Projects = () => {
-  const [isClockOutVisible, setClockOutIsVisible] = useState(true);
-
-  const [isAnimeVisible, setAnimeIsVisible] = useState(false);
-  const [isCovidVisible, setCovidIsVisible] = useState(false);
-  const [isPathVisible, setPathIsVisible] = useState(false);
-  const [isKronosTime, setIsKronosTime] = useState(false);
-  const [isCovidTravelLog, setIsCovidTravelLog] = useState(false);
-  const [isAnimeRecommendation, setIsAnimeRecommendation] = useState(false);
-  const [isPathFinding, setIsPathFinding] = useState(false);
-
-  const [isHoverClockout, setIsHoverClockout] = useState(false);
-  const [isHoverAnime, setIsHoverAnime] = useState(false);
-  const [isHoverCovid, setIsHoverCovid] = useState(false);
-  const [isHoverPathfinding, setIsHoverPathfinding] = useState(false);
   const clockOutRef = useRef(null);
   const animeRef = useRef(null);
   const covidRef = useRef(null);
@@ -31,108 +12,64 @@ const Projects = () => {
     useParallax <
     HTMLDivElement >
     {
-      scale: [0.5, 1, "easeInQuad"]
+      translateY: [-100, 100]
     };
-  // const FadeUp = batch(Fade(), Move(), Sticky(), FadeOut());
-
-  const Spin = (cycle) => ({
-    in: {
-      style: {
-        transform: (p) => `rotate(${p * 360 * cycle}deg)`
-      }
-    },
-    out: {
-      style: {
-        transform: (p) => `rotate(${p * 360 * cycle}deg)`
-      }
-    }
-  });
-
-  function handleOnHoverClockout() {
-    // setIsHoverClockout(true);
-  }
-  function handleOnHoverAnime() {
-    // setIsHoverAnime(true);
-  }
-  function handleOnHoverCovid() {
-    // setIsHoverCovid(true);
-  }
-  function handleOnHoverPathfinding() {
-    // setIsHoverPathfinding(true);
-  }
-  function handleOffHoverClockout() {
-    // setIsHoverClockout(false);
-  }
-  function handleOffHoverAnime() {
-    // setIsHoverAnime(false);
-  }
-  function handleOffHoverCovid() {
-    // setIsHoverCovid(false);
-  }
-  function handleOffHoverPathfinding() {
-    // setIsHoverPathfinding(false);
-  }
-  function handleOnClickKronosTime() {
-    setIsKronosTime(true);
-    setIsCovidTravelLog(false);
-    setIsAnimeRecommendation(false);
-    setIsPathFinding(false);
-    // console.log("in the handle function");
-  }
-  function handleOnClickCovidTravelLog() {
-    setIsKronosTime(false);
-    setIsCovidTravelLog(true);
-    setIsAnimeRecommendation(false);
-    setIsPathFinding(false);
-  }
-
-  function handleOnClickAnimeRecommendation() {
-    setIsKronosTime(false);
-    setIsCovidTravelLog(false);
-    setIsAnimeRecommendation(true);
-    setIsPathFinding(false);
-  }
-  function handleOnClickPathFinding() {
-    setIsKronosTime(false);
-    setIsCovidTravelLog(false);
-    setIsAnimeRecommendation(false);
-    setIsPathFinding(true);
-  }
 
   return (
     <>
-      <div className="preProjectsContainer">
+      <div className="preVideosContainer">
         <div className="videosContainer">
           <div
-            className={
-              isClockOutVisible
-                ? "videoContainer clockoutContainer leftvideoContainer showVideo"
-                : "videoContainer leftvideoContainer showVideo"
-            }
+            className="videoContainer clockoutContainer leftvideoContainer showVideo"
             ref={clockOutRef}
           >
-            <Parallax speed={-10}>
+            <div className="projectTitle leftProjectTitle">
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 900 : 1100}
+                endScroll={window.innerWidth < 1500 ? 1200 : 1400}
+                translateX={
+                  window.innerWidth < 1500
+                    ? [0, -130, "ease"]
+                    : [0, -130, "ease"]
+                }
+                rotate={[0, -90]}
+                scale={[1, 0.6]}
+
+                // opacity={[1, 0]}
+                // rootMargin={{ bottom: 300, top: 0 }}
+              >
+                <div className="projectTitleName firstTitle clockoutTitle">
+                  clockout
+                </div>
+              </Parallax>
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 900 : 1100}
+                endScroll={window.innerWidth < 1500 ? 1200 : 1400}
+                translateX={
+                  window.innerWidth < 1500 ? [0, 100, "ease"] : [0, 100, "ease"]
+                }
+                rotate={[0, 90]}
+                scale={[1, 0.6]}
+                // opacity={[1, 0]}
+                // rootMargin={{ bottom: 300, top: 0 }}
+              >
+                <div className="projectTitleName secondTitle calculatorTitle">
+                  CALCULATOR
+                </div>
+              </Parallax>
+            </div>
+            <Parallax
+              speed={20}
+              startScroll={1000}
+              endScroll={1500}
+              // opacity={[1, 0.2]}
+            >
               {" "}
               <div className="video clockout lefvideo"></div>
             </Parallax>
-            <Parallax speed={10}>
+            <Parallax startScroll={1100} endScroll={1500} speed={20}>
               <div className="projectTitleContainer clockoutContainer lefttitleContainer ">
-                <div className="projectTitle leftProjectTitle">
-                  <div className="projectTitleName firstTitle clockoutTitle">
-                    clockout
-                  </div>
-                  <div className="projectTitleName secondTitle calculatorTitle">
-                    CALCULATOR
-                  </div>
-                </div>
-                <div
-                  ref={scrollUp.ref}
-                  className={
-                    isHoverClockout ? "projectDescHide" : "projectDescription"
-                  }
-                  onMouseOver={handleOnHoverClockout}
-                  onMouseOut={handleOffHoverClockout}
-                >
+                <div ref={scrollUp.ref} className="projectDescription">
                   At my workplace we would have to clock in and then clock out
                   for lunch and clock back in from lunch, and at times there
                   would be confusion as to when to clock out to make the whole
@@ -155,38 +92,44 @@ const Projects = () => {
           </div>
 
           <div
-            className={
-              isAnimeVisible
-                ? "videoContainer animeContainer rightvideoContainer showVideo"
-                : "videoContainer animeContainer rightvideoContainer showVideo"
-            }
+            className="videoContainer animeContainer rightvideoContainer showVideo"
             ref={animeRef}
           >
-            <Parallax speed={-10}>
+            <div className="projectTitle rightProjectTitle">
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 1700 : 1900}
+                endScroll={window.innerWidth < 1500 ? 1900 : 2100}
+                translateX={[0, -130, "ease"]}
+                rotate={[0, -90]}
+                scale={[1, 0.7]}
+              >
+                {" "}
+                <div className="projectTitleName firstTitle animeTitle">
+                  anime
+                </div>
+              </Parallax>
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 1700 : 1900}
+                endScroll={window.innerWidth < 1500 ? 1900 : 2100}
+                translateX={[0, 75, "ease"]}
+                rotate={[0, 90]}
+                scale={[1, 0.5]}
+              >
+                {" "}
+                <div className="projectTitleName secondTitle recommendationTitle">
+                  RECOMMENDATION
+                </div>
+              </Parallax>
+            </div>
+
+            <Parallax speed={20} startScroll={1700} endScroll={2300}>
               {" "}
               <div className="video anime rightvideo"></div>
             </Parallax>
 
-            <Parallax speed={10}>
+            <Parallax speed={20} startScroll={1800} endScroll={2300}>
               <div className="projectTitleContainer animeTitleContainer righttitleContainer ">
-                <div className="projectTitle rightProjectTitle">
-                  <div className="projectTitleName firstTitle animeTitle">
-                    anime
-                  </div>
-                  <div className="projectTitleName secondTitle recommendationTitle">
-                    RECOMMENDATION
-                  </div>
-                </div>
-
-                <div
-                  className={
-                    isHoverAnime
-                      ? "projectDescHide"
-                      : "projectDescription rightProjectDescription rightProjectDescription"
-                  }
-                  onMouseOver={handleOnHoverAnime}
-                  onMouseOut={handleOffHoverAnime}
-                >
+                <div className="projectDescription rightProjectDescription rightProjectDescription">
                   Have you ever finished a show and wanted to watch another
                   similar show? This Anime Recommendation search engine does
                   exactly that. It also allows users to search for Animes, view
@@ -209,35 +152,41 @@ const Projects = () => {
           </div>
 
           <div
-            className={
-              isCovidVisible
-                ? "videoContainer covidVideoContainer leftvideoContainer showVideo"
-                : "videoContainer covidVideoContainer showVideo"
-            }
+            className="videoContainer covidVideoContainer leftvideoContainer showVideo"
             ref={covidRef}
           >
-            <Parallax speed={-10}>
+            <div className="projectTitle leftProjectTitle">
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 2500 : 2700}
+                endScroll={window.innerWidth < 1500 ? 2700 : 2900}
+                translateX={[0, -220, "ease"]}
+                rotate={[0, -90]}
+                scale={[1, 0.7]}
+              >
+                {" "}
+                <div className="projectTitleName firstTitle covidTitle">
+                  covid
+                </div>
+              </Parallax>
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 2500 : 2700}
+                endScroll={window.innerWidth < 1500 ? 2700 : 2900}
+                translateX={[0, 125, "ease"]}
+                rotate={[0, 90]}
+                scale={[1, 0.7]}
+              >
+                <div className="projectTitleName secondTitle travellogTitle">
+                  TRAVELLOG
+                </div>
+              </Parallax>
+            </div>
+            <Parallax speed={20} startScroll={2600} endScroll={3000}>
               {" "}
               <div className="video covid leftvideo"></div>
             </Parallax>
-            <Parallax speed={10}>
+            <Parallax speed={20} startScroll={2700} endScroll={3000}>
               <div className="projectTitleContainer covidTitleContainer lefttitleContainer ">
-                <div className="projectTitle leftProjectTitle">
-                  <div className="projectTitleName firstTitle covidTitle">
-                    covid
-                  </div>
-                  <div className="projectTitleName secondTitle travellogTitle">
-                    TRAVELLOG
-                  </div>
-                </div>
-
-                <div
-                  className={
-                    isHoverCovid ? "projectDescHide" : "projectDescription"
-                  }
-                  onMouseOver={handleOnHoverCovid}
-                  onMouseOut={handleOffHoverCovid}
-                >
+                <div className="projectDescription">
                   I worked on a COVID Travel Log web app that allows users to
                   plan their trips according to the severity of the current
                   global pandemic’s impact. During/after this pandemic, it's
@@ -267,38 +216,40 @@ const Projects = () => {
           </div>
 
           <div
-            className={
-              isPathVisible
-                ? "videoContainer pathFindingContainer rightvideoContainer showVideo"
-                : "videoContainer pathFindingContainer rightvideoContainer showVideo"
-            }
+            className="videoContainer pathFindingContainer rightvideoContainer showVideo"
             ref={pathRef}
           >
-            <Parallax speed={-10}>
+            <div className="projectTitle rightProjectTitle">
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 3300 : 3500}
+                endScroll={window.innerWidth < 1500 ? 3500 : 3700}
+                translateX={[0, -88, "ease"]}
+                rotate={[0, -90]}
+                scale={[1, 0.7]}
+              >
+                <div className="projectTitleName firstTitle pathTitle">
+                  pathfinding
+                </div>
+              </Parallax>
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 3300 : 3500}
+                endScroll={window.innerWidth < 1500 ? 3500 : 3700}
+                translateX={[0, 76, "ease"]}
+                rotate={[0, 90]}
+                scale={[1, 0.7]}
+              >
+                <div className="projectTitleName secondTitle findingTitle">
+                  VISUALIZATION
+                </div>
+              </Parallax>
+            </div>
+            <Parallax speed={20} startScroll={3400} endScroll={3800}>
               {" "}
               <div className="video pathfinding rightvideo"></div>
             </Parallax>
-
-            <Parallax speed={10}>
+            <Parallax speed={20} startScroll={3500} endScroll={3800}>
               <div className="projectTitleContainer pathfindingTitleContainer righttitleContainer ">
-                <div className="projectTitle rightProjectTitle">
-                  <div className="projectTitleName firstTitle pathTitle">
-                    pathfinding
-                  </div>
-                  <div className="projectTitleName secondTitle findingTitle">
-                    VISUALIZATION
-                  </div>
-                </div>
-
-                <div
-                  className={
-                    isHoverPathfinding
-                      ? "projectDescHide"
-                      : "projectDescription rightProjectDescription"
-                  }
-                  onMouseOver={handleOnHoverPathfinding}
-                  onMouseOut={handleOffHoverPathfinding}
-                >
+                <div className="projectDescription rightProjectDescription">
                   In order to visually understand pathfinding algorithms, I
                   implemented the A* algorithm, which will allow users to plant
                   two points, then they will be able to create barriers within
@@ -319,9 +270,9 @@ const Projects = () => {
             </Parallax>
           </div>
 
-          <div className="seeMoreContainer">
+          {/* <div className="seeMoreContainer">
             <button className="seeMore">see more......</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -1,78 +1,95 @@
 import "./projectsList.css";
-import { useEffect, useState, useRef } from "react";
-import { useInView } from "react-intersection-observer";
-import { Parallax, useParallax } from "react-scroll-parallax";
+import { Parallax } from "react-scroll-parallax";
 import Projects from "./projects";
 
 const ProjectList = (props) => {
-  const [data, setData] = useState("");
-  const [whichVideo, setWhichVideo] = useState("");
-  const [clickedProject, setClickedProject] = useState(1);
-  const passData = (childData) => {
-    setData(childData);
-  };
-
-  // const scrollUppy = useParallax({
-  //   onChange: (element) => console.log(element)
-  // });
-
-  const options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.4
-  };
-  // const clockOutObserver = new IntersectionObserver(entries => {
-  //   const entry = entries[0];
-  //   setClockOutIsVisible(entry.isIntersecting)
-  //   console.log(entry);
-  // }, options);
-  // const animeObserver = new IntersectionObserver(entries => {
-  //   const entry = entries[0];
-  //   setAnimeIsVisible(entry.isIntersecting)
-  //   console.log(entry);
-  // }, options);
-  // const covidObserver = new IntersectionObserver(entries => {
-  //   const entry = entries[0];
-  //   setCovidIsVisible(entry.isIntersecting)
-  //   console.log(entry);
-  // }, options);
-  // const pathObserver = new IntersectionObserver(entries => {
-  //   const entry = entries[0];
-  //   setPathIsVisible(entry.isIntersecting)
-  //   console.log(entry);
-  // }, options);
-
-  // useEffect(()=>{
-  //   clockOutObserver.observe(clockOutRef.current);
-  //   animeObserver.observe(animeRef.current);
-  //   covidObserver.observe(covidRef.current);
-  //   pathObserver.observe(pathRef.current);
-  // }, []);
-  // console.log('here is the data ' + data + ' and done ');
-  // if (data === 'Kronos Time') {
-  //   setWhichVideo(clockOutApp);
-  // } else if (data === 'Covid TravelLog') {
-  //   setWhichVideo(covidTravelLog);
-  // } else if (data === 'Anime Recommendation') {
-  //   setWhichVideo(animeRecommendation);
-  // } else {
-  //   setWhichVideo(pathFinding);
-  // }
-
   return (
     <>
       <div id="projectRef">
         <div className="projectsContainer">
           <div className="projectsTitle">
-            <Parallax speed={4}>
-              {" "}
-              <div className="projectsTitleBar">PROJECTS</div>
-            </Parallax>
+            <div className="projectsTitleBar">
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 900 : 800}
+                endScroll={window.innerWidth < 1500 ? 1200 : 1500}
+                // speed={2}
+                // opacity={[1, 0]}
+                rootMargin={{ bottom: 10, top: 0 }}
+              >
+                P
+              </Parallax>
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 900 : 700}
+                endScroll={window.innerWidth < 1500 ? 1200 : 1500}
+                translateY={[0, -100]}
+                // speed={6}
+                // opacity={[1, 0]}
+                rootMargin={{ bottom: 0, top: 50 }}
+              >
+                R
+              </Parallax>
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 900 : 700}
+                endScroll={window.innerWidth < 1500 ? 1200 : 1500}
+                // speed={2}
+                // opacity={[1, 0]}
+                rootMargin={{ bottom: 0, top: 50 }}
+              >
+                O
+              </Parallax>
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 900 : 700}
+                endScroll={window.innerWidth < 1500 ? 1200 : 1500}
+                translateY={[0, -100]}
+                // speed={6}
+                // opacity={[1, 0]}
+                rootMargin={{ bottom: 0, top: 50 }}
+              >
+                J
+              </Parallax>
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 900 : 700}
+                endScroll={window.innerWidth < 1500 ? 1200 : 1500}
+                // speed={2}
+                // opacity={[1, 0]}
+                rootMargin={{ bottom: 0, top: 50 }}
+              >
+                E
+              </Parallax>
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 900 : 700}
+                endScroll={window.innerWidth < 1500 ? 1200 : 1500}
+                translateY={[0, -100]}
+                // speed={6}
+                // opacity={[1, 0]}
+                rootMargin={{ bottom: 0, top: 50 }}
+              >
+                C
+              </Parallax>
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 900 : 700}
+                endScroll={window.innerWidth < 1500 ? 1200 : 1500}
+                // speed={2}
+                // opacity={[1, 0]}
+                rootMargin={{ bottom: 0, top: 50 }}
+              >
+                T
+              </Parallax>
+              <Parallax
+                startScroll={window.innerWidth < 1500 ? 900 : 700}
+                endScroll={window.innerWidth < 1500 ? 1200 : 1500}
+                translateY={[0, -100]}
+                // speed={6}
+                // opacity={[1, 0]}
+                rootMargin={{ bottom: 0, top: 50 }}
+              >
+                S
+              </Parallax>
+            </div>
           </div>
+          <Projects></Projects>
         </div>
-        <Projects></Projects>
       </div>
-      {/* </div> */}
     </>
   );
 };
