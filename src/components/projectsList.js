@@ -8,10 +8,17 @@ const ProjectList = (props) => {
       <div id="projectRef">
         <div className="projectsContainer">
           <div className="projectsTitle">
-            <div className="projectsTitleBar">
-              <Parallax
+            <Parallax
+              speed={3}
+              startScroll={window.innerWidth < 1500 ? 700 : 700}
+              endScroll={window.innerWidth < 1500 ? 1000 : 1200}
+              scale={[1, 1.5]}
+              opacity={[1, 0]}
+            >
+              <div className="projectsTitleBar">
+                {/* <Parallax
                 startScroll={window.innerWidth < 1500 ? 900 : 800}
-                endScroll={window.innerWidth < 1500 ? 1200 : 1500}
+                endScroll={window.innerWidth < 1500 ? 1200 : 1700}
                 // speed={2}
                 // opacity={[1, 0]}
                 rootMargin={{ bottom: 10, top: 0 }}
@@ -84,8 +91,10 @@ const ProjectList = (props) => {
                 rootMargin={{ bottom: 0, top: 50 }}
               >
                 S
-              </Parallax>
-            </div>
+              </Parallax> */}
+                PROJECTS
+              </div>
+            </Parallax>
           </div>
           <Projects></Projects>
         </div>

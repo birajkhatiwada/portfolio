@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import svg from "./components/public/22.svg";
 import { Link } from "react-scroll";
 import AnimatedCursor from "react-animated-cursor";
-import { Parallax } from "react-scroll-parallax";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
 function App() {
   return (

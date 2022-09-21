@@ -25,8 +25,8 @@ const Projects = () => {
           >
             <div className="projectTitle leftProjectTitle">
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 900 : 1100}
-                endScroll={window.innerWidth < 1500 ? 1200 : 1400}
+                startScroll={window.innerWidth < 1500 ? 900 : 1200}
+                endScroll={window.innerWidth < 1500 ? 1100 : 1500}
                 translateX={
                   window.innerWidth < 1500
                     ? [0, -130, "ease"]
@@ -43,8 +43,8 @@ const Projects = () => {
                 </div>
               </Parallax>
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 900 : 1100}
-                endScroll={window.innerWidth < 1500 ? 1200 : 1400}
+                startScroll={window.innerWidth < 1500 ? 900 : 1200}
+                endScroll={window.innerWidth < 1500 ? 1100 : 1500}
                 translateX={
                   window.innerWidth < 1500 ? [0, 100, "ease"] : [0, 100, "ease"]
                 }
@@ -60,14 +60,18 @@ const Projects = () => {
             </div>
             <Parallax
               speed={20}
-              startScroll={1000}
-              endScroll={1500}
+              startScroll={window.innerWidth < 1500 ? 800 : 1100}
+              endScroll={window.innerWidth < 1500 ? 1300 : 1600}
               // opacity={[1, 0.2]}
             >
               {" "}
               <div className="video clockout lefvideo"></div>
             </Parallax>
-            <Parallax startScroll={1100} endScroll={1500} speed={20}>
+            <Parallax
+              startScroll={window.innerWidth < 1500 ? 900 : 1200}
+              endScroll={window.innerWidth < 1500 ? 1300 : 1600}
+              speed={20}
+            >
               <div className="projectTitleContainer clockoutContainer lefttitleContainer ">
                 <div ref={scrollUp.ref} className="projectDescription">
                   At my workplace we would have to clock in and then clock out
@@ -97,8 +101,8 @@ const Projects = () => {
           >
             <div className="projectTitle rightProjectTitle">
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 1700 : 1900}
-                endScroll={window.innerWidth < 1500 ? 1900 : 2100}
+                startScroll={window.innerWidth < 1500 ? 1700 : 2100}
+                endScroll={window.innerWidth < 1500 ? 1900 : 2300}
                 translateX={[0, -130, "ease"]}
                 rotate={[0, -90]}
                 scale={[1, 0.7]}
@@ -109,8 +113,8 @@ const Projects = () => {
                 </div>
               </Parallax>
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 1700 : 1900}
-                endScroll={window.innerWidth < 1500 ? 1900 : 2100}
+                startScroll={window.innerWidth < 1500 ? 1700 : 2100}
+                endScroll={window.innerWidth < 1500 ? 1900 : 2300}
                 translateX={[0, 75, "ease"]}
                 rotate={[0, 90]}
                 scale={[1, 0.5]}
@@ -122,12 +126,20 @@ const Projects = () => {
               </Parallax>
             </div>
 
-            <Parallax speed={20} startScroll={1700} endScroll={2300}>
+            <Parallax
+              speed={20}
+              startScroll={window.innerWidth < 1500 ? 1700 : 2000}
+              endScroll={window.innerWidth < 1500 ? 2100 : 2400}
+            >
               {" "}
               <div className="video anime rightvideo"></div>
             </Parallax>
 
-            <Parallax speed={20} startScroll={1800} endScroll={2300}>
+            <Parallax
+              speed={20}
+              startScroll={window.innerWidth < 1500 ? 1800 : 2100}
+              endScroll={window.innerWidth < 1500 ? 2100 : 2400}
+            >
               <div className="projectTitleContainer animeTitleContainer righttitleContainer ">
                 <div className="projectDescription rightProjectDescription rightProjectDescription">
                   Have you ever finished a show and wanted to watch another
@@ -157,8 +169,8 @@ const Projects = () => {
           >
             <div className="projectTitle leftProjectTitle">
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 2500 : 2700}
-                endScroll={window.innerWidth < 1500 ? 2700 : 2900}
+                startScroll={window.innerWidth < 1500 ? 2500 : 3000}
+                endScroll={window.innerWidth < 1500 ? 2700 : 3200}
                 translateX={[0, -220, "ease"]}
                 rotate={[0, -90]}
                 scale={[1, 0.7]}
@@ -169,8 +181,8 @@ const Projects = () => {
                 </div>
               </Parallax>
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 2500 : 2700}
-                endScroll={window.innerWidth < 1500 ? 2700 : 2900}
+                startScroll={window.innerWidth < 1500 ? 2500 : 3000}
+                endScroll={window.innerWidth < 1500 ? 2700 : 3200}
                 translateX={[0, 125, "ease"]}
                 rotate={[0, 90]}
                 scale={[1, 0.7]}
@@ -180,11 +192,19 @@ const Projects = () => {
                 </div>
               </Parallax>
             </div>
-            <Parallax speed={20} startScroll={2600} endScroll={3000}>
+            <Parallax
+              speed={20}
+              startScroll={window.innerWidth < 1500 ? 2500 : 2900}
+              endScroll={window.innerWidth < 1500 ? 2900 : 3300}
+            >
               {" "}
               <div className="video covid leftvideo"></div>
             </Parallax>
-            <Parallax speed={20} startScroll={2700} endScroll={3000}>
+            <Parallax
+              speed={20}
+              startScroll={window.innerWidth < 1500 ? 2600 : 3000}
+              endScroll={window.innerWidth < 1500 ? 2900 : 3300}
+            >
               <div className="projectTitleContainer covidTitleContainer lefttitleContainer ">
                 <div className="projectDescription">
                   I worked on a COVID Travel Log web app that allows users to
@@ -221,8 +241,8 @@ const Projects = () => {
           >
             <div className="projectTitle rightProjectTitle">
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 3300 : 3500}
-                endScroll={window.innerWidth < 1500 ? 3500 : 3700}
+                startScroll={window.innerWidth < 1500 ? 3300 : 3900}
+                endScroll={window.innerWidth < 1500 ? 3500 : 4100}
                 translateX={[0, -88, "ease"]}
                 rotate={[0, -90]}
                 scale={[1, 0.7]}
@@ -232,8 +252,8 @@ const Projects = () => {
                 </div>
               </Parallax>
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 3300 : 3500}
-                endScroll={window.innerWidth < 1500 ? 3500 : 3700}
+                startScroll={window.innerWidth < 1500 ? 3300 : 3900}
+                endScroll={window.innerWidth < 1500 ? 3500 : 4100}
                 translateX={[0, 76, "ease"]}
                 rotate={[0, 90]}
                 scale={[1, 0.7]}
@@ -243,11 +263,19 @@ const Projects = () => {
                 </div>
               </Parallax>
             </div>
-            <Parallax speed={20} startScroll={3400} endScroll={3800}>
+            <Parallax
+              speed={20}
+              startScroll={window.innerWidth < 1500 ? 3300 : 3800}
+              endScroll={window.innerWidth < 1500 ? 3700 : 4200}
+            >
               {" "}
               <div className="video pathfinding rightvideo"></div>
             </Parallax>
-            <Parallax speed={20} startScroll={3500} endScroll={3800}>
+            <Parallax
+              speed={20}
+              startScroll={window.innerWidth < 1500 ? 3400 : 3800}
+              endScroll={window.innerWidth < 1500 ? 3700 : 4200}
+            >
               <div className="projectTitleContainer pathfindingTitleContainer righttitleContainer ">
                 <div className="projectDescription rightProjectDescription">
                   In order to visually understand pathfinding algorithms, I
