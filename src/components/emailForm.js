@@ -33,10 +33,10 @@ const EmailForm = (props) => {
         <Parallax>
           <div className="contactTitle">
             <Parallax
-              scale={[1, 1.5]}
-              startScroll={window.innerWidth < 1500 ? 4500 : 4800}
-              endScroll={window.innerWidth < 1500 ? 4700 : 5300}
-              opacity={[1, 0]}
+              scale={[1, 1.1]}
+              startScroll={window.innerWidth < 1500 ? 4500 : 5000}
+              endScroll={window.innerWidth < 1500 ? 4700 : 5100}
+              // opacity={[1, 0]}
             >
               <div className="contactTitleBar">CONTACT</div>
             </Parallax>
@@ -88,7 +88,7 @@ const EmailForm = (props) => {
                       endScroll={window.innerWidth < 1500 ? 5200 : 5900}
                     >
                       <div className="mailMe chat">
-                        you can also reach out to me here!
+                        you can reach out to me here ↓ or message me BELOW!
                       </div>
                     </Parallax>
                     <Parallax
@@ -108,44 +108,46 @@ const EmailForm = (props) => {
           <img className='mailAvatar' src={mail}></img>
         </div> */}
             <Parallax speed={0}>
-              <form className="formContainer" ref={form} onSubmit={sendEmail}>
-                {/* <div className="titleBar">
+              <div className="formContainerOuter">
+                <form className="formContainer" ref={form} onSubmit={sendEmail}>
+                  {/* <div className="titleBar">
             <div className="green"></div>
             <div className="yellow"></div>
             <div className="red"></div>
             <div className="emailTitleName">Email</div>
           </div> */}
-                <div className="sendMeMsg chat">Send me a message!</div>
-                {/* <div className="yourEmail labell">Your Email </div> */}
-                <input
-                  className="emailInput inputbox"
-                  placeholder="Email address*"
-                  name="from_email"
-                  required
-                ></input>
-                {/* <div className="line"></div> */}
-                {/* <div className="firstName labell">Your Name</div> */}
-                <input
-                  className="nameInput inputbox"
-                  placeholder="Full name"
-                  name="from_name"
-                ></input>
-                <input
-                  className="nameInput inputbox"
-                  placeholder="Subject"
-                  // name="from_name"
-                ></input>
-                {/* <div className="secondline"></div> */}
-                <div className="messageOg labell">Your Message here*</div>
-                <textarea
-                  className="messageInput inputbox"
-                  name="message"
-                  required
-                ></textarea>
-                <button className="sendBtn chat" type="submit">
-                  Send Message
-                </button>
-              </form>
+                  <div className="sendMeMsg chat">Send me a message!</div>
+                  {/* <div className="yourEmail labell">Your Email </div> */}
+                  <input
+                    className="emailInput inputbox"
+                    placeholder="Email address*"
+                    name="from_email"
+                    required
+                  ></input>
+                  {/* <div className="line"></div> */}
+                  {/* <div className="firstName labell">Your Name</div> */}
+                  <input
+                    className="nameInput inputbox"
+                    placeholder="Full name"
+                    name="from_name"
+                  ></input>
+                  <input
+                    className="nameInput inputbox"
+                    placeholder="Subject"
+                    // name="from_name"
+                  ></input>
+                  {/* <div className="secondline"></div> */}
+                  <div className="messageOg labell">Your Message here*</div>
+                  <textarea
+                    className="messageInput inputbox"
+                    name="message"
+                    required
+                  ></textarea>
+                  <button className="sendBtn chat" type="submit">
+                    Send Message
+                  </button>
+                </form>
+              </div>
             </Parallax>
           </div>
         </div>

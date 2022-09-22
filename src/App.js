@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <div id="firstPageRef" className="firstPage">
-        <AnimatedCursor
+        {/* <AnimatedCursor
           color="255,255,255"
           innerSize={5}
           outerSize={35}
@@ -22,7 +22,7 @@ function App() {
             color: "red",
             border: "2px solid #000000"
           }}
-        ></AnimatedCursor>
+        ></AnimatedCursor> */}
         <div className="linksContainer">
           <div className="linkLine"></div>
           <Link

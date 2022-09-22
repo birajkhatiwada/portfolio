@@ -17,41 +17,43 @@ const Projects = () => {
 
   return (
     <>
-      <div className="preVideosContainer">
-        <div className="videosContainer">
-          <div
-            className="videoContainer clockoutContainer leftvideoContainer showVideo"
-            ref={clockOutRef}
-          >
+      {/* <div className="preVideosContainer"> */}
+      <div className="videosContainer">
+        <div
+          className="videoContainer clockoutContainer leftvideoContainer showVideo"
+          ref={clockOutRef}
+        >
+          <div className="videoContainerII">
             <div className="projectTitle leftProjectTitle">
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 900 : 1200}
-                endScroll={window.innerWidth < 1500 ? 1100 : 1500}
-                translateX={
-                  window.innerWidth < 1500
-                    ? [0, -130, "ease"]
-                    : [0, -130, "ease"]
-                }
-                rotate={[0, -90]}
-                scale={[1, 0.6]}
-
-                // opacity={[1, 0]}
-                // rootMargin={{ bottom: 300, top: 0 }}
+              // startScroll={window.innerWidth < 1500 ? 900 : 1200}
+              // endScroll={window.innerWidth < 1500 ? 1300 : 1500}
+              // translateX={
+              //   window.innerWidth < 1500
+              //     ? [0, -130, "ease"]
+              //     : [0, -380, "ease"]
+              // }
+              // rotate={[0, -90]}
+              // translateY={[0, 300]}
+              // scale={[1, 0.6]}
+              // opacity={[1, 0]}
+              // rootMargin={{ bottom: 300, top: 0 }}
               >
                 <div className="projectTitleName firstTitle clockoutTitle">
                   clockout
                 </div>
               </Parallax>
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 900 : 1200}
-                endScroll={window.innerWidth < 1500 ? 1100 : 1500}
-                translateX={
-                  window.innerWidth < 1500 ? [0, 100, "ease"] : [0, 100, "ease"]
-                }
-                rotate={[0, 90]}
-                scale={[1, 0.6]}
-                // opacity={[1, 0]}
-                // rootMargin={{ bottom: 300, top: 0 }}
+              // startScroll={window.innerWidth < 1500 ? 900 : 1200}
+              // endScroll={window.innerWidth < 1500 ? 1300 : 1500}
+              // translateX={
+              //   window.innerWidth < 1500 ? [0, 100, "ease"] : [0, 300, "ease"]
+              // }
+              // rotate={[0, 90]}
+              // translateY={[0, 280]}
+              // scale={[1, 0.6]}
+              // opacity={[1, 0]}
+              // rootMargin={{ bottom: 300, top: 0 }}
               >
                 <div className="projectTitleName secondTitle calculatorTitle">
                   CALCULATOR
@@ -59,18 +61,18 @@ const Projects = () => {
               </Parallax>
             </div>
             <Parallax
-              speed={20}
-              startScroll={window.innerWidth < 1500 ? 800 : 1100}
-              endScroll={window.innerWidth < 1500 ? 1300 : 1600}
-              // opacity={[1, 0.2]}
+            // speed={10}
+            // startScroll={window.innerWidth < 1500 ? 800 : 1100}
+            // endScroll={window.innerWidth < 1500 ? 1300 : 1600}
+            // opacity={[1, 0.2]}
             >
               {" "}
               <div className="video clockout lefvideo"></div>
             </Parallax>
             <Parallax
-              startScroll={window.innerWidth < 1500 ? 900 : 1200}
-              endScroll={window.innerWidth < 1500 ? 1300 : 1600}
-              speed={20}
+            // startScroll={window.innerWidth < 1500 ? 900 : 1200}
+            // endScroll={window.innerWidth < 1500 ? 1300 : 1600}
+            // speed={10}
             >
               <div className="projectTitleContainer clockoutContainer lefttitleContainer ">
                 <div ref={scrollUp.ref} className="projectDescription">
@@ -94,18 +96,21 @@ const Projects = () => {
               </div>
             </Parallax>
           </div>
+        </div>
 
-          <div
-            className="videoContainer animeContainer rightvideoContainer showVideo"
-            ref={animeRef}
-          >
+        <div
+          className="videoContainer animeContainer rightvideoContainer showVideo"
+          ref={animeRef}
+        >
+          {" "}
+          <div className="videoContainerII">
             <div className="projectTitle rightProjectTitle">
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 1700 : 2100}
-                endScroll={window.innerWidth < 1500 ? 1900 : 2300}
-                translateX={[0, -130, "ease"]}
-                rotate={[0, -90]}
-                scale={[1, 0.7]}
+              // startScroll={window.innerWidth < 1500 ? 1700 : 2100}
+              // endScroll={window.innerWidth < 1500 ? 2100 : 2300}
+              // translateX={[0, -130, "ease"]}
+              // rotate={[0, -90]}
+              // scale={[1, 0.4]}
               >
                 {" "}
                 <div className="projectTitleName firstTitle animeTitle">
@@ -113,11 +118,11 @@ const Projects = () => {
                 </div>
               </Parallax>
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 1700 : 2100}
-                endScroll={window.innerWidth < 1500 ? 1900 : 2300}
-                translateX={[0, 75, "ease"]}
-                rotate={[0, 90]}
-                scale={[1, 0.5]}
+              // startScroll={window.innerWidth < 1500 ? 1700 : 2100}
+              // endScroll={window.innerWidth < 1500 ? 2100 : 2300}
+              // translateX={[0, 75, "ease"]}
+              // rotate={[0, 90]}
+              // scale={[1, 0.4]}
               >
                 {" "}
                 <div className="projectTitleName secondTitle recommendationTitle">
@@ -127,18 +132,18 @@ const Projects = () => {
             </div>
 
             <Parallax
-              speed={20}
-              startScroll={window.innerWidth < 1500 ? 1700 : 2000}
-              endScroll={window.innerWidth < 1500 ? 2100 : 2400}
+            // speed={10}
+            // startScroll={window.innerWidth < 1500 ? 1700 : 2000}
+            // endScroll={window.innerWidth < 1500 ? 2100 : 2400}
             >
               {" "}
               <div className="video anime rightvideo"></div>
             </Parallax>
 
             <Parallax
-              speed={20}
-              startScroll={window.innerWidth < 1500 ? 1800 : 2100}
-              endScroll={window.innerWidth < 1500 ? 2100 : 2400}
+            // speed={10}
+            // startScroll={window.innerWidth < 1500 ? 1800 : 2100}
+            // endScroll={window.innerWidth < 1500 ? 2100 : 2400}
             >
               <div className="projectTitleContainer animeTitleContainer righttitleContainer ">
                 <div className="projectDescription rightProjectDescription rightProjectDescription">
@@ -162,18 +167,20 @@ const Projects = () => {
               </div>
             </Parallax>
           </div>
+        </div>
 
-          <div
-            className="videoContainer covidVideoContainer leftvideoContainer showVideo"
-            ref={covidRef}
-          >
+        <div
+          className="videoContainer covidVideoContainer leftvideoContainer showVideo"
+          ref={covidRef}
+        >
+          <div className="videoContainerII">
             <div className="projectTitle leftProjectTitle">
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 2500 : 3000}
-                endScroll={window.innerWidth < 1500 ? 2700 : 3200}
-                translateX={[0, -220, "ease"]}
-                rotate={[0, -90]}
-                scale={[1, 0.7]}
+              // startScroll={window.innerWidth < 1500 ? 2500 : 3000}
+              // endScroll={window.innerWidth < 1500 ? 2900 : 3200}
+              // translateX={[0, -220, "ease"]}
+              // rotate={[0, -90]}
+              // scale={[1, 0.4]}
               >
                 {" "}
                 <div className="projectTitleName firstTitle covidTitle">
@@ -181,11 +188,11 @@ const Projects = () => {
                 </div>
               </Parallax>
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 2500 : 3000}
-                endScroll={window.innerWidth < 1500 ? 2700 : 3200}
-                translateX={[0, 125, "ease"]}
-                rotate={[0, 90]}
-                scale={[1, 0.7]}
+              // startScroll={window.innerWidth < 1500 ? 2500 : 3000}
+              // endScroll={window.innerWidth < 1500 ? 2900 : 3200}
+              // translateX={[0, 125, "ease"]}
+              // rotate={[0, 90]}
+              // scale={[1, 0.4]}
               >
                 <div className="projectTitleName secondTitle travellogTitle">
                   TRAVELLOG
@@ -193,17 +200,17 @@ const Projects = () => {
               </Parallax>
             </div>
             <Parallax
-              speed={20}
-              startScroll={window.innerWidth < 1500 ? 2500 : 2900}
-              endScroll={window.innerWidth < 1500 ? 2900 : 3300}
+            // speed={10}
+            // startScroll={window.innerWidth < 1500 ? 2500 : 2900}
+            // endScroll={window.innerWidth < 1500 ? 2900 : 3300}
             >
               {" "}
               <div className="video covid leftvideo"></div>
             </Parallax>
             <Parallax
-              speed={20}
-              startScroll={window.innerWidth < 1500 ? 2600 : 3000}
-              endScroll={window.innerWidth < 1500 ? 2900 : 3300}
+            // speed={10}
+            // startScroll={window.innerWidth < 1500 ? 2600 : 3000}
+            // endScroll={window.innerWidth < 1500 ? 2900 : 3300}
             >
               <div className="projectTitleContainer covidTitleContainer lefttitleContainer ">
                 <div className="projectDescription">
@@ -234,29 +241,31 @@ const Projects = () => {
               </div>
             </Parallax>
           </div>
+        </div>
 
-          <div
-            className="videoContainer pathFindingContainer rightvideoContainer showVideo"
-            ref={pathRef}
-          >
+        <div
+          className="videoContainer pathFindingContainer rightvideoContainer showVideo"
+          ref={pathRef}
+        >
+          <div className="videoContainerII">
             <div className="projectTitle rightProjectTitle">
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 3300 : 3900}
-                endScroll={window.innerWidth < 1500 ? 3500 : 4100}
-                translateX={[0, -88, "ease"]}
-                rotate={[0, -90]}
-                scale={[1, 0.7]}
+              // startScroll={window.innerWidth < 1500 ? 3300 : 3900}
+              // endScroll={window.innerWidth < 1500 ? 3700 : 4100}
+              // translateX={[0, -88, "ease"]}
+              // rotate={[0, -90]}
+              // scale={[1, 0.4]}
               >
                 <div className="projectTitleName firstTitle pathTitle">
                   pathfinding
                 </div>
               </Parallax>
               <Parallax
-                startScroll={window.innerWidth < 1500 ? 3300 : 3900}
-                endScroll={window.innerWidth < 1500 ? 3500 : 4100}
-                translateX={[0, 76, "ease"]}
-                rotate={[0, 90]}
-                scale={[1, 0.7]}
+              // startScroll={window.innerWidth < 1500 ? 3300 : 3900}
+              // endScroll={window.innerWidth < 1500 ? 3700 : 4100}
+              // translateX={[0, 76, "ease"]}
+              // rotate={[0, 90]}
+              // scale={[1, 0.4]}
               >
                 <div className="projectTitleName secondTitle findingTitle">
                   VISUALIZATION
@@ -264,17 +273,17 @@ const Projects = () => {
               </Parallax>
             </div>
             <Parallax
-              speed={20}
-              startScroll={window.innerWidth < 1500 ? 3300 : 3800}
-              endScroll={window.innerWidth < 1500 ? 3700 : 4200}
+            // speed={10}
+            // startScroll={window.innerWidth < 1500 ? 3300 : 3800}
+            // endScroll={window.innerWidth < 1500 ? 3700 : 4200}
             >
               {" "}
               <div className="video pathfinding rightvideo"></div>
             </Parallax>
             <Parallax
-              speed={20}
-              startScroll={window.innerWidth < 1500 ? 3400 : 3800}
-              endScroll={window.innerWidth < 1500 ? 3700 : 4200}
+            // speed={10}
+            // startScroll={window.innerWidth < 1500 ? 3400 : 3800}
+            // endScroll={window.innerWidth < 1500 ? 3700 : 4200}
             >
               <div className="projectTitleContainer pathfindingTitleContainer righttitleContainer ">
                 <div className="projectDescription rightProjectDescription">
@@ -297,12 +306,13 @@ const Projects = () => {
               </div>
             </Parallax>
           </div>
+        </div>
 
-          {/* <div className="seeMoreContainer">
+        {/* <div className="seeMoreContainer">
             <button className="seeMore">see more......</button>
           </div> */}
-        </div>
       </div>
+      {/* </div> */}
     </>
   );
 };

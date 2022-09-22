@@ -5,15 +5,15 @@ import Projects from "./projects";
 const ProjectList = (props) => {
   return (
     <>
-      <div id="projectRef">
+      <div id="projectRef" className="outerProjectsContainer">
         <div className="projectsContainer">
           <div className="projectsTitle">
             <Parallax
-              speed={3}
-              startScroll={window.innerWidth < 1500 ? 700 : 700}
-              endScroll={window.innerWidth < 1500 ? 1000 : 1200}
-              scale={[1, 1.5]}
-              opacity={[1, 0]}
+            // speed={-10}
+            // startScroll={window.innerWidth < 1500 ? 700 : 600}
+            // endScroll={window.innerWidth < 1500 ? 1000 : 700}
+            // scale={[1, 1.1]}
+            // opacity={[1, 0]}
             >
               <div className="projectsTitleBar">
                 {/* <Parallax

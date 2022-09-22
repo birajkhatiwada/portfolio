@@ -1,5 +1,12 @@
+.outerProjectsContainer {
+  padding: 0 10vh;
+}
 .projectsContainer {
-  background-color: #02111e;
+  /* background-color: #02111e; */
+  position: relative;
+  z-index: 1;
+  background-color: rgb(17, 16, 16);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,12 +28,12 @@
   /* padding-left: 20vw; */
   /* margin-left: 17vw; */
   margin: 15vh 0 15vh 0;
-  height: 50vh;
+  /* height: 50vh; */
   /* width: fit-content; */
   /* padding: 0px 10px 10px 10px; */
   font-size: 150px;
   font-weight: 600;
-  /* background-color: #11497b; */
+  /* background-color: #41464a; */
   /* color: #52b69a; */
 
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -41,13 +48,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  letter-spacing: 50px;
+  letter-spacing: 40px;
   /* background-color: rgb(205, 166, 115); */
   /* border: 2px solid #52b69a; */
   /* border: 3px solid #1fa2ff; */
 
   /* background-color: #52b69a; */
-  color: #a9d6e5;
+  color: white;
   /* animation: blinkerProjects 2s ease-in-out infinite; */
 }
 .projectsTitleBar::after {
@@ -93,7 +100,6 @@
 }
 
 .videosContainer {
-  /* background-color: #1fa2ff; */
   --height: 400px;
 
   height: 100%;
@@ -111,15 +117,30 @@
 .videoContainer {
   /* position: relative; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   /* padding: 0px 30px; */
-  margin-bottom: 20vh;
+  /* margin-bottom: 20vh; */
   /* position: relative; */
-  /* background-color: #25323e; */
+  background-color: #25323e;
+  padding: 7vh 0;
+}
+.videoContainerII {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.clockoutContainer {
+  background-color: #f0eeff;
+}
+.animeContainer {
+  background-color: #e7f5ff;
+}
+.covidVideoContainer {
+  background-color: #ebfff2;
 }
 .pathFindingContainer {
-  /* margin-bottom:20vh; */
+  background-color: #eaffe7;
 }
 
 .showVideo {
@@ -145,9 +166,9 @@
   display: block;
   height: var(--height);
   width: 800px;
-  border: 2px solid #013a63;
+  /* border: 2px solid #013a63; */
   border-radius: 10px;
-  filter: brightness(0.8);
+  /* filter: brightness(0.9); */
 }
 .video:hover {
   filter: brightness(1);
@@ -274,15 +295,14 @@
 } */
 
 .projectTitle {
-  color: #1fa2ff;
-
+  z-index: 1;
   /* width: fit-content; */
   font-weight: 800;
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 60px;
-  /* margin-bottom: 8vh; */
+  margin-bottom: 25px;
   /* justify-content: flex-end; */
   /* background-color: #2a3136; */
   /* color: rgb(0, 0, 0); */
@@ -305,7 +325,9 @@
   /* background-color: bisque; */
   width: fit-content;
   /* background-color: #76c893; */
-
+  /* background-color: #5ea075; */
+  color: black;
+  padding: 0 5px;
   margin-bottom: 5px;
   border-radius: 5px;
   /* padding: 0px 15px; */
@@ -333,7 +355,7 @@
   /* position: relative; */
   /* left: -15%; */
   /* color: #6a9bff; */
-  color: #ffffff;
+  color: black;
   /* background-color: rgb(6, 37, 60, 0.7); */
   backdrop-filter: blur(15px);
   text-align: left;
@@ -348,6 +370,7 @@
   /* border: 1px solid #964be0; */
   border-radius: 5px;
   font-size: 17px;
+  font-weight: 300;
   overflow-wrap: break-word;
 }
 .leftProjectDescription {
@@ -502,7 +525,7 @@
 
 @media (max-width: 1500px) {
   .projectsTitle {
-    font-size: 120px;
+    font-size: 100px;
   }
   .leftvideoContainer {
     /* margin-left: 150px; */

@@ -94,14 +94,14 @@ html.dark-mode {
 }
 
 .firstPage {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   padding: 0 250px;
   flex-direction: row;
   justify-content: space-around;
   // border-bottom: 1px solid rgb(255, 255, 255, 0.5);
   // background: linear-gradient(to bottom,  #000000  13%,#ffffff 13%,#ffffff 85%, #000000 85%);
-  background-color: #02111e;
+  background-color: white;
 }
 
 .EmailForm {
@@ -124,7 +124,7 @@ html.dark-mode {
 }
 
 .linkLine {
-  opacity: 0.2;
+  opacity: 0;
   width: 160px;
   height: 1px;
   margin-top: 9px;
@@ -137,10 +137,12 @@ html.dark-mode {
 }
 
 .projectLink {
-  opacity: 0.6;
+  opacity: 0.8;
   margin: 0;
   margin-left: 10px;
   // cursor: pointer;
+  border-radius: 2px;
+  padding: 2px 4px;
   color: #1fa2ff;
   cursor: pointer;
   // background-color: #1FA2FF;
@@ -149,6 +151,8 @@ html.dark-mode {
 }
 .projectLink:hover {
   opacity: 1;
+  background-color: #1fa2ff;
+  color: white;
   // transform: scale(1);
 }
 
@@ -169,17 +173,22 @@ html.dark-mode {
 
 .fixedEmailLink {
   // cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.8;
   margin-right: 10px;
   color: #1fa2ff;
+  border-radius: 2px;
+  padding: 2px 6px;
 }
 .fixedEmailLink:hover {
   opacity: 1;
+  cursor: pointer;
+  background-color: #1fa2ff;
+  color: white;
   // color: #ffd700;
 }
 
 .linkLineEmail {
-  opacity: 0.2;
+  opacity: 0;
   width: 160px;
   height: 1px;
   margin-top: 9px;
@@ -205,7 +214,7 @@ html.dark-mode {
   justify-content: center;
   padding: 30px 40px;
   border-radius: 10px;
-  z-index: 1;
+  // z-index: 1;
 }
 .aboutMeComp {
   display: flex;
@@ -232,11 +241,11 @@ html.dark-mode {
 
 .aboutMeDescription {
   font-size: 20px;
-  font-weight: 100;
-  color: #feffff;
-  max-width: 550px;
+  font-weight: 600;
+  color: black;
+  max-width: 580px;
   // background-color: #1FA2FF;
-  opacity: 0.7;
+  // opacity: 0.7;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -277,14 +286,14 @@ html.dark-mode {
 .hiMyName {
   font-weight: 200;
   font-size: 30px;
-  color: #feffff;
+  color: #000;
   // background-color: #1FA2FF;
 }
 
 .aboutMeMyName {
   // position: absolute;
   // background-color: #964be0;
-  color: #76c893;
+  color: #5ea075;
   margin: 0;
   top: 51vh;
   left: 5vw;
@@ -306,9 +315,13 @@ html.dark-mode {
 // }
 
 .avatarContainer {
-  // background-color: #ffd700;
+  position: relative;
+  z-index: -1;
+  // background-color: #fffadc;
+  // border-radius: 960px 100px 50px 50px;
   display: flex;
-  height: 100vh;
+  margin-top: 3vh;
+  height: 80vh;
   width: fit-content;
   flex-direction: column;
   justify-content: center;
@@ -316,7 +329,7 @@ html.dark-mode {
 .avatar {
   width: 40vw;
   height: 45vh;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 1500px) {
