@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.29daf45b.css",
+    "main.css": "/portfolio/static/css/main.0b37f06b.css",
     "main.js": "/portfolio/static/js/main.44765861.js",
     "static/media/covidTravel.gif": "/portfolio/static/media/covidTravel.c91fbb689ad385c01608.gif",
     "static/media/animeRecommendation.gif": "/portfolio/static/media/animeRecommendation.2c8610177ab216d1b08a.gif",
@@ -13,11 +13,11 @@
     "static/media/43.svg": "/portfolio/static/media/43.b872a3c3cd929b37774d6190a6a27ec4.svg",
     "index.html": "/portfolio/index.html",
     "static/media/work.svg": "/portfolio/static/media/work.e2147939f6af053ddbdbaa6e80055985.svg",
-    "main.29daf45b.css.map": "/portfolio/static/css/main.29daf45b.css.map",
+    "main.0b37f06b.css.map": "/portfolio/static/css/main.0b37f06b.css.map",
     "main.44765861.js.map": "/portfolio/static/js/main.44765861.js.map"
   },
   "entrypoints": [
-    "static/css/main.29daf45b.css",
+    "static/css/main.0b37f06b.css",
     "static/js/main.44765861.js"
   ]
 }
