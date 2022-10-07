@@ -1,0 +1,175 @@
+.skillsContainer {
+  height: fit-content;
+  padding: 5vh 0 5vh 0;
+  background-color: #252534;
+}
+
+.skillsTitleContainer {
+  display: flex;
+  flex-direction: row;
+  /* background-color: aqua; */
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.skillsTitle {
+  /* background-color: black; */
+  color: white;
+  font-size: 40px;
+  /* padding: 0px 20px; */
+  border-radius: 5px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
+
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.allSkillsContainer {
+  position: relative;
+  /* right: 200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skillsRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.skillsItem {
+  padding: 5px 10px;
+  font-size: 17px;
+  color: white;
+  /* border: 1px solid black; */
+  /* border-radius: 5px; */
+  /* margin: 10px; */
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
+
+  /* background-color: rgb(242, 249, 255); */
+}
+.skillsIcon {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  color: white;
+}
+.firstRow,
+.thirdRow {
+  /* animation: skillsSlideRight 4s ease-in-out infinite; */
+}
+.secondRow,
+.fourthRow {
+  /* animation: skillsSlideLeft 5s ease-in-out infinite; */
+}
+
+.arrow {
+  color: white;
+  position: relative;
+  top: 13px;
+  margin: 0 15px;
+}
+.resumeSvgContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  left: 150px;
+  /* transform: scaleX(-1); */
+}
+.resumeTitle {
+  /* background-color: black; */
+  color: white;
+  font-size: 40px;
+  /* padding: 0px 20px; */
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
+
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.resumeSvg {
+  height: 200px;
+  width: auto;
+  cursor: pointer;
+
+  /* background-color: aqua; */
+}
+.resumeSvg:hover {
+  opacity: 0.7;
+}
+.iconContainer {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.findMe {
+  font-size: 20px;
+  font-weight: 500;
+}
+.icon {
+  /* background-color: aqua; */
+  /* color: white; */
+}
+
+@keyframes skillsSlideRight {
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes skillsSlideLeft {
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* 
+.skillsItem {
+  background-color: #000000;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.skillsItem:disabled {
+  pointer-events: none;
+}
+
+.skillsItem:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.skillsItem:active {
+  box-shadow: none;
+  transform: translateY(0);
+} */

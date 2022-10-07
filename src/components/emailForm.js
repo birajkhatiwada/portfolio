@@ -2,6 +2,26 @@ import "./emailForm.css";
 import emailjs, { init } from "@emailjs/browser";
 import { useRef } from "react";
 import { Parallax } from "react-scroll-parallax";
+import mailSvgImg from "./images/43.svg";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import SendIcon from "@mui/icons-material/Send";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import mailSvg from "./images/mail.svg";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import { palette } from "@mui/system";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+const styles = {
+  input: {
+    color: "white"
+  }
+};
 
 const EmailForm = (props) => {
   // console.log(props.emailAppClick);
@@ -30,126 +50,94 @@ const EmailForm = (props) => {
   return (
     <>
       <div className="EmailContainer">
-        <Parallax>
-          <div className="contactTitle">
-            <Parallax
-              scale={[1, 1.1]}
-              startScroll={window.innerWidth < 1500 ? 4500 : 5000}
-              endScroll={window.innerWidth < 1500 ? 4700 : 5100}
-              // opacity={[1, 0]}
-            >
-              <div className="contactTitleBar">CONTACT</div>
-            </Parallax>
-          </div>
-        </Parallax>
+        <div className="contactTitle">
+          <div className="contactTitleBar">Contact</div>
+        </div>
         <div className="mainMailingContainer">
-          <div className="mainMailingContainerSecond">
-            <Parallax speed={0}>
-              <div className="leftbox">
-                <div className="chatWithMeContainer">
-                  <Parallax
-                    translateX={[0, 50, "ease"]}
-                    startScroll={window.innerWidth < 1500 ? 4700 : 5300}
-                    endScroll={window.innerWidth < 1500 ? 4900 : 5500}
-                  >
-                    {" "}
-                    <div className="chatI chat">Let's Connect!</div>
-                  </Parallax>
-                  <Parallax
-                    translateX={[0, -50, "ease"]}
-                    startScroll={window.innerWidth < 1500 ? 4800 : 5400}
-                    endScroll={window.innerWidth < 1500 ? 5000 : 5600}
-                  >
-                    {" "}
-                    <div className="chatII chat">Collaborate</div>
-                  </Parallax>
-                  <Parallax
-                    translateX={[0, 30, "ease"]}
-                    startScroll={window.innerWidth < 1500 ? 4900 : 5500}
-                    endScroll={window.innerWidth < 1500 ? 5100 : 5700}
-                  >
-                    {" "}
-                    <div className="ideas chat">Ideas, thoughts</div>
-                  </Parallax>
-                  <Parallax
-                    translateX={[0, -20, "ease"]}
-                    startScroll={window.innerWidth < 1500 ? 5000 : 5600}
-                    endScroll={window.innerWidth < 1500 ? 5200 : 5800}
-                  >
-                    <div className="createSomething chat">
-                      and Let's create something together!
-                    </div>
-                  </Parallax>
-
-                  <div className="mailMeContainer">
-                    <Parallax
-                      scale={[1, 1.1]}
-                      startScroll={window.innerWidth < 1500 ? 5100 : 5700}
-                      endScroll={window.innerWidth < 1500 ? 5200 : 5900}
-                    >
-                      <div className="mailMe chat">
-                        you can reach out to me here ↓ or message me BELOW!
-                      </div>
-                    </Parallax>
-                    <Parallax
-                      startScroll={window.innerWidth < 1500 ? 5200 : 5800}
-                      endScroll={window.innerWidth < 1500 ? 5300 : 6000}
-                      scale={[1, 1.1]}
-                    >
-                      <div className="myMail chat">
-                        khatiwadabiraj10@gmail.com
-                      </div>
-                    </Parallax>
-                  </div>
-                </div>
-              </div>
-            </Parallax>
-            {/* <div className='mailsvgContainer'>
-          <img className='mailAvatar' src={mail}></img>
-        </div> */}
-            <Parallax speed={0}>
-              <div className="formContainerOuter">
-                <form className="formContainer" ref={form} onSubmit={sendEmail}>
-                  {/* <div className="titleBar">
-            <div className="green"></div>
-            <div className="yellow"></div>
-            <div className="red"></div>
-            <div className="emailTitleName">Email</div>
-          </div> */}
-                  <div className="sendMeMsg chat">Send me a message!</div>
-                  {/* <div className="yourEmail labell">Your Email </div> */}
-                  <input
-                    className="emailInput inputbox"
-                    placeholder="Email address*"
-                    name="from_email"
-                    required
-                  ></input>
-                  {/* <div className="line"></div> */}
-                  {/* <div className="firstName labell">Your Name</div> */}
-                  <input
-                    className="nameInput inputbox"
-                    placeholder="Full name"
-                    name="from_name"
-                  ></input>
-                  <input
-                    className="nameInput inputbox"
-                    placeholder="Subject"
-                    // name="from_name"
-                  ></input>
-                  {/* <div className="secondline"></div> */}
-                  <div className="messageOg labell">Your Message here*</div>
-                  <textarea
-                    className="messageInput inputbox"
-                    name="message"
-                    required
-                  ></textarea>
-                  <button className="sendBtn chat" type="submit">
-                    Send Message
-                  </button>
-                </form>
-              </div>
-            </Parallax>
+          <div className="mailSvgContainer">
+            <img className="mailSvg" src={mailSvg}></img>
           </div>
+          <div className="mainMailingContainerSecond">
+            <Box
+              component="form"
+              sx={{
+                "& .MuiTextField-root": {
+                  m: 1,
+                  width: "50ch",
+                  color: "text.primary"
+                },
+                textField: {
+                  border: "1px solid blue"
+                }
+              }}
+              noValidate
+              autoComplete="off"
+            >
+              <div>
+                <TextField
+                  required
+                  id="filled-require"
+                  // variant="filled"
+                  name="from_email"
+                  label="Email Address"
+                  size="small"
+                  // defaultValue="email"
+                />
+              </div>
+              <div>
+                <TextField
+                  autoFocus={true}
+                  id="outlined-required"
+                  label="Full Name"
+                  name="from_name"
+                  // variant="filled"
+                  size="small"
+
+                  // defaultValue="email"
+                />
+              </div>
+              <div>
+                <TextField
+                  id="outlined-required"
+                  label="Subject"
+                  // variant="filled"
+                  size="small"
+
+                  // defaultValue="email"
+                />
+              </div>
+              <div>
+                <TextField
+                  required
+                  color="info"
+                  // className="textField"
+                  // classes={{ className: "textField" }}
+                  id="filled-multiline-static"
+                  label="Message"
+                  name="message"
+                  multiline
+                  size="small"
+                  rows={4}
+                  // defaultValue="Default Value"
+                  // variant="filled"
+                />
+              </div>
+              <Button
+                sx={{ width: "60ch" }}
+                variant="contained"
+                type="submit"
+                endIcon={<SendIcon />}
+              >
+                Send
+              </Button>
+            </Box>
+          </div>
+        </div>
+        <div className="iconContainer">
+          <div className="findMe">You can also find me here!</div>
+          <LinkedInIcon fontSize="large" className="icon"></LinkedInIcon>
+          <GitHubIcon fontSize="large" className="icon"></GitHubIcon>
+          <InstagramIcon fontSize="large" className="icon"></InstagramIcon>
         </div>
       </div>
     </>
@@ -157,3 +145,101 @@ const EmailForm = (props) => {
 };
 
 export default EmailForm;
+
+// <Parallax speed={0}>
+//               <div className="leftbox">
+//                 <div className="chatWithMeContainer">
+//                   <Parallax
+//                     translateX={[0, 15, "ease"]}
+//                     startScroll={window.innerWidth < 1500 ? 4700 : 5300}
+//                     endScroll={window.innerWidth < 1500 ? 4900 : 5500}
+//                   >
+//                     {" "}
+//                     <div className="chatI chat">Let's Connect!</div>
+//                   </Parallax>
+//                   <Parallax
+//                     translateX={[0, -15, "ease"]}
+//                     startScroll={window.innerWidth < 1500 ? 4800 : 5400}
+//                     endScroll={window.innerWidth < 1500 ? 5000 : 5600}
+//                   >
+//                     {" "}
+//                     <div className="chatII chat">Collaborate</div>
+//                   </Parallax>
+//                   <Parallax
+//                     translateX={[0, 7, "ease"]}
+//                     startScroll={window.innerWidth < 1500 ? 4900 : 5500}
+//                     endScroll={window.innerWidth < 1500 ? 5100 : 5700}
+//                   >
+//                     {" "}
+//                     <div className="ideas chat">Ideas, thoughts</div>
+//                   </Parallax>
+//                   <Parallax
+//                     translateX={[0, -2, "ease"]}
+//                     startScroll={window.innerWidth < 1500 ? 5000 : 5600}
+//                     endScroll={window.innerWidth < 1500 ? 5200 : 5800}
+//                   >
+//                     <div className="createSomething chat">
+//                       and Let's create something together!
+//                     </div>
+//                   </Parallax>
+
+//                   <div className="mailMeContainer">
+//                     <Parallax
+//                       scale={[1, 1.1]}
+//                       startScroll={window.innerWidth < 1500 ? 5100 : 5700}
+//                       endScroll={window.innerWidth < 1500 ? 5200 : 5900}
+//                     >
+//                       <div className="mailMe chat">
+//                         you can reach out to me here ↓ or message me BELOW!
+//                       </div>
+//                     </Parallax>
+//                     <Parallax
+//                       startScroll={window.innerWidth < 1500 ? 5200 : 5800}
+//                       endScroll={window.innerWidth < 1500 ? 5300 : 6000}
+//                       scale={[1, 1.1]}
+//                     >
+//                       <div className="myMail chat">
+//                         khatiwadabiraj10@gmail.com
+//                       </div>
+//                     </Parallax>
+//                   </div>
+//                 </div>
+//               </div>
+//             </Parallax>
+
+{
+  /* <Parallax speed={0}>
+<div className="formContainerOuter">
+  <form className="formContainer" ref={form} onSubmit={sendEmail}>
+    <div className="sendMeMsg chat">Send me a message!</div>
+
+    <input
+      className="emailInput inputbox"
+      placeholder="Email address*"
+      name="from_email"
+      required
+    ></input>
+
+    <input
+      className="nameInput inputbox"
+      placeholder="Full name"
+      name="from_name"
+    ></input>
+    <input
+      className="nameInput inputbox"
+      placeholder="Subject"
+    ></input>
+
+    <div className="messageOg labell">Your Message here*</div>
+    <textarea
+      className="messageInput inputbox"
+      name="message"
+      required
+    ></textarea>
+    <button className="sendBtn chat" type="submit">
+      Send Message
+    </button>
+  </form>
+</div>
+</Parallax> */
+}

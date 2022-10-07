@@ -2,10 +2,12 @@ import "./App.scss";
 import ProjectList from "./components/projectsList";
 import EmailForm from "./components/emailForm";
 import "aos/dist/aos.css";
-import svg from "./components/public/22.svg";
+import svg from "./components/images/coding.svg";
 import { Link } from "react-scroll";
 import AnimatedCursor from "react-animated-cursor";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import Skills from "./components/skills";
+import Experiences from "./components/experiences";
 
 function App() {
   return (
@@ -23,37 +25,38 @@ function App() {
             border: "2px solid #000000"
           }}
         ></AnimatedCursor> */}
-        <div className="linksContainer">
-          <div className="linkLine"></div>
-          <Link
-            className="projectLink"
-            to="contactRef"
-            spy={true}
-            smooth={true}
-          >
-            CONTACT
-          </Link>
-          <Link
-            className="projectLink"
-            to="projectRef"
-            spy={true}
-            smooth={true}
-          >
-            PROJECT
-          </Link>
-          <Link
-            className="projectLink"
-            to="firstPageRef"
-            spy={true}
-            smooth={true}
-          >
-            HOME
-          </Link>
+        <div className="navigation">
+          <div className="linksContainer">
+            <Link
+              className="projectLink"
+              to="contactRef"
+              spy={true}
+              smooth={true}
+            >
+              CONTACT
+            </Link>
+            <Link
+              className="projectLink"
+              to="projectRef"
+              spy={true}
+              smooth={true}
+            >
+              PROJECT
+            </Link>
+            <Link
+              className="projectLink"
+              to="firstPageRef"
+              spy={true}
+              smooth={true}
+            >
+              HOME
+            </Link>
+          </div>
+          <div className="fixedEmailContainer">
+            <div className="fixedEmailLink">khatiwadabiraj10@gmail.com</div>
+          </div>
         </div>
-        <div className="fixedEmailContainer">
-          <div className="linkLineEmail"></div>
-          <div className="fixedEmailLink">khatiwadabiraj10@gmail.com</div>
-        </div>
+
         <div className="aboutMe">
           <div className="aboutMe2">
             <Parallax speed={10}>
@@ -62,36 +65,44 @@ function App() {
             </Parallax>
 
             <Parallax speed={7}>
-              <div className="aboutMeComp aboutMeMyName">biraj khatiwada.</div>
+              <div className="aboutMeComp aboutMeMyName">
+                def{" about("}BIRAJ KHATIWADA{"):"}
+              </div>
             </Parallax>
 
             <Parallax speed={5}>
               {" "}
               <div className="aboutMeComp aboutMeDescription">
-                I enjoy desiging and creating, whether it's art or computer
-                programming. Both allow me to turn a small idea into an entire
-                work of art. Separately, computer programming allows me to
-                joyfully explore my interest in problem solving.
+                print {"("} I enjoy desiging and creating, whether it's art or
+                computer programming. Both allow me to turn a small idea into an
+                entire work of art. Separately, computer programming allows me
+                to joyfully explore my interest in problem solving. {")"}
               </div>
             </Parallax>
 
             <div className="aboutMeComp aboutMeSoftwareEngineer">
-              Software Engineer
+              {"{"} Software Engineer
             </div>
-            <div className="aboutMeComp aboutMeWebDeveloper">Web Developer</div>
+            <div className="aboutMeComp aboutMeWebDeveloper">
+              Web Developer {"}"}
+            </div>
           </div>
         </div>
         <Parallax speed={-15}>
           <div className="avatarContainer">
             <img className="avatar" src={svg}></img>
+            {/* <div className="insideAvatar"></div> */}
           </div>
         </Parallax>
       </div>
       <ProjectList></ProjectList>
+
+      <Experiences></Experiences>
+      <Skills></Skills>
+
       <div id="contactRef" className="emailContainer">
         <EmailForm className="emailForm"></EmailForm>
       </div>
-
       <div className="footer">
         <div className="footerContainer">
           <div className="designedByContainer">

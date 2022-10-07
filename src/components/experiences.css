@@ -1,0 +1,75 @@
+.experiencesContainer {
+  background-color: rgb(241, 255, 254);
+  height: fit-content;
+  padding: 0vh 20vh 5vh 20vh;
+}
+
+.experiencesTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5vh 0;
+}
+.experiencesTitle {
+  /* background-color: white; */
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.graduationSvg {
+  height: 150px;
+  width: 500px;
+  /* background-color: aqua; */
+}
+
+.date {
+  color: white;
+}
+.experiencesListContainer {
+  color: rgb(33, 150, 243);
+}
+.experienceCompany {
+  font-size: 25px;
+}
+.experienceTitle {
+  font-size: 20px;
+}
+.experienceItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.experienceSeeMoreContainer {
+  justify-content: center;
+}
+.experienceSeeMore {
+  padding: 5px 10px;
+  width: fit-content;
+  /* justify-content: center; */
+  font-size: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 10px;
+  background-color: white;
+}
+
+.outerExperienceDescription {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.experienceDescription {
+  /* background-color: blueviolet; */
+  text-align: left;
+  justify-items: center;
+  font-size: 15px;
+}

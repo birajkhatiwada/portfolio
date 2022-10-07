@@ -6,10 +6,10 @@
   color: black;
   /* padding-bottom: 60vh; */
   /* height: 100vh; */
-  /* background-color: rgb(46, 148, 150); */
+  background-color: rgba(244, 250, 255, 0.9);
   /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px; */
-  background-color: white;
+  /* background: linear-gradient(to bottom right, #f1e4ff 50%, #ebf6ff 80%); */
   display: flex;
   flex-direction: column;
 }
@@ -22,45 +22,37 @@
   /* width: fit-content; */
   /* background-color: #5f1461; */
 
-  font-size: 150px;
+  font-size: 40px;
   font-weight: 600;
   /* color: #a9d6e5; */
-  margin: 25vh 0 15vh 0;
+  margin: 5vh 0 3vh 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+.textField::placeholder {
+  color: #964be0;
+  background-color: #12d8fa;
+}
+.MuiTextField-root {
+  color: white;
+}
 .contactTitleBar {
   position: relative;
-  letter-spacing: 50px;
+  /* letter-spacing: 50px; */
+  color: black;
   /* border: 3px solid #1fa2ff; */
-  border-radius: 10px;
+  border-radius: 5px;
   /* border-right: 3px solid #1FA2FF; */
   /* animation: blinker-contact 2s ease-in-out infinite; */
-  /* padding: 0px 10px 10px 10px; */
+  padding: 0px 20px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
 }
 @media (max-width: 1500px) {
   .contactTitle {
     font-size: 50px;
   }
 }
-/* .contactTitleBar::before{
-  content: '';
-  width: 50px;
-  height: 3px;
-  background: rgb(169, 214, 229, 0.9);
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-.contactTitleBar::after{
-  content: '';
-  width: 3px;
-  height: 30px;
-  background: rgb(169, 214, 229, 0.9);
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-} */
+
 @keyframes blinker-contact {
   0% {
     border-top-color: #012a4a;
@@ -84,10 +76,6 @@
   }
 }
 .lineUnderContact {
-  /* position: absolute; */
-  /* margin-top: 20vh; */
-  /* margin: 0 auto; */
-  /* margin-bottom: 20vh; */
   align-content: center;
   width: 100%;
   height: 2px;
@@ -101,13 +89,15 @@
   flex-direction: row;
   justify-content: center;
   padding: 0 50px;
-  margin-bottom: 20vh;
-  /* background-color: #12d8fa; */
+  margin-bottom: 7vh;
+  /* background-color: #1fa2ff; */
 }
+
 .mainMailingContainerSecond {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background-color: #012a4a; */
 }
 
 .leftbox {
@@ -122,14 +112,14 @@
   justify-content: center;
 }
 .chatI {
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 600;
   /* padding-top: 10vh; */
   /* background-color: #12d8fa; */
 }
 .chatII,
 .ideas {
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 600;
   /* background-color: #1fa2ff; */
 }
@@ -143,15 +133,15 @@
 }
 .createSomething {
   padding-top: 14px;
-  font-size: 30px;
-  padding-bottom: 14px;
-  margin-bottom: 5vh;
+  font-size: 25px;
+  /* padding-bottom: 14px; */
+  /* margin-bottom: 5vh; */
 }
 .mailMeContainer {
   display: flex;
   padding-top: 15px;
   flex-direction: column;
-  font-size: 30px;
+  font-size: 25px;
 }
 .myMail {
   /* border: 1px solid #a9d6e5; */
@@ -168,13 +158,24 @@
   flex-wrap: row;
   justify-content: center;
 }
+.mailSvgContainer {
+  /* background-color: #12d8fa; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mailSvg {
+  height: 30vh;
+  /* width: 25vw; */
+  /* background-color: #964be0; */
+}
 .formContainer {
   margin-top: 10vh;
   padding: 30px;
   /* position: relative; */
   top: 10vh;
   left: 55%;
-  height: fit-content;
+  /* height: fit-content; */
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -183,21 +184,6 @@
   text-align: left;
   /* background-color: #47773c; */
   border-radius: 20px;
-}
-
-.mailsvgContainer {
-  /* background-color: #964be0; */
-  width: fit-content;
-  height: fit-content;
-  position: absolute;
-  overflow: hidden;
-  left: 22%;
-  top: 50%;
-  opacity: 0.4;
-}
-.mailAvatar {
-  /* height: 40vh;
-  width: 50vw; */
 }
 
 .sendMeMsg {
@@ -213,11 +199,12 @@
 }
 .inputbox {
   height: 35px;
-  width: 40vw;
+  width: 450px;
   border: none;
   font-size: 18px;
   padding: 5px 15px;
-  background-color: rgba(79, 123, 255, 0.1);
+  /* background-color: rgba(79, 123, 255, 0.1); */
+  background-color: white;
   border-radius: 7px;
   /* border-bottom: 2px solid rgb(0,0,0,0.4); */
 }
@@ -352,6 +339,6 @@
 
 @media (max-width: 1500px) {
   .contactTitle {
-    font-size: 120px;
+    font-size: 50px;
   }
 }
