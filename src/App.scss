@@ -97,15 +97,18 @@ html.dark-mode {
   height: 100vh;
   display: flex;
   padding: 0 250px;
+  color: #252534;
   flex-direction: row;
+  // border-right: 50px solid black;
+  // border-left: 50px solid black;
   justify-content: space-around;
   // border-bottom: 1px solid rgb(255, 255, 255, 0.5);
   // background: linear-gradient(to bottom,  #000000  13%,#ffffff 13%,#ffffff 85%, #000000 85%);
   // background-color: #e7f5ff;
   // background: linear-gradient(to bottom right, #dff1ff 50%, #eddcff 80%);
-  background: #005aa7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fffde4, #005aa7);
-  background: linear-gradient(to right, #fffde4, #005aa7);
+  background: #72728f; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #fffde4, #005aa7);
+  // background: linear-gradient(to right, #fffde4, #005aa7);
 }
 .EmailForm {
   color: blue;
@@ -114,60 +117,104 @@ html.dark-mode {
 .navigation {
   position: fixed;
   z-index: 2;
-  bottom: 0vh;
+  // bottom: 0px;
   font-size: 15px;
-  width: 90%;
+  font-weight: 600;
+  // height: fit-content;
+  width: 100%;
   // left: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 15px;
-  background-color: #252534;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+.linksContainerMain {
+  // background-color: #0195fe;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .linksContainer {
+  display: flex;
+  flex-direction: row;
+  // width: 450px;
+  // justify-content: space-around;
+  // background-color: #ffd700;
   // height: 100vh;
 }
-
+.iconButtonContainer {
+  // background-color: #0195fe;
+  // height: 30px;
+  // width: 30px;
+  // height: fit-content;
+  // width: fit-content;
+  padding: 0;
+}
+.resumeLink {
+  text-decoration: none;
+  color: white;
+}
 .projectLink {
   // opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
   margin: 0;
-  margin-left: 10px;
+  // margin-left: 10px;
   // cursor: pointer;
-  border-radius: 5px;
-  // padding: 2px 4px;
+  padding: 2px 15px;
   transition: all 0.2s ease-in-out;
 
   cursor: pointer;
-  // background-color: #1FA2FF;
+  // background-color: #0195fe;
   // height: 100vh;
   // transition: transform 1s ease-in-out;
 }
 .projectLink:hover {
+  background-position: 0 100%;
   opacity: 1;
-  color: #0195fe;
+  background-color: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  // color: #0195fe;
   // transform: scale(1);
 }
 
 .fixedEmailContainer {
+  // background-color: #005aa7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.fixedEmailLink {
+.nameNavigation {
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
 }
-.fixedEmailLink:hover {
+.nameNavigation:hover {
   opacity: 1;
   cursor: pointer;
   background-color: black;
   color: white;
   // color: #ffd700;
 }
+.nameNavigationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+.resumeLinkContainer {
+  display: flex;
+}
 
 .aboutMe {
-  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,7 +234,6 @@ html.dark-mode {
 }
 .aboutMeComp {
   text-align: start;
-  color: black;
   font-weight: 700;
   font-size: 50px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -196,10 +242,9 @@ html.dark-mode {
 }
 
 .aboutMeDescription {
-  opacity: 0.5;
+  opacity: 0.8;
   font-size: 17px;
   font-weight: 600;
-  color: black;
   width: 580px;
   // background-color: #1fa2ff;
   // opacity: 0.7;
@@ -209,22 +254,20 @@ html.dark-mode {
 
 .hiMyName {
   font-weight: 600;
-  opacity: 0.5;
+  opacity: 0.8;
   font-size: 17px;
   padding-left: 5px;
-  color: black;
   // background-color: #1fa2ff;
 }
 
 .aboutMeMyName {
   // position: absolute;
   // background-color: white;
-  color: #252534;
   font-weight: 600;
   width: fit-content;
   // padding: 0px 10px 7px 10px;
   border-radius: 5px;
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   // opacity: 0.9;
@@ -241,11 +284,12 @@ html.dark-mode {
   // top: 33vh;
   // left: 23vw;
   z-index: 1;
+
   // letter-spacing: 20px;
   // opacity: 0.8;
   // background: linear-gradient(to right, #1fa2ff 20%, #000000 40%);
   // color: green;
-  color: #0078cf;
+  // color: #0078cf;
   /* background-clip: text; */
   /* background: -webkit-linear-gradient(#eee, #333); */
   // -webkit-background-clip: text;
@@ -266,7 +310,7 @@ html.dark-mode {
   // opacity: 0.8;
   // background: linear-gradient(to right, #000000 20%, #1fa2ff 0%);
   // color: #6c63ff;
-  color: #0078cf;
+  // color: #0078cf;
 
   // color: rgb(113, 0, 128);
   // -webkit-background-clip: text;
@@ -436,11 +480,7 @@ html.dark-mode {
     opacity: 1;
     transform: translateY(10px);
   }
-  25% {
-    // opacity: 1;
-  }
   50% {
-    // z-index: ;
     opacity: 0.5;
 
     transform: translateY(40px);
@@ -449,7 +489,6 @@ html.dark-mode {
     opacity: 0.3;
   }
   100% {
-    // z-index:
     opacity: 1;
     transform: translateY(10px);
   }
@@ -467,14 +506,10 @@ html.dark-mode {
   50% {
     opacity: 1;
     z-index: 2;
-
     transform: translateY(-33px);
   }
   99% {
     z-index: 2;
-  }
-  75% {
-    // opacity: 1;
   }
   100% {
     opacity: 0.5;
@@ -486,28 +521,24 @@ html.dark-mode {
 @-webkit-keyframes slideUpSoftwareEngineer {
   0% {
     opacity: 1;
-  }
-  25% {
-    // opacity: 1;
+    transform: translateY(10px);
   }
   50% {
-    // z-index: ;
     opacity: 0.5;
 
-    transform: translateY(120px);
+    transform: translateY(40px);
   }
   75% {
     opacity: 0.3;
   }
   100% {
-    // z-index:
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(10px);
   }
 }
 @-webkit-keyframes slideUpWebDeveloper {
   0% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
   25% {
     opacity: 0.3;
@@ -518,16 +549,13 @@ html.dark-mode {
   50% {
     opacity: 1;
     z-index: 2;
-    transform: translateY(-80px);
+    transform: translateY(-33px);
   }
   99% {
     z-index: 2;
   }
-  75% {
-    opacity: 1;
-  }
   100% {
-    opacity: 0.7;
+    opacity: 0.5;
     z-index: 0;
     transform: translateY(0px);
   }

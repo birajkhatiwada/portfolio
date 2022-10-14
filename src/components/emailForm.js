@@ -49,7 +49,7 @@ const EmailForm = (props) => {
   };
   return (
     <>
-      <div className="EmailContainer">
+      <div id="contactRef" className="EmailContainer">
         <div className="contactTitle">
           <div className="contactTitleBar">Contact</div>
         </div>
@@ -122,22 +122,46 @@ const EmailForm = (props) => {
                   // variant="filled"
                 />
               </div>
-              <Button
+              {/* <Button
                 sx={{ width: "60ch" }}
                 variant="contained"
                 type="submit"
                 endIcon={<SendIcon />}
               >
                 Send
-              </Button>
+              </Button> */}
+              <div className="sendBtnContainer">
+                <button className="sendMsg">Send</button>
+              </div>
             </Box>
           </div>
         </div>
         <div className="iconContainer">
           <div className="findMe">You can also find me here!</div>
-          <LinkedInIcon fontSize="large" className="icon"></LinkedInIcon>
-          <GitHubIcon fontSize="large" className="icon"></GitHubIcon>
-          <InstagramIcon fontSize="large" className="icon"></InstagramIcon>
+          <a
+            href="https://www.linkedin.com/in/birajkhatiwada/"
+            className="socialMediaLink"
+            target="_blank"
+          >
+            {" "}
+            <LinkedInIcon fontSize="large" className="icon"></LinkedInIcon>
+          </a>
+
+          <a
+            href="https://github.com/birajkhatiwada"
+            className="socialMediaLink"
+            target="_blank"
+          >
+            <GitHubIcon fontSize="large" className="icon github"></GitHubIcon>
+          </a>
+
+          <a href="" className="socialMediaLink" target="_blank">
+            {" "}
+            <InstagramIcon
+              fontSize="large"
+              className="icon instagram"
+            ></InstagramIcon>
+          </a>
         </div>
       </div>
     </>

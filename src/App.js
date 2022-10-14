@@ -2,121 +2,116 @@ import "./App.scss";
 import ProjectList from "./components/projectsList";
 import EmailForm from "./components/emailForm";
 import "aos/dist/aos.css";
-import svg from "./components/images/coding.svg";
-import { Link } from "react-scroll";
 import AnimatedCursor from "react-animated-cursor";
-import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import Skills from "./components/skills";
 import Experiences from "./components/experiences";
+import Navigation from "./components/navigation";
+import Home from "./components/home";
+import Footer from "./components/footer";
+import Avatar from "@mui/material/Avatar";
+import Badge from "@mui/material/Badge";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import Box from "@mui/material/Box";
+import { palette } from "@mui/system";
+import { spacing } from "@mui/system";
+
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import FolderIcon from "@mui/icons-material/Folder";
+import { IconButton } from "@mui/material";
+import HomeIcon from "@mui/icons-material/Home";
+import HistoryIcon from "@mui/icons-material/History";
+import ContactMailIcon from "@mui/icons-material/ContactMail";
+import ViewCarouselIcon from "@mui/icons-material/ViewCarousel";
+import ViewTimelineIcon from "@mui/icons-material/ViewTimeline";
+import ViewModuleIcon from "@mui/icons-material/ViewModule";
+import EmailIcon from "@mui/icons-material/Email";
 
 function App() {
   return (
     <div className="App">
-      <div id="firstPageRef" className="firstPage">
-        {/* <AnimatedCursor
-          color="255,255,255"
-          innerSize={5}
-          outerSize={35}
-          innerScale={0}
-          outerScale={1.2}
-          outerAlpha={0.2}
-          outerStyle={{
-            color: "red",
-            border: "2px solid #000000"
-          }}
-        ></AnimatedCursor> */}
-        <div className="navigation">
-          <div className="linksContainer">
-            <Link
-              className="projectLink"
-              to="contactRef"
-              spy={true}
-              smooth={true}
-            >
-              CONTACT
-            </Link>
-            <Link
-              className="projectLink"
-              to="projectRef"
-              spy={true}
-              smooth={true}
-            >
-              PROJECT
-            </Link>
-            <Link
-              className="projectLink"
-              to="firstPageRef"
-              spy={true}
-              smooth={true}
-            >
-              HOME
-            </Link>
-          </div>
-          <div className="fixedEmailContainer">
-            <div className="fixedEmailLink">khatiwadabiraj10@gmail.com</div>
-          </div>
-        </div>
-
-        <div className="aboutMe">
-          <div className="aboutMe2">
-            <Parallax speed={10}>
-              {" "}
-              <div className="aboutMeComp hiMyName">hi! I am</div>
-            </Parallax>
-
-            <Parallax speed={7}>
-              <div className="aboutMeComp aboutMeMyName">
-                def{" about("}BIRAJ KHATIWADA{"):"}
-              </div>
-            </Parallax>
-
-            <Parallax speed={5}>
-              {" "}
-              <div className="aboutMeComp aboutMeDescription">
-                print {"("} I enjoy desiging and creating, whether it's art or
-                computer programming. Both allow me to turn a small idea into an
-                entire work of art. Separately, computer programming allows me
-                to joyfully explore my interest in problem solving. {")"}
-              </div>
-            </Parallax>
-
-            <div className="aboutMeComp aboutMeSoftwareEngineer">
-              {"{"} Software Engineer
-            </div>
-            <div className="aboutMeComp aboutMeWebDeveloper">
-              Web Developer {"}"}
-            </div>
-          </div>
-        </div>
-        <Parallax speed={-15}>
-          <div className="avatarContainer">
-            <img className="avatar" src={svg}></img>
-            {/* <div className="insideAvatar"></div> */}
-          </div>
-        </Parallax>
-      </div>
+      <Navigation></Navigation>
+      <Home></Home>
       <ProjectList></ProjectList>
-
       <Experiences></Experiences>
       <Skills></Skills>
-
-      <div id="contactRef" className="emailContainer">
-        <EmailForm className="emailForm"></EmailForm>
-      </div>
-      <div className="footer">
-        <div className="footerContainer">
-          <div className="designedByContainer">
-            <div className="designedBy">Designed and Coded by</div>
-            <div className="codedBy">Biraj Khatiwada</div>
-          </div>
-          <div className="copyrightContainer">
-            <div>©2022 Copyright</div>
-            <div className="emeryville">Emeryville</div>
-          </div>
-        </div>
-      </div>
+      <EmailForm></EmailForm>
+      <Footer></Footer>
     </div>
   );
 }
 
 export default App;
+
+// <div className="linksContainerMain">
+//             <div className="linksContainer">
+//               <Link
+//                 className="projectLink"
+//                 to="firstPageRef"
+//                 spy={true}
+//                 smooth={true}
+//               >
+//                 <div className="iconButtonContainer">
+//                   <IconButton
+//                     aria-label="delete"
+//                     sx={{ p: 0, "&:hover": { color: "green" } }}
+//                   >
+//                     <HomeIcon style={{ color: "white" }} />
+//                   </IconButton>
+//                 </div>
+//                 <div> Home</div>
+//               </Link>
+//               <Link
+//                 className="projectLink"
+//                 to="projectRef"
+//                 spy={true}
+//                 smooth={true}
+//               >
+//                 <div className="iconButtonContainer">
+//                   <IconButton aria-label="delete" sx={{ p: 0 }}>
+//                     <ViewCarouselIcon style={{ color: "white" }} />
+//                   </IconButton>
+//                 </div>
+//                 <div> Projects</div>
+//               </Link>
+//               <Link
+//                 className="projectLink"
+//                 to="experienceRef"
+//                 spy={true}
+//                 smooth={true}
+//               >
+//                 <div className="iconButtonContainer">
+//                   <IconButton aria-label="delete" sx={{ p: 0 }}>
+//                     <ViewTimelineIcon style={{ color: "white" }} />
+//                   </IconButton>
+//                 </div>
+//                 <div>TimeLine</div>
+//               </Link>
+
+//               <Link
+//                 className="projectLink"
+//                 to="skillsRef"
+//                 spy={true}
+//                 smooth={true}
+//               >
+//                 <div className="iconButtonContainer">
+//                   <IconButton aria-label="delete" sx={{ p: 0 }}>
+//                     <ViewModuleIcon style={{ color: "white" }} />
+//                   </IconButton>
+//                 </div>
+//                 <div>Skills</div>
+//               </Link>
+//               <Link
+//                 className="projectLink"
+//                 to="contactRef"
+//                 spy={true}
+//                 smooth={true}
+//               >
+//                 <div className="iconButtonContainer">
+//                   <IconButton aria-label="delete" sx={{ p: 0 }}>
+//                     <EmailIcon style={{ color: "white" }} />
+//                   </IconButton>
+//                 </div>
+//                 <div>Contact</div>
+//               </Link>
+//             </div>
+//           </div>

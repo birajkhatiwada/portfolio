@@ -10,7 +10,9 @@ const ProjectList = (props) => {
           <div className="projectsTitle">
             <div className="projectsTitleBar">Projects</div>
           </div>
-          <Projects></Projects>
+          <div className="projectsCenterDiv">
+            <Projects></Projects>
+          </div>
         </div>
       </div>
     </>

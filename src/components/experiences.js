@@ -26,9 +26,9 @@ import graduation from "./images/graduation.svg";
 const Experiences = () => {
   return (
     <>
-      <div className="experiencesContainer">
+      <div id="experienceRef" className="experiencesContainer">
         <div className="experiencesTitleContainer">
-          <div className="experiencesTitle">Education and Experience</div>
+          <div className="experiencesTitle">Timeline</div>
         </div>
 
         <Timeline position="alternate">
@@ -41,9 +41,9 @@ const Experiences = () => {
             >
               Jan 2021 - Mar 2022
             </TimelineOppositeContent>
-            <TimelineSeparator>
+            <TimelineSeparator color="#0daf49">
               <TimelineConnector />
-              <TimelineDot>
+              <TimelineDot sx={{ bgcolor: "#252534" }}>
                 <WorkIcon />
               </TimelineDot>
               <TimelineConnector />
@@ -94,7 +94,7 @@ const Experiences = () => {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color="primary">
+              <TimelineDot sx={{ bgcolor: "#252534" }}>
                 <SchoolIcon />
               </TimelineDot>
               <TimelineConnector />
@@ -116,10 +116,10 @@ const Experiences = () => {
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
-              <TimelineDot color="primary">
+              <TimelineDot sx={{ bgcolor: "#252534" }}>
                 <SchoolIcon />
               </TimelineDot>
-              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+              <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Typography variant="h6" component="span">
@@ -130,8 +130,8 @@ const Experiences = () => {
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-              <TimelineDot color="secondary">
+              <TimelineConnector />
+              <TimelineDot sx={{ bgcolor: "#252534" }}>
                 <RepeatIcon />
               </TimelineDot>
               <TimelineConnector />

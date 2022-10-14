@@ -1,5 +1,6 @@
 .experiencesContainer {
-  background-color: rgb(241, 255, 254);
+  /* background-color: rgb(241, 255, 254); */
+  background-color: rgba(244, 250, 255, 0.9);
   height: fit-content;
   padding: 0vh 20vh 5vh 20vh;
 }

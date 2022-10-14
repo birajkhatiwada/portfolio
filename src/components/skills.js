@@ -10,7 +10,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Skills = () => {
   return (
     <>
-      <div className="skillsContainer">
+      <div id="skillsRef" className="skillsContainer">
         <div className="skillsTitleContainer">
           {/* <ArrowBackIosIcon className="arrow"></ArrowBackIosIcon> */}
           <div className="skillsTitle">Skills</div>

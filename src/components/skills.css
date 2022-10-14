@@ -56,6 +56,10 @@
   width: 50px;
   margin-right: 10px;
   color: white;
+  transition: transform 0.2s ease-in-out;
+}
+.skillsIcon:hover {
+  transform: translateY(-3px);
 }
 .firstRow,
 .thirdRow {

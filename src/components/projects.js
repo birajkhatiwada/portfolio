@@ -65,7 +65,7 @@ const Projects = () => {
           coverflowEffect={{ rotate: 20, slideShadows: false }}
           // cardsEffect={{ slideShadows: false }}
           // flipEffect={{ limitRotation: true, slideShadows: true }}
-          navigation
+          navigation={{ color: "white" }}
           pagination={{
             clickable: true,
             dynamicBullets: true
@@ -114,15 +114,15 @@ const Projects = () => {
                         the whole shift 8 hours. I observed many of my coworkers
                         asking other for the answers. So, i decided to work on
                         this project to help the problem.
-                        <div className="linksDiv leftLinksDiv">
-                          <a className="link">
-                            https://github.com/birajkhatiwada/kronosTimeCalculator
-                          </a>
-                        </div>
                         <div className="projectLanguageDiv leftProjectLanguageDiv">
                           <div className="projectLanguage">react</div>
                           <div className="projectLanguage">html</div>
                           <div className="projectLanguage">css</div>
+                        </div>
+                        <div className="linksDiv leftLinksDiv">
+                          <a className="link">
+                            https://github.com/birajkhatiwada/kronosTimeCalculator
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -172,16 +172,17 @@ const Projects = () => {
                         engine does exactly that. It also allows users to search
                         for Animes, view trending Animes and upcoming Animes.
                         This is all done through API "api.jikan.moe".
-                        <div className="linksDiv rightLinksDiv">
-                          <a className="link">
-                            https://github.com/birajkhatiwada/AnimeRecommendations
-                          </a>
-                        </div>
+                        
                         <div className="projectLanguageDiv rightProjectLanguageDiv">
                           <div className="projectLanguage">react</div>
                           <div className="projectLanguage">html</div>
                           <div className="projectLanguage">css</div>
                           <div className="projectLanguage">Api calls</div>
+                        </div>
+                        <div className="linksDiv rightLinksDiv">
+                          <a className="link">
+                            https://github.com/birajkhatiwada/AnimeRecommendations
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -234,11 +235,7 @@ const Projects = () => {
                         to plan their trips accordingly. Users will also be able
                         to create logs for the places they have visited and the
                         places that they are interested in visiting.
-                        <div className="linksDiv leftLinksDiv">
-                          <a className="link">
-                            https://github.com/birajkhatiwada/covidTravelLog
-                          </a>
-                        </div>
+                        
                         <div className="projectLanguageDiv leftProjectLanguageDiv">
                           <div className="projectLanguage">react</div>
                           <div className="projectLanguage">node.js</div>
@@ -246,6 +243,11 @@ const Projects = () => {
                           <div className="projectLanguage">api calls</div>
                           <div className="projectLanguage">html</div>
                           <div className="projectLanguage">css</div>
+                        </div>
+                        <div className="linksDiv leftLinksDiv">
+                          <a className="link">
+                            https://github.com/birajkhatiwada/covidTravelLog
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -295,13 +297,14 @@ const Projects = () => {
                         worked on this project because I was extremely
                         fascinated by the idea of how these pathfinding
                         algorithms would look in visualization.
+                       
+                        <div className="projectLanguageDiv rightProjectLanguageDiv">
+                          <div className="projectLanguage">python</div>
+                        </div>
                         <div className="linksDiv rightLinksDiv">
                           <a className="link">
                             https://github.com/birajkhatiwada/PathfindingVisualization
                           </a>
-                        </div>
-                        <div className="projectLanguageDiv rightProjectLanguageDiv">
-                          <div className="projectLanguage">python</div>
                         </div>
                       </div>
                     </div>
