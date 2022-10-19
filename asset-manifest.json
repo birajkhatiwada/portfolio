@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3fe4e33c.css",
-    "main.js": "/portfolio/static/js/main.7e50e661.js",
-    "static/media/covidTravel.gif": "/portfolio/static/media/covidTravel.c91fbb689ad385c01608.gif",
-    "static/media/animeRecommendation.gif": "/portfolio/static/media/animeRecommendation.2c8610177ab216d1b08a.gif",
-    "static/media/pathfinding.gif": "/portfolio/static/media/pathfinding.4bd380fe1d587328136c.gif",
-    "static/media/clockoutCalculatorDemo.gif": "/portfolio/static/media/clockoutCalculatorDemo.a0cb9186181e26318ef6.gif",
-    "static/media/profile.jpeg": "/portfolio/static/media/profile.d1b01791e2cf8553a86f.jpeg",
-    "static/media/coding.svg": "/portfolio/static/media/coding.e7fd0478451b8d72ff9b93b1ea475b66.svg",
-    "static/media/khatiwadabirajResume.pdf": "/portfolio/static/media/khatiwadabirajResume.5d379c5d6ebe4aa4ad1c.pdf",
-    "static/media/graduation.svg": "/portfolio/static/media/graduation.30d81f8c8282a9bdeff8eaf30295f243.svg",
-    "static/media/resume.svg": "/portfolio/static/media/resume.b4f1bbe4a250fb56293f4d260c48e187.svg",
-    "static/media/mail.svg": "/portfolio/static/media/mail.c2712b40a9944483fb2f9e933d1373df.svg",
-    "index.html": "/portfolio/index.html",
-    "static/media/work.svg": "/portfolio/static/media/work.e2147939f6af053ddbdbaa6e80055985.svg",
-    "main.3fe4e33c.css.map": "/portfolio/static/css/main.3fe4e33c.css.map",
-    "main.7e50e661.js.map": "/portfolio/static/js/main.7e50e661.js.map"
+    "main.css": "/static/css/main.045a37b9.css",
+    "main.js": "/static/js/main.10b830ff.js",
+    "static/media/covidTravel.gif": "/static/media/covidTravel.c91fbb689ad385c01608.gif",
+    "static/media/animeRecommendation.gif": "/static/media/animeRecommendation.2c8610177ab216d1b08a.gif",
+    "static/media/pathfinding.gif": "/static/media/pathfinding.4bd380fe1d587328136c.gif",
+    "static/media/clockoutCalculatorDemo.gif": "/static/media/clockoutCalculatorDemo.a0cb9186181e26318ef6.gif",
+    "static/media/profile.jpeg": "/static/media/profile.d1b01791e2cf8553a86f.jpeg",
+    "static/media/coding.svg": "/static/media/coding.e7fd0478451b8d72ff9b93b1ea475b66.svg",
+    "static/media/khatiwadabirajResume.pdf": "/static/media/khatiwadabirajResume.5d379c5d6ebe4aa4ad1c.pdf",
+    "static/media/graduation.svg": "/static/media/graduation.30d81f8c8282a9bdeff8eaf30295f243.svg",
+    "static/media/resume.svg": "/static/media/resume.b4f1bbe4a250fb56293f4d260c48e187.svg",
+    "static/media/mail.svg": "/static/media/mail.c2712b40a9944483fb2f9e933d1373df.svg",
+    "index.html": "/index.html",
+    "static/media/work.svg": "/static/media/work.e2147939f6af053ddbdbaa6e80055985.svg",
+    "main.045a37b9.css.map": "/static/css/main.045a37b9.css.map",
+    "main.10b830ff.js.map": "/static/js/main.10b830ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fe4e33c.css",
-    "static/js/main.7e50e661.js"
+    "static/css/main.045a37b9.css",
+    "static/js/main.10b830ff.js"
   ]
 }
