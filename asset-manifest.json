@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.dc4742fe.css",
-    "main.js": "/portfolio/static/js/main.ef647dff.js",
+    "main.css": "/portfolio/static/css/main.3fe4e33c.css",
+    "main.js": "/portfolio/static/js/main.d2ab091c.js",
     "static/media/covidTravel.gif": "/portfolio/static/media/covidTravel.c91fbb689ad385c01608.gif",
     "static/media/animeRecommendation.gif": "/portfolio/static/media/animeRecommendation.2c8610177ab216d1b08a.gif",
     "static/media/pathfinding.gif": "/portfolio/static/media/pathfinding.4bd380fe1d587328136c.gif",
@@ -15,11 +15,11 @@
     "static/media/43.svg": "/portfolio/static/media/43.b872a3c3cd929b37774d6190a6a27ec4.svg",
     "index.html": "/portfolio/index.html",
     "static/media/work.svg": "/portfolio/static/media/work.e2147939f6af053ddbdbaa6e80055985.svg",
-    "main.dc4742fe.css.map": "/portfolio/static/css/main.dc4742fe.css.map",
-    "main.ef647dff.js.map": "/portfolio/static/js/main.ef647dff.js.map"
+    "main.3fe4e33c.css.map": "/portfolio/static/css/main.3fe4e33c.css.map",
+    "main.d2ab091c.js.map": "/portfolio/static/js/main.d2ab091c.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc4742fe.css",
-    "static/js/main.ef647dff.js"
+    "static/css/main.3fe4e33c.css",
+    "static/js/main.d2ab091c.js"
   ]
 }
