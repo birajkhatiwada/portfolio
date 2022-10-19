@@ -97,16 +97,19 @@ html.dark-mode {
   height: 100vh;
   display: flex;
   padding: 0 250px;
-  color: #252534;
+  // color: #252534;
+  color: black;
   flex-direction: row;
   // border-right: 50px solid black;
   // border-left: 50px solid black;
   justify-content: space-around;
   // border-bottom: 1px solid rgb(255, 255, 255, 0.5);
   // background: linear-gradient(to bottom,  #000000  13%,#ffffff 13%,#ffffff 85%, #000000 85%);
-  // background-color: #e7f5ff;
+  // background-color: rgb(117, 117, 172);
+  background-color: #727299;
+
   // background: linear-gradient(to bottom right, #dff1ff 50%, #eddcff 80%);
-  background: #72728f; /* fallback for old browsers */
+  // background: #72728f; /* fallback for old browsers */
   // background: -webkit-linear-gradient(to right, #fffde4, #005aa7);
   // background: linear-gradient(to right, #fffde4, #005aa7);
 }
@@ -179,7 +182,8 @@ html.dark-mode {
 .projectLink:hover {
   background-position: 0 100%;
   opacity: 1;
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: rgb(108, 98, 251, 0.9);
+  // color: #252534;
   backdrop-filter: blur(15px);
   border-radius: 5px;
   // color: #0195fe;
@@ -394,7 +398,7 @@ html.dark-mode {
   // z-index: 1;
   // margin-top: 70vh;
   font-size: 10px;
-  height: 25vh;
+  height: 15vh;
   width: 100%;
   color: white;
   background-color: #252534;

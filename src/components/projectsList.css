@@ -158,7 +158,7 @@
   /* color: #6c63ff; */
 
   /* border-bottom: 5px solid #6c62fb; */
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid #6c62fb;
 
   /* border-radius: 5px; */
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
@@ -491,7 +491,6 @@
   /* margin: 10px 0 10px 0; */
   /* width: 500px; */
   background-color: #252534;
-  color: white;
 
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -514,8 +513,13 @@
   cursor: pointer;
   /* color: rgb(212, 212, 212); */
   background-color: #6c62fb;
+  opacity: 1;
   /* background-color: white; */
   /* color: #012a4a; */
+}
+.link {
+  text-decoration: none;
+  color: white;
 }
 .projectLanguageDiv {
   display: flex;

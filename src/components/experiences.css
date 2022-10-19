@@ -1,6 +1,8 @@
 .experiencesContainer {
   /* background-color: rgb(241, 255, 254); */
-  background-color: rgba(244, 250, 255, 0.9);
+  /* background-color: rgba(244, 250, 255, 0.9); */
+  background-color: rgb(237, 241, 255);
+
   height: fit-content;
   padding: 0vh 20vh 5vh 20vh;
 }
@@ -12,7 +14,7 @@
   padding: 5vh 0;
 }
 .experiencesTitle {
-  /* background-color: white; */
+  /* background-color: #ffffff; */
   color: rgb(0, 0, 0);
   font-size: 40px;
   padding: 0px 20px;

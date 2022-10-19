@@ -17,12 +17,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const styles = {
-  input: {
-    color: "white"
-  }
-};
-
 const EmailForm = (props) => {
   // console.log(props.emailAppClick);
   const form = useRef();
@@ -144,7 +138,12 @@ const EmailForm = (props) => {
             target="_blank"
           >
             {" "}
-            <LinkedInIcon fontSize="large" className="icon"></LinkedInIcon>
+            <LinkedInIcon
+              hover
+              fontSize="large"
+              className="icon"
+              sx={{ "&:hover": { color: "#6c62fb" } }}
+            ></LinkedInIcon>
           </a>
 
           <a
@@ -152,7 +151,11 @@ const EmailForm = (props) => {
             className="socialMediaLink"
             target="_blank"
           >
-            <GitHubIcon fontSize="large" className="icon github"></GitHubIcon>
+            <GitHubIcon
+              sx={{ "&:hover": { color: "#6c62fb" } }}
+              fontSize="large"
+              className="icon github"
+            ></GitHubIcon>
           </a>
 
           <a href="" className="socialMediaLink" target="_blank">
@@ -160,6 +163,7 @@ const EmailForm = (props) => {
             <InstagramIcon
               fontSize="large"
               className="icon instagram"
+              sx={{ "&:hover": { color: "#6c62fb" } }}
             ></InstagramIcon>
           </a>
         </div>

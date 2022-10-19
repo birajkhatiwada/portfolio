@@ -120,7 +120,11 @@ const Projects = () => {
                           <div className="projectLanguage">css</div>
                         </div>
                         <div className="linksDiv leftLinksDiv">
-                          <a className="link">
+                          <a
+                            href="https://github.com/birajkhatiwada/kronosTimeCalculator"
+                            target="blank"
+                            className="link"
+                          >
                             https://github.com/birajkhatiwada/kronosTimeCalculator
                           </a>
                         </div>
@@ -172,7 +176,6 @@ const Projects = () => {
                         engine does exactly that. It also allows users to search
                         for Animes, view trending Animes and upcoming Animes.
                         This is all done through API "api.jikan.moe".
-                        
                         <div className="projectLanguageDiv rightProjectLanguageDiv">
                           <div className="projectLanguage">react</div>
                           <div className="projectLanguage">html</div>
@@ -180,7 +183,11 @@ const Projects = () => {
                           <div className="projectLanguage">Api calls</div>
                         </div>
                         <div className="linksDiv rightLinksDiv">
-                          <a className="link">
+                          <a
+                            href="https://github.com/birajkhatiwada/AnimeRecommendations"
+                            target="blank"
+                            className="link"
+                          >
                             https://github.com/birajkhatiwada/AnimeRecommendations
                           </a>
                         </div>
@@ -235,7 +242,6 @@ const Projects = () => {
                         to plan their trips accordingly. Users will also be able
                         to create logs for the places they have visited and the
                         places that they are interested in visiting.
-                        
                         <div className="projectLanguageDiv leftProjectLanguageDiv">
                           <div className="projectLanguage">react</div>
                           <div className="projectLanguage">node.js</div>
@@ -245,7 +251,11 @@ const Projects = () => {
                           <div className="projectLanguage">css</div>
                         </div>
                         <div className="linksDiv leftLinksDiv">
-                          <a className="link">
+                          <a
+                            href="https://github.com/birajkhatiwada/covidTravelLog"
+                            target="blank"
+                            className="link"
+                          >
                             https://github.com/birajkhatiwada/covidTravelLog
                           </a>
                         </div>
@@ -297,12 +307,15 @@ const Projects = () => {
                         worked on this project because I was extremely
                         fascinated by the idea of how these pathfinding
                         algorithms would look in visualization.
-                       
                         <div className="projectLanguageDiv rightProjectLanguageDiv">
                           <div className="projectLanguage">python</div>
                         </div>
                         <div className="linksDiv rightLinksDiv">
-                          <a className="link">
+                          <a
+                            href="https://github.com/birajkhatiwada/PathfindingVisualization"
+                            target="blank"
+                            className="link"
+                          >
                             https://github.com/birajkhatiwada/PathfindingVisualization
                           </a>
                         </div>
