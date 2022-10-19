@@ -1,8 +1,6 @@
 import "./emailForm.css";
 import emailjs, { init } from "@emailjs/browser";
 import { useRef } from "react";
-import { Parallax } from "react-scroll-parallax";
-import mailSvgImg from "./images/43.svg";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import mailSvg from "./images/mail.svg";
