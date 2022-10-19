@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3fe4e33c.css",
-    "main.js": "/portfolio/static/js/main.d2ab091c.js",
+    "main.js": "/portfolio/static/js/main.7e50e661.js",
     "static/media/covidTravel.gif": "/portfolio/static/media/covidTravel.c91fbb689ad385c01608.gif",
     "static/media/animeRecommendation.gif": "/portfolio/static/media/animeRecommendation.2c8610177ab216d1b08a.gif",
     "static/media/pathfinding.gif": "/portfolio/static/media/pathfinding.4bd380fe1d587328136c.gif",
@@ -12,14 +12,13 @@
     "static/media/graduation.svg": "/portfolio/static/media/graduation.30d81f8c8282a9bdeff8eaf30295f243.svg",
     "static/media/resume.svg": "/portfolio/static/media/resume.b4f1bbe4a250fb56293f4d260c48e187.svg",
     "static/media/mail.svg": "/portfolio/static/media/mail.c2712b40a9944483fb2f9e933d1373df.svg",
-    "static/media/43.svg": "/portfolio/static/media/43.b872a3c3cd929b37774d6190a6a27ec4.svg",
     "index.html": "/portfolio/index.html",
     "static/media/work.svg": "/portfolio/static/media/work.e2147939f6af053ddbdbaa6e80055985.svg",
     "main.3fe4e33c.css.map": "/portfolio/static/css/main.3fe4e33c.css.map",
-    "main.d2ab091c.js.map": "/portfolio/static/js/main.d2ab091c.js.map"
+    "main.7e50e661.js.map": "/portfolio/static/js/main.7e50e661.js.map"
   },
   "entrypoints": [
     "static/css/main.3fe4e33c.css",
-    "static/js/main.d2ab091c.js"
+    "static/js/main.7e50e661.js"
   ]
 }
