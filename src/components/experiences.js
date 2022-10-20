@@ -35,6 +35,28 @@ const Experiences = () => {
           <TimelineItem>
             <TimelineOppositeContent
               sx={{ m: "auto 0" }}
+              variant="body2"
+              color="text.secondary"
+            >
+              Mar 2022 - Current
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector sx={{ bgcolor: "#252534" }} />
+              <TimelineDot sx={{ bgcolor: "#6c62fb" }}>
+                <LaptopMacIcon />
+              </TimelineDot>
+              <TimelineConnector sx={{ bgcolor: "#252534" }} />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant="h6" component="span">
+                Personal Development
+              </Typography>
+              <Typography>Working on personal developement</Typography>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
               color="text.primary"

@@ -24,18 +24,16 @@ const Home = (props) => {
           </Parallax>
 
           <Parallax speed={7}>
-            <div className="aboutMeComp aboutMeMyName">
-              def{" about("}BIRAJ KHATIWADA{"):"}
-            </div>
+            <div className="aboutMeComp aboutMeMyName">BIRAJ KHATIWADA</div>
           </Parallax>
 
           <Parallax speed={5}>
             {" "}
             <div className="aboutMeComp aboutMeDescription">
-              print {"("} I enjoy desiging and creating, whether it's art or
-              computer programming. Both allow me to turn a small idea into an
-              entire work of art. Separately, computer programming allows me to
-              joyfully explore my interest in problem solving. {")"}
+              I enjoy desiging and creating, whether it's art or computer
+              programming. Both allow me to turn a small idea into an entire
+              work of art. Separately, computer programming allows me to
+              joyfully explore my interest in problem solving.
             </div>
           </Parallax>
 

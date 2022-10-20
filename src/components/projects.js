@@ -4,27 +4,16 @@ import SwiperCore, {
   Navigation,
   Pagination,
   Scrollbar,
-  A11y,
   Mousewheel,
   Autoplay,
-  EffectCube,
   Thumbs,
-  EffectFade,
-  EffectFlip,
   EffectCoverflow,
   HashNavigation
 } from "swiper";
 
-// import "swiper/css";
 import "swiper/css/bundle";
-// import "swiper/swiper.min.css";
-
 import { useRef } from "react";
 import "./projectsList.css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "swiper/css/scrollbar";
-// import "swiper/css/effectcube";
 
 SwiperCore.use([EffectCoverflow, Pagination]);
 

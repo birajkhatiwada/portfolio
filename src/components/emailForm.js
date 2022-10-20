@@ -9,7 +9,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const EmailForm = (props) => {
-  // console.log(props.emailAppClick);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -62,59 +61,38 @@ const EmailForm = (props) => {
                 <TextField
                   required
                   id="filled-require"
-                  // variant="filled"
                   name="from_email"
                   label="Email Address"
                   size="small"
-                  // defaultValue="email"
                 />
               </div>
               <div>
                 <TextField
-                  autoFocus={true}
                   id="outlined-required"
                   label="Full Name"
                   name="from_name"
-                  // variant="filled"
                   size="small"
-
-                  // defaultValue="email"
                 />
               </div>
               <div>
                 <TextField
                   id="outlined-required"
                   label="Subject"
-                  // variant="filled"
                   size="small"
-
-                  // defaultValue="email"
                 />
               </div>
               <div>
                 <TextField
                   required
                   color="info"
-                  // className="textField"
-                  // classes={{ className: "textField" }}
                   id="filled-multiline-static"
                   label="Message"
                   name="message"
                   multiline
                   size="small"
                   rows={4}
-                  // defaultValue="Default Value"
-                  // variant="filled"
                 />
               </div>
-              {/* <Button
-                sx={{ width: "60ch" }}
-                variant="contained"
-                type="submit"
-                endIcon={<SendIcon />}
-              >
-                Send
-              </Button> */}
               <div className="sendBtnContainer">
                 <button className="sendMsg">Send</button>
               </div>
