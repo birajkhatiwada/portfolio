@@ -1,5 +1,6 @@
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import svg from "./images/coding.svg";
+import React from "react";
 
 const Home = (props) => {
   return (

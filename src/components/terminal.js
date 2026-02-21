@@ -1,9 +1,10 @@
-import './terminal.css';
+import "./terminal.css";
+import React from "react";
 
 const Terminal = (props) => {
   console.log(props.terminalAppClick);
   return (
-    <div className={props.terminalAppClick ? 'terminalContainer' : 'hideForm'}>
+    <div className={props.terminalAppClick ? "terminalContainer" : "hideForm"}>
       <div className="greenButton"></div>
       <div className="yellowButton"></div>
       <div className="redButton"></div>

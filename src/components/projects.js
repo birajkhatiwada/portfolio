@@ -1,5 +1,7 @@
 import { Parallax, useParallax } from "react-scroll-parallax";
 import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
+
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -8,10 +10,10 @@ import SwiperCore, {
   Autoplay,
   Thumbs,
   EffectCoverflow,
-  HashNavigation
+  HashNavigation,
 } from "swiper";
 
-import "swiper/css/bundle";
+// import "swiper/css/bundle";
 import { useRef } from "react";
 import "./projectsList.css";
 
@@ -27,7 +29,7 @@ const Projects = () => {
     useParallax <
     HTMLDivElement >
     {
-      translateY: [-100, 100]
+      translateY: [-100, 100],
     };
 
   return (
@@ -41,7 +43,7 @@ const Projects = () => {
             Mousewheel,
             Autoplay,
             Thumbs,
-            HashNavigation
+            HashNavigation,
           ]}
           autoplay={{ delay: 3000, pauseOnMouseEnter: true }}
           mousewheel={{ sensitivity: 5, forceToAxis: true, thresholdDelta: 2 }}
@@ -57,7 +59,7 @@ const Projects = () => {
           navigation={{ color: "white" }}
           pagination={{
             clickable: true,
-            dynamicBullets: true
+            dynamicBullets: true,
             // type: "progressbar"
           }}
           onSwiper={(swiper) => console.log(swiper)}

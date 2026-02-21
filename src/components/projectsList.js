@@ -1,6 +1,7 @@
 import "./projectsList.css";
 import { Parallax } from "react-scroll-parallax";
 import Projects from "./projects";
+import React from "react";
 
 const ProjectList = (props) => {
   return (

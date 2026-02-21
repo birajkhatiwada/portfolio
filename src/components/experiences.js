@@ -1,8 +1,10 @@
 import "./experiences.css";
 import { Chrono } from "react-chrono";
+import React from "react";
+
 import {
   VerticalTimeline,
-  VerticalTimelineElement
+  VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import work from "./images/work.svg";
@@ -38,7 +40,61 @@ const Experiences = () => {
               variant="body2"
               color="text.secondary"
             >
-              Mar 2022 - Current
+              Nov 2022 - Current
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector sx={{ bgcolor: "#252534" }} />
+              <TimelineDot sx={{ bgcolor: "#252534" }}>
+                <WorkIcon />
+              </TimelineDot>
+              <TimelineConnector sx={{ bgcolor: "#252534" }} />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant="h6" component="span">
+                Odoo, Software Engineer
+              </Typography>
+              <Typography>
+                - Worked on the Odoo ERP system, a comprehensive business
+                management software that helps businesses manage their
+                operations, finances, and customer relationships
+              </Typography>
+              <Typography>
+                - Developed and maintained the Odoo ERP system, a comprehensive
+                business management software that helps businesses manage their
+                operations, finances, and customer relationships
+              </Typography>
+              <Typography></Typography>
+            </TimelineContent>
+          </TimelineItem>
+          {/* <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant="body2"
+              color="text.secondary"
+            >
+              Mar 2022 - Nov 2022
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector sx={{ bgcolor: "#252534" }} />
+              <TimelineDot sx={{ bgcolor: "#6c62fb" }}>
+                <LaptopMacIcon />
+              </TimelineDot>
+              <TimelineConnector sx={{ bgcolor: "#252534" }} />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: "12px", px: 2 }}>
+              <Typography variant="h6" component="span">
+                Personal Development
+              </Typography>
+              <Typography>Working on personal developement</Typography>
+            </TimelineContent>
+          </TimelineItem> */}
+          <TimelineItem>
+            <TimelineOppositeContent
+              sx={{ m: "auto 0" }}
+              variant="body2"
+              color="text.secondary"
+            >
+              Mar 2022 - Nov 2022
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector sx={{ bgcolor: "#252534" }} />
@@ -59,7 +115,7 @@ const Experiences = () => {
               sx={{ m: "auto 0" }}
               align="right"
               variant="body2"
-              color="text.primary"
+              color="text.secondary"
             >
               Jan 2021 - Mar 2022
             </TimelineOppositeContent>

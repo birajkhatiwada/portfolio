@@ -7,6 +7,7 @@ import mailSvg from "./images/mail.svg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import React from "react";
 
 const EmailForm = (props) => {
   const form = useRef();
@@ -48,11 +49,11 @@ const EmailForm = (props) => {
                 "& .MuiTextField-root": {
                   m: 1,
                   width: "50ch",
-                  color: "text.primary"
+                  color: "text.primary",
                 },
                 textField: {
-                  border: "1px solid blue"
-                }
+                  border: "1px solid blue",
+                },
               }}
               noValidate
               autoComplete="off"
