@@ -40,67 +40,31 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 const Navigation = (props) => {
   return (
     <div className="navigation">
-      <div className="fixedEmailContainer">
-        {/* <StyledBadge
-          overlap="circular"
-          anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-          variant="dot"
-        > */}
-        <Avatar
-          alt="Biraj Khatiwada"
-          src={profile}
-          sx={{ width: 40, height: 40 }}
-        />
-        {/* </StyledBadge> */}
-        {/* <div className="nameNavigationContainer">
-          <div className="nameNavigation">biraj</div>
-        </div> */}
-      </div>
       <div className="linksContainerMain">
         <div className="linksContainer">
-          <Link
-            className="projectLink"
-            to="firstPageRef"
-            spy={true}
-            smooth={true}
-          >
+          <Link className="navLink" to="firstPageRef" spy={true} smooth={true}>
             <div> Home</div>
           </Link>
-          <Link
-            className="projectLink"
-            to="projectRef"
-            spy={true}
-            smooth={true}
-          >
+          <Link className="navLink" to="projectRef" spy={true} smooth={true}>
             <div> Projects</div>
           </Link>
-          <Link
-            className="projectLink"
-            to="experienceRef"
-            spy={true}
-            smooth={true}
-          >
+          <Link className="navLink" to="experienceRef" spy={true} smooth={true}>
             <div>TimeLine</div>
           </Link>
 
-          <Link className="projectLink" to="skillsRef" spy={true} smooth={true}>
+          <Link className="navLink" to="skillsRef" spy={true} smooth={true}>
             <div>Skills</div>
           </Link>
-          <Link
-            className="projectLink"
-            to="contactRef"
-            spy={true}
-            smooth={true}
-          >
+          <Link className="navLink" to="contactRef" spy={true} smooth={true}>
             <div>Contact</div>
           </Link>
-        </div>
-      </div>
-      <div className="resumeLinkContainer">
-        <div className="projectLink">
-          <a className="resumeLink" href={resume} target="blank">
-            Resume
-          </a>
+          {/* <div className="resumeLinkContainer"> */}
+          <div className="navLink">
+            <a className="resumeLink" href={resume} target="blank">
+              Resume
+            </a>
+          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>

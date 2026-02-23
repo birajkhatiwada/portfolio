@@ -38,20 +38,19 @@ const Home = (props) => {
             </div>
           </Parallax>
 
-          <div className="aboutMeComp aboutMeSoftwareEngineer">
+          <div className="aboutMeComp aboutMeRole aboutMeSoftwareEngineer">
             {"{"} Software Engineer
           </div>
-          <div className="aboutMeComp aboutMeWebDeveloper">
+          <div className="aboutMeComp aboutMeRole aboutMeWebDeveloper">
             Web Developer {"}"}
           </div>
         </div>
       </div>
-      <Parallax speed={-15}>
+      {/* <Parallax speed={-15}>
         <div className="avatarContainer">
           <img className="avatar" src={svg}></img>
-          {/* <div className="insideAvatar"></div> */}
         </div>
-      </Parallax>
+      </Parallax> */}
     </div>
   );
 };

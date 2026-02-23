@@ -36,12 +36,12 @@ const EmailForm = (props) => {
     <>
       <div id="contactRef" className="EmailContainer">
         <div className="contactTitle">
-          <div className="contactTitleBar">Contact</div>
+          <div className="contactTitleBar">CONTACT</div>
         </div>
         <div className="mainMailingContainer">
-          <div className="mailSvgContainer">
+          {/* <div className="mailSvgContainer">
             <img className="mailSvg" src={mailSvg}></img>
-          </div>
+          </div> */}
           <div className="mainMailingContainerSecond">
             <Box
               component="form"
@@ -49,10 +49,26 @@ const EmailForm = (props) => {
                 "& .MuiTextField-root": {
                   m: 1,
                   width: "50ch",
-                  color: "text.primary",
                 },
-                textField: {
-                  border: "1px solid blue",
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "#bfbfd8",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "#bfbfd8",
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#6c62fb",
+                  },
+                },
+                "& .MuiInputLabel-root": {
+                  color: "#bfbfd8",
+                },
+                "& .MuiInputLabel-root.Mui-focused": {
+                  color: "#6c62fb",
+                },
+                "& .MuiInputBase-input": {
+                  color: "#bfbfd8",
                 },
               }}
               noValidate
@@ -101,7 +117,7 @@ const EmailForm = (props) => {
           </div>
         </div>
         <div className="iconContainer">
-          <div className="findMe">You can also find me here!</div>
+          {/* <div className="findMe">You can also find me here!</div> */}
           <a
             href="https://www.linkedin.com/in/birajkhatiwada/"
             className="socialMediaLink"

@@ -30,26 +30,25 @@ const Experiences = () => {
     <>
       <div id="experienceRef" className="experiencesContainer">
         <div className="experiencesTitleContainer">
-          <div className="experiencesTitle">Timeline</div>
+          <div className="experiencesTitle">TIMELINE</div>
         </div>
 
         <Timeline position="alternate">
           <TimelineItem>
             <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
+              sx={{ m: "auto 0", color: "#bfbfd8" }}
               variant="body2"
-              color="text.secondary"
             >
               Nov 2022 - Current
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector sx={{ bgcolor: "#252534" }} />
-              <TimelineDot sx={{ bgcolor: "#252534" }}>
-                <WorkIcon />
+              <TimelineConnector sx={{ bgcolor: "#bfbfd8" }} />
+              <TimelineDot sx={{ bgcolor: "#06A606" }}>
+                <WorkIcon sx={{ color: "#000000" }} />
               </TimelineDot>
-              <TimelineConnector sx={{ bgcolor: "#252534" }} />
+              <TimelineConnector sx={{ bgcolor: "#bfbfd8" }} />
             </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <TimelineContent sx={{ py: "12px", px: 2, color: "#bfbfd8" }}>
               <Typography variant="h6" component="span">
                 Odoo, Software Engineer
               </Typography>
@@ -90,20 +89,19 @@ const Experiences = () => {
           </TimelineItem> */}
           <TimelineItem>
             <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
+              sx={{ m: "auto 0", color: "#bfbfd8" }}
               variant="body2"
-              color="text.secondary"
             >
               Mar 2022 - Nov 2022
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector sx={{ bgcolor: "#252534" }} />
-              <TimelineDot sx={{ bgcolor: "#6c62fb" }}>
-                <LaptopMacIcon />
+              <TimelineConnector sx={{ bgcolor: "#bfbfd8" }} />
+              <TimelineDot sx={{ bgcolor: "#06A606" }}>
+                <LaptopMacIcon sx={{ color: "#000000" }} />
               </TimelineDot>
-              <TimelineConnector sx={{ bgcolor: "#252534" }} />
+              <TimelineConnector sx={{ bgcolor: "#bfbfd8" }} />
             </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <TimelineContent sx={{ py: "12px", px: 2, color: "#bfbfd8" }}>
               <Typography variant="h6" component="span">
                 Personal Development
               </Typography>
@@ -112,21 +110,20 @@ const Experiences = () => {
           </TimelineItem>
           <TimelineItem>
             <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
+              sx={{ m: "auto 0", color: "#bfbfd8" }}
               align="right"
               variant="body2"
-              color="text.secondary"
             >
               Jan 2021 - Mar 2022
             </TimelineOppositeContent>
-            <TimelineSeparator color="#0daf49">
-              <TimelineConnector sx={{ bgcolor: "#252534" }} />
-              <TimelineDot sx={{ bgcolor: "#252534" }}>
-                <WorkIcon />
+            <TimelineSeparator color="#bfbfd8">
+              <TimelineConnector sx={{ bgcolor: "#bfbfd8" }} />
+              <TimelineDot sx={{ bgcolor: "#06A606" }}>
+                <WorkIcon sx={{ color: "#000000" }} />
               </TimelineDot>
-              <TimelineConnector sx={{ bgcolor: "#252534" }} />
+              <TimelineConnector sx={{ bgcolor: "#bfbfd8" }} />
             </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <TimelineContent sx={{ py: "12px", px: 2, color: "#bfbfd8" }}>
               <Typography variant="h6" component="span">
                 Tesla, Autopilot Engineer
               </Typography>
@@ -159,25 +156,24 @@ const Experiences = () => {
               </Typography>
             </TimelineContent>
           </TimelineItem>
-          <div>
+          {/* <div>
             <img className="graduationSvg" src={graduation}></img>
-          </div>{" "}
+          </div> */}{" "}
           <TimelineItem>
             <TimelineOppositeContent
-              sx={{ m: "auto 0" }}
+              sx={{ m: "auto 0", color: "#bfbfd8" }}
               variant="body2"
-              color="text.secondary"
             >
               Aug 2018 - May 2020
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector sx={{ bgcolor: "#252534" }} />
-              <TimelineDot sx={{ bgcolor: "#252534" }}>
-                <SchoolIcon />
+              <TimelineConnector sx={{ bgcolor: "#bfbfd8" }} />
+              <TimelineDot sx={{ bgcolor: "#06A606" }}>
+                <SchoolIcon sx={{ color: "#000000" }} />
               </TimelineDot>
-              <TimelineConnector sx={{ bgcolor: "#252534" }} />
+              <TimelineConnector sx={{ bgcolor: "#bfbfd8" }} />
             </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <TimelineContent sx={{ py: "12px", px: 2, color: "#bfbfd8" }}>
               <Typography variant="h6" component="span">
                 Sonoma State University
               </Typography>
@@ -193,13 +189,13 @@ const Experiences = () => {
               Aug 2016 - May 2018
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector sx={{ bgcolor: "#252534" }} />
-              <TimelineDot sx={{ bgcolor: "#252534" }}>
-                <SchoolIcon />
+              <TimelineConnector sx={{ bgcolor: "#bfbfd8" }} />
+              <TimelineDot sx={{ bgcolor: "#06A606" }}>
+                <SchoolIcon sx={{ color: "#000000" }} />
               </TimelineDot>
-              <TimelineConnector sx={{ bgcolor: "#252534" }} />
+              <TimelineConnector sx={{ bgcolor: "#bfbfd8" }} />
             </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <TimelineContent sx={{ py: "12px", px: 2, color: "#bfbfd8" }}>
               <Typography variant="h6" component="span">
                 Santa Rosa Junior College
               </Typography>
@@ -209,12 +205,12 @@ const Experiences = () => {
           <TimelineItem>
             <TimelineSeparator>
               <TimelineConnector sx={{ bgcolor: "#252534" }} />
-              <TimelineDot sx={{ bgcolor: "#252534" }}>
-                <RepeatIcon />
+              <TimelineDot sx={{ bgcolor: "#06A606" }}>
+                <RepeatIcon sx={{ color: "#000000" }} />
               </TimelineDot>
               <TimelineConnector sx={{ bgcolor: "#252534" }} />
             </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <TimelineContent sx={{ py: "12px", px: 2, color: "#bfbfd8" }}>
               <Typography variant="h6" component="span">
                 Repeat
               </Typography>

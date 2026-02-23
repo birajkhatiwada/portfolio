@@ -1,7 +1,7 @@
 .skillsContainer {
   height: fit-content;
   padding: 5vh 0 5vh 0;
-  background-color: #252534;
+  background-color: #000000;
 }
 
 .skillsTitleContainer {
@@ -105,10 +105,7 @@
 .resumeSvg:hover {
   opacity: 0.7;
 }
-.iconContainer {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
+
 .findMe {
   font-size: 20px;
   font-weight: 500;
